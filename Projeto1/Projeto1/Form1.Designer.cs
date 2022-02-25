@@ -4,6 +4,7 @@
     {
         /// <summary>
         ///  Required designer variable.
+        ///  Thiago Sartorel
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
