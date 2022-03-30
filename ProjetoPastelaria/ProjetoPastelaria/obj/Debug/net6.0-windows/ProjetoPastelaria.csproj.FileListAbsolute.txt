@@ -23,3 +23,6 @@ C:\Users\Thiago Sartorel\source\repos\ProjetoPastelaria\ProjetoPastelaria\obj\De
 C:\Users\Thiago Sartorel\source\repos\ProjetoPastelaria\ProjetoPastelaria\obj\Debug\net6.0-windows\ProjetoPastelaria.Menu.resources
 C:\Users\Thiago Sartorel\source\repos\ProjetoPastelaria\ProjetoPastelaria\obj\Debug\net6.0-windows\ProjetoPastelaria.Properties.Resources.resources
 C:\Users\Thiago Sartorel\source\repos\ProjetoPastelaria\ProjetoPastelaria\obj\Debug\net6.0-windows\ProjetoPastelaria.UserControl.resources
+C:\Users\Thiago Sartorel\source\repos\ProjetoPastelaria\ProjetoPastelaria\obj\Debug\net6.0-windows\ProjetoPastelaria.Login.en-US.resources
+C:\Users\Thiago Sartorel\source\repos\ProjetoPastelaria\ProjetoPastelaria\bin\Debug\net6.0-windows\en-US\ProjetoPastelaria.resources.dll
+C:\Users\Thiago Sartorel\source\repos\ProjetoPastelaria\ProjetoPastelaria\obj\Debug\net6.0-windows\en-US\ProjetoPastelaria.resources.dll

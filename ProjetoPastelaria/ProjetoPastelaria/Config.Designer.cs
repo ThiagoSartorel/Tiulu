@@ -72,7 +72,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(546, 33);
+            this.label2.Location = new System.Drawing.Point(27, 128);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(83, 20);
             this.label2.TabIndex = 41;
@@ -82,7 +82,7 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(546, 56);
+            this.comboBox1.Location = new System.Drawing.Point(27, 151);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(151, 28);
             this.comboBox1.TabIndex = 40;
@@ -90,7 +90,7 @@
             // 
             // userControl1
             // 
-            this.userControl1.Location = new System.Drawing.Point(88, 90);
+            this.userControl1.Location = new System.Drawing.Point(-2, 245);
             this.userControl1.Name = "userControl1";
             this.userControl1.Size = new System.Drawing.Size(685, 65);
             this.userControl1.TabIndex = 42;
@@ -99,7 +99,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(708, 167);
+            this.ClientSize = new System.Drawing.Size(520, 322);
             this.Controls.Add(this.userControl1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.comboBox1);
