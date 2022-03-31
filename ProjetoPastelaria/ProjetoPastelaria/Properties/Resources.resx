@@ -117,4 +117,28 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ButtonLoginEntrar" xml:space="preserve">
+    <value>Entrar</value>
+  </data>
+  <data name="ButtonMenuCadClient" xml:space="preserve">
+    <value>Cadastrar Cliente</value>
+  </data>
+  <data name="ButtonMenuCadFun" xml:space="preserve">
+    <value>Cadastrar Funcionario</value>
+  </data>
+  <data name="ButtonMenuCadProd" xml:space="preserve">
+    <value>Cadastrar Produto</value>
+  </data>
+  <data name="ButtonMenuConfig" xml:space="preserve">
+    <value>Configuração</value>
+  </data>
+  <data name="ButtonMenuSobre" xml:space="preserve">
+    <value>Sobre</value>
+  </data>
+  <data name="LabelLoginSenha" xml:space="preserve">
+    <value>Senha</value>
+  </data>
+  <data name="LabelLoginUser" xml:space="preserve">
+    <value>Usuario:</value>
+  </data>
 </root>

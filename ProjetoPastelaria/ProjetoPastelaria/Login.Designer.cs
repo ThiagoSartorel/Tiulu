@@ -28,64 +28,82 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.labelLoginUser = new System.Windows.Forms.Label();
+            this.labelLoginSenha = new System.Windows.Forms.Label();
+            this.buttonLoginEntrar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // textBox1
             // 
-            resources.ApplyResources(this.textBox1, "textBox1");
+            this.textBox1.Location = new System.Drawing.Point(31, 68);
             this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(128, 27);
+            this.textBox1.TabIndex = 0;
             // 
             // textBox2
             // 
-            resources.ApplyResources(this.textBox2, "textBox2");
+            this.textBox2.Location = new System.Drawing.Point(31, 127);
             this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(128, 27);
+            this.textBox2.TabIndex = 1;
             // 
-            // label1
+            // labelLoginUser
             // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Name = "label1";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.labelLoginUser.AutoSize = true;
+            this.labelLoginUser.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.labelLoginUser.Location = new System.Drawing.Point(31, 42);
+            this.labelLoginUser.Name = "labelLoginUser";
+            this.labelLoginUser.Size = new System.Drawing.Size(33, 20);
+            this.labelLoginUser.TabIndex = 2;
+            this.labelLoginUser.Text = "Usu";
+            this.labelLoginUser.Click += new System.EventHandler(this.label1_Click);
             // 
-            // label2
+            // labelLoginSenha
             // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Name = "label2";
+            this.labelLoginSenha.AutoSize = true;
+            this.labelLoginSenha.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.labelLoginSenha.Location = new System.Drawing.Point(31, 101);
+            this.labelLoginSenha.Name = "labelLoginSenha";
+            this.labelLoginSenha.Size = new System.Drawing.Size(25, 20);
+            this.labelLoginSenha.TabIndex = 3;
+            this.labelLoginSenha.Text = "Se";
             // 
-            // button1
+            // buttonLoginEntrar
             // 
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonLoginEntrar.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonLoginEntrar.Location = new System.Drawing.Point(47, 160);
+            this.buttonLoginEntrar.Name = "buttonLoginEntrar";
+            this.buttonLoginEntrar.Size = new System.Drawing.Size(94, 29);
+            this.buttonLoginEntrar.TabIndex = 4;
+            this.buttonLoginEntrar.Text = "Ent";
+            this.buttonLoginEntrar.UseVisualStyleBackColor = false;
+            this.buttonLoginEntrar.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel1
             // 
-            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.panel1.Location = new System.Drawing.Point(12, 24);
             this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(176, 182);
+            this.panel1.TabIndex = 5;
             // 
             // Login
             // 
-            resources.ApplyResources(this, "$this");
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(200, 227);
+            this.Controls.Add(this.buttonLoginEntrar);
+            this.Controls.Add(this.labelLoginSenha);
+            this.Controls.Add(this.labelLoginUser);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.panel1);
             this.Name = "Login";
+            this.Text = "Login";
             this.Load += new System.EventHandler(this.Login_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -96,9 +114,9 @@
 
         private TextBox textBox1;
         private TextBox textBox2;
-        private Label label1;
-        private Label label2;
-        private Button button1;
+        private Label labelLoginUser;
+        private Label labelLoginSenha;
+        private Button buttonLoginEntrar;
         private Panel panel1;
     }
 }

@@ -15,6 +15,13 @@ namespace ProjetoPastelaria
         public Menu()
         {
             InitializeComponent();
+            buttonMenuCadProd.Text = Properties.Resources.ResourceManager.GetString("ButtonMenuCadProd");
+            buttonMenuCadClient.Text = Properties.Resources.ResourceManager.GetString("ButtonMenuCadClient");
+            buttonMenuCadFun.Text = Properties.Resources.ResourceManager.GetString("ButtonMenuCadFun");
+            buttonMenuConfig.Text = Properties.Resources.ResourceManager.GetString("ButtonMenuConfig");
+            buttonMenuSobre.Text = Properties.Resources.ResourceManager.GetString("ButtonMenuSobre");
+
+
         }
 
         private void button1_Click(object sender, EventArgs e)

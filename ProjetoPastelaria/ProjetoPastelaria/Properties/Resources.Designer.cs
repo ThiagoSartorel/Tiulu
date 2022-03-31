@@ -59,5 +59,77 @@ namespace ProjetoPastelaria.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Entrar.
+        /// </summary>
+        internal static string ButtonLoginEntrar {
+            get {
+                return ResourceManager.GetString("ButtonLoginEntrar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Cadastrar Cliente.
+        /// </summary>
+        internal static string ButtonMenuCadClient {
+            get {
+                return ResourceManager.GetString("ButtonMenuCadClient", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Cadastrar Funcionario.
+        /// </summary>
+        internal static string ButtonMenuCadFun {
+            get {
+                return ResourceManager.GetString("ButtonMenuCadFun", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Cadastrar Produto.
+        /// </summary>
+        internal static string ButtonMenuCadProd {
+            get {
+                return ResourceManager.GetString("ButtonMenuCadProd", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Configuração.
+        /// </summary>
+        internal static string ButtonMenuConfig {
+            get {
+                return ResourceManager.GetString("ButtonMenuConfig", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Sobre.
+        /// </summary>
+        internal static string ButtonMenuSobre {
+            get {
+                return ResourceManager.GetString("ButtonMenuSobre", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Senha.
+        /// </summary>
+        internal static string LabelLoginSenha {
+            get {
+                return ResourceManager.GetString("LabelLoginSenha", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Usuario:.
+        /// </summary>
+        internal static string LabelLoginUser {
+            get {
+                return ResourceManager.GetString("LabelLoginUser", resourceCulture);
+            }
+        }
     }
 }

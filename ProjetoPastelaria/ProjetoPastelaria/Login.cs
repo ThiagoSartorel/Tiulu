@@ -5,6 +5,9 @@ namespace ProjetoPastelaria
         public Login()
         {
             InitializeComponent();
+            labelLoginUser.Text = Properties.Resources.ResourceManager.GetString("LabelLoginUser");
+            labelLoginSenha.Text = Properties.Resources.ResourceManager.GetString("LabelLoginSenha");
+            buttonLoginEntrar.Text = Properties.Resources.ResourceManager.GetString("ButtonLoginEntrar");
         }
 
         private void Login_Load(object sender, EventArgs e)

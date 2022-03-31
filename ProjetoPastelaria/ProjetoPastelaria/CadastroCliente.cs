@@ -34,5 +34,15 @@ namespace ProjetoPastelaria
         {
 
         }
+
+        private void userControl1_Load_2(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CadastroCliente_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

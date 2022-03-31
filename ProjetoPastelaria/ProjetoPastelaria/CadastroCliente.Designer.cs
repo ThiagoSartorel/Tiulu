@@ -183,6 +183,7 @@
             this.userControl1.Name = "userControl1";
             this.userControl1.Size = new System.Drawing.Size(860, 81);
             this.userControl1.TabIndex = 41;
+            this.userControl1.Load += new System.EventHandler(this.userControl1_Load_2);
             // 
             // CadastroCliente
             // 
@@ -208,6 +209,7 @@
             this.Controls.Add(this.textBox1);
             this.Name = "CadastroCliente";
             this.Text = "CadastroCliente";
+            this.Load += new System.EventHandler(this.CadastroCliente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

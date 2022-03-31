@@ -29,71 +29,71 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.buttonMenuCadProd = new System.Windows.Forms.Button();
+            this.buttonMenuCadClient = new System.Windows.Forms.Button();
+            this.buttonMenuCadFun = new System.Windows.Forms.Button();
+            this.buttonMenuConfig = new System.Windows.Forms.Button();
+            this.buttonMenuSobre = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.splitter1 = new System.Windows.Forms.Splitter();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // buttonMenuCadProd
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button1.Location = new System.Drawing.Point(17, 227);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(170, 29);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Cadastra Produto";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonMenuCadProd.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonMenuCadProd.Location = new System.Drawing.Point(17, 227);
+            this.buttonMenuCadProd.Name = "buttonMenuCadProd";
+            this.buttonMenuCadProd.Size = new System.Drawing.Size(170, 29);
+            this.buttonMenuCadProd.TabIndex = 0;
+            this.buttonMenuCadProd.Text = "CP";
+            this.buttonMenuCadProd.UseVisualStyleBackColor = false;
+            this.buttonMenuCadProd.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // buttonMenuCadClient
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button2.Location = new System.Drawing.Point(17, 284);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(170, 29);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Cadastra Cliente";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.buttonMenuCadClient.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonMenuCadClient.Location = new System.Drawing.Point(17, 284);
+            this.buttonMenuCadClient.Name = "buttonMenuCadClient";
+            this.buttonMenuCadClient.Size = new System.Drawing.Size(170, 29);
+            this.buttonMenuCadClient.TabIndex = 1;
+            this.buttonMenuCadClient.Text = "CC";
+            this.buttonMenuCadClient.UseVisualStyleBackColor = false;
+            this.buttonMenuCadClient.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // buttonMenuCadFun
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button3.Location = new System.Drawing.Point(17, 341);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(170, 29);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Cadastra Funcionario";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.buttonMenuCadFun.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonMenuCadFun.Location = new System.Drawing.Point(17, 341);
+            this.buttonMenuCadFun.Name = "buttonMenuCadFun";
+            this.buttonMenuCadFun.Size = new System.Drawing.Size(170, 29);
+            this.buttonMenuCadFun.TabIndex = 2;
+            this.buttonMenuCadFun.Text = "CF";
+            this.buttonMenuCadFun.UseVisualStyleBackColor = false;
+            this.buttonMenuCadFun.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button4
+            // buttonMenuConfig
             // 
-            this.button4.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button4.Location = new System.Drawing.Point(17, 398);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(170, 29);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Configuração";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.buttonMenuConfig.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonMenuConfig.Location = new System.Drawing.Point(17, 398);
+            this.buttonMenuConfig.Name = "buttonMenuConfig";
+            this.buttonMenuConfig.Size = new System.Drawing.Size(170, 29);
+            this.buttonMenuConfig.TabIndex = 3;
+            this.buttonMenuConfig.Text = "Config";
+            this.buttonMenuConfig.UseVisualStyleBackColor = false;
+            this.buttonMenuConfig.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button5
+            // buttonMenuSobre
             // 
-            this.button5.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button5.Location = new System.Drawing.Point(17, 455);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(170, 29);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Sobre";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.buttonMenuSobre.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonMenuSobre.Location = new System.Drawing.Point(17, 455);
+            this.buttonMenuSobre.Name = "buttonMenuSobre";
+            this.buttonMenuSobre.Size = new System.Drawing.Size(170, 29);
+            this.buttonMenuSobre.TabIndex = 4;
+            this.buttonMenuSobre.Text = "Sb";
+            this.buttonMenuSobre.UseVisualStyleBackColor = false;
+            this.buttonMenuSobre.Click += new System.EventHandler(this.button5_Click);
             // 
             // pictureBox1
             // 
@@ -134,11 +134,11 @@
             this.ClientSize = new System.Drawing.Size(667, 512);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonMenuSobre);
+            this.Controls.Add(this.buttonMenuConfig);
+            this.Controls.Add(this.buttonMenuCadFun);
+            this.Controls.Add(this.buttonMenuCadClient);
+            this.Controls.Add(this.buttonMenuCadProd);
             this.Controls.Add(this.splitter1);
             this.Name = "Menu";
             this.Text = "Menu";
@@ -151,11 +151,11 @@
 
         #endregion
 
-        private Button button1;
-        private Button button2;
-        private Button button3;
-        private Button button4;
-        private Button button5;
+        private Button buttonMenuCadProd;
+        private Button buttonMenuCadClient;
+        private Button buttonMenuCadFun;
+        private Button buttonMenuConfig;
+        private Button buttonMenuSobre;
         private PictureBox pictureBox1;
         private Splitter splitter1;
         private Label label1;
