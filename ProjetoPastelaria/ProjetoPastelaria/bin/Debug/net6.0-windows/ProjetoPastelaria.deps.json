@@ -9,6 +9,11 @@
       "ProjetoPastelaria/1.0.0": {
         "runtime": {
           "ProjetoPastelaria.dll": {}
+        },
+        "resources": {
+          "en-US/ProjetoPastelaria.resources.dll": {
+            "locale": "en-US"
+          }
         }
       }
     }

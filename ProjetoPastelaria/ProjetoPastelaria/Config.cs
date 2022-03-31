@@ -15,6 +15,10 @@ namespace ProjetoPastelaria
         public Config()
         {
             InitializeComponent();
+
+            labelConfigJuros.Text = Properties.Resources.ResourceManager.GetString("LabelConfigJuros");
+            labelConfigMulta.Text = Properties.Resources.ResourceManager.GetString("LabelConfigMulta");
+            labelConfigLinguagem.Text = Properties.Resources.ResourceManager.GetString("LabelConfigLinguagem");
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -38,6 +42,11 @@ namespace ProjetoPastelaria
         }
 
         private void Config_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelConfigJuros_Click(object sender, EventArgs e)
         {
 
         }

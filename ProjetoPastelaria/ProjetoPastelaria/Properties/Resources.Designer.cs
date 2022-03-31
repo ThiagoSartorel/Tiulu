@@ -115,6 +115,33 @@ namespace ProjetoPastelaria.Properties {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Percentual juros diario.
+        /// </summary>
+        internal static string LabelConfigJuros {
+            get {
+                return ResourceManager.GetString("LabelConfigJuros", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Linguagem:.
+        /// </summary>
+        internal static string LabelConfigLinguagem {
+            get {
+                return ResourceManager.GetString("LabelConfigLinguagem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Multa por atraso (RS).
+        /// </summary>
+        internal static string LabelConfigMulta {
+            get {
+                return ResourceManager.GetString("LabelConfigMulta", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Senha.
         /// </summary>
         internal static string LabelLoginSenha {

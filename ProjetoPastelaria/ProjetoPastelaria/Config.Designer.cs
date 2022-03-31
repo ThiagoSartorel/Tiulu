@@ -28,23 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label4 = new System.Windows.Forms.Label();
+            this.labelConfigJuros = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelConfigMulta = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.labelConfigLinguagem = new System.Windows.Forms.Label();
+            this.comboBoxLinguagem = new System.Windows.Forms.ComboBox();
             this.userControl1 = new ProjetoPastelaria.UserControl();
             this.SuspendLayout();
             // 
-            // label4
+            // labelConfigJuros
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(27, 34);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(159, 20);
-            this.label4.TabIndex = 36;
-            this.label4.Text = "Percentual Juros Diario";
+            this.labelConfigJuros.AutoSize = true;
+            this.labelConfigJuros.Location = new System.Drawing.Point(27, 34);
+            this.labelConfigJuros.Name = "labelConfigJuros";
+            this.labelConfigJuros.Size = new System.Drawing.Size(93, 20);
+            this.labelConfigJuros.TabIndex = 36;
+            this.labelConfigJuros.Text = "Percent juros";
+            this.labelConfigJuros.Click += new System.EventHandler(this.labelConfigJuros_Click);
             // 
             // textBox5
             // 
@@ -53,14 +54,14 @@
             this.textBox5.Size = new System.Drawing.Size(159, 27);
             this.textBox5.TabIndex = 35;
             // 
-            // label1
+            // labelConfigMulta
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(215, 34);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(150, 20);
-            this.label1.TabIndex = 34;
-            this.label1.Text = "Multa por atraso (R$)";
+            this.labelConfigMulta.AutoSize = true;
+            this.labelConfigMulta.Location = new System.Drawing.Point(215, 34);
+            this.labelConfigMulta.Name = "labelConfigMulta";
+            this.labelConfigMulta.Size = new System.Drawing.Size(91, 20);
+            this.labelConfigMulta.TabIndex = 34;
+            this.labelConfigMulta.Text = "Multa por at";
             // 
             // textBox1
             // 
@@ -69,24 +70,28 @@
             this.textBox1.Size = new System.Drawing.Size(279, 27);
             this.textBox1.TabIndex = 33;
             // 
-            // label2
+            // labelConfigLinguagem
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(27, 128);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(83, 20);
-            this.label2.TabIndex = 41;
-            this.label2.Text = "Linguagem";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.labelConfigLinguagem.AutoSize = true;
+            this.labelConfigLinguagem.Location = new System.Drawing.Point(27, 128);
+            this.labelConfigLinguagem.Name = "labelConfigLinguagem";
+            this.labelConfigLinguagem.Size = new System.Drawing.Size(37, 20);
+            this.labelConfigLinguagem.TabIndex = 41;
+            this.labelConfigLinguagem.Text = "Ling";
+            this.labelConfigLinguagem.Click += new System.EventHandler(this.label2_Click);
             // 
-            // comboBox1
+            // comboBoxLinguagem
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(27, 151);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(151, 28);
-            this.comboBox1.TabIndex = 40;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.comboBoxLinguagem.FormattingEnabled = true;
+            this.comboBoxLinguagem.Items.AddRange(new object[] {
+            "Portugues (PT-BR)",
+            "Ingles(EN-US)",
+            "Espanhol(ES-ES)"});
+            this.comboBoxLinguagem.Location = new System.Drawing.Point(27, 151);
+            this.comboBoxLinguagem.Name = "comboBoxLinguagem";
+            this.comboBoxLinguagem.Size = new System.Drawing.Size(151, 28);
+            this.comboBoxLinguagem.TabIndex = 40;
+            this.comboBoxLinguagem.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // userControl1
             // 
@@ -101,11 +106,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(520, 322);
             this.Controls.Add(this.userControl1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.labelConfigLinguagem);
+            this.Controls.Add(this.comboBoxLinguagem);
+            this.Controls.Add(this.labelConfigJuros);
             this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelConfigMulta);
             this.Controls.Add(this.textBox1);
             this.Name = "Config";
             this.Text = "Config";
@@ -116,12 +121,12 @@
         }
 
         #endregion
-        private Label label4;
+        private Label labelConfigJuros;
         private TextBox textBox5;
-        private Label label1;
+        private Label labelConfigMulta;
         private TextBox textBox1;
-        private Label label2;
-        private ComboBox comboBox1;
+        private Label labelConfigLinguagem;
+        private ComboBox comboBoxLinguagem;
         private UserControl userControl1;
     }
 }

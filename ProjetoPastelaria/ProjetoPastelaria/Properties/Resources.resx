@@ -135,6 +135,15 @@
   <data name="ButtonMenuSobre" xml:space="preserve">
     <value>Sobre</value>
   </data>
+  <data name="LabelConfigJuros" xml:space="preserve">
+    <value>Percentual juros diario</value>
+  </data>
+  <data name="LabelConfigLinguagem" xml:space="preserve">
+    <value>Linguagem:</value>
+  </data>
+  <data name="LabelConfigMulta" xml:space="preserve">
+    <value>Multa por atraso (RS)</value>
+  </data>
   <data name="LabelLoginSenha" xml:space="preserve">
     <value>Senha</value>
   </data>
