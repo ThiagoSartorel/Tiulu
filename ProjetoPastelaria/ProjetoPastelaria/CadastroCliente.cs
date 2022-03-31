@@ -15,6 +15,14 @@ namespace ProjetoPastelaria
         public CadastroCliente()
         {
             InitializeComponent();
+
+            labelCadCliCPF.Text = Properties.Resources.ResourceManager.GetString("LabelCadCliCPF");
+            labelCadCliDias.Text = Properties.Resources.ResourceManager.GetString("LabelCadCliDias");
+            labelCadCliFiado.Text = Properties.Resources.ResourceManager.GetString("LabelCadCliFiado");
+            labelCadCliNome.Text = Properties.Resources.ResourceManager.GetString("LabelCadCliNome");
+            labelCadCliSenha.Text = Properties.Resources.ResourceManager.GetString("LabelCadCliSenha");
+            labelCadCliRSenha.Text = Properties.Resources.ResourceManager.GetString("LabelCadCliRSenha");
+            labelCadCliTelefone.Text = Properties.Resources.ResourceManager.GetString("LabelCadCliTelefone");
         }
 
         public void button2_Click(object sender, EventArgs e)
@@ -41,6 +49,16 @@ namespace ProjetoPastelaria
         }
 
         private void CadastroCliente_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelCadCliCPF_Click(object sender, EventArgs e)
         {
 
         }

@@ -135,6 +135,27 @@
   <data name="ButtonMenuSobre" xml:space="preserve">
     <value>Sobre</value>
   </data>
+  <data name="LabelCadCliCPF" xml:space="preserve">
+    <value>CPF:</value>
+  </data>
+  <data name="LabelCadCliDias" xml:space="preserve">
+    <value>Dias:</value>
+  </data>
+  <data name="LabelCadCliFiado" xml:space="preserve">
+    <value>Marca Fiado:</value>
+  </data>
+  <data name="LabelCadCliNome" xml:space="preserve">
+    <value>Nome:</value>
+  </data>
+  <data name="LabelCadCliRSenha" xml:space="preserve">
+    <value>Re-Senha:</value>
+  </data>
+  <data name="LabelCadCliSenha" xml:space="preserve">
+    <value>Senha:</value>
+  </data>
+  <data name="LabelCadCliTelefone" xml:space="preserve">
+    <value>Telefone:</value>
+  </data>
   <data name="LabelCadProdDesc" xml:space="preserve">
     <value>Descrição produto</value>
   </data>

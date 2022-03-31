@@ -115,6 +115,69 @@ namespace ProjetoPastelaria.Properties {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a CPF:.
+        /// </summary>
+        internal static string LabelCadCliCPF {
+            get {
+                return ResourceManager.GetString("LabelCadCliCPF", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Dias:.
+        /// </summary>
+        internal static string LabelCadCliDias {
+            get {
+                return ResourceManager.GetString("LabelCadCliDias", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Marca Fiado:.
+        /// </summary>
+        internal static string LabelCadCliFiado {
+            get {
+                return ResourceManager.GetString("LabelCadCliFiado", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Nome:.
+        /// </summary>
+        internal static string LabelCadCliNome {
+            get {
+                return ResourceManager.GetString("LabelCadCliNome", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Re-Senha:.
+        /// </summary>
+        internal static string LabelCadCliRSenha {
+            get {
+                return ResourceManager.GetString("LabelCadCliRSenha", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Senha:.
+        /// </summary>
+        internal static string LabelCadCliSenha {
+            get {
+                return ResourceManager.GetString("LabelCadCliSenha", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Telefone:.
+        /// </summary>
+        internal static string LabelCadCliTelefone {
+            get {
+                return ResourceManager.GetString("LabelCadCliTelefone", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Descrição produto.
         /// </summary>
         internal static string LabelCadProdDesc {
