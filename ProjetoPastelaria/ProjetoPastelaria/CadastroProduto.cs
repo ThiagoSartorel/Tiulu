@@ -20,6 +20,10 @@ namespace ProjetoPastelaria
             userControl.Dock = DockStyle.Bottom;
 
             Size = new Size(Size.Width, Size.Height + userControl.Size.Height);
+
+            labelCadProdNome.Text = Properties.Resources.ResourceManager.GetString("LabelCadProdNome");
+            labelCadProgDesc.Text = Properties.Resources.ResourceManager.GetString("LabelCadProdDesc");
+            labelCadProValor.Text = Properties.Resources.ResourceManager.GetString("LabelCadProdValor");
         }
 
         private void button2_Click(object sender, EventArgs e)

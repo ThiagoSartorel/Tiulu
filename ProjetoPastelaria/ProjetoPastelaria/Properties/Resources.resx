@@ -135,6 +135,15 @@
   <data name="ButtonMenuSobre" xml:space="preserve">
     <value>Sobre</value>
   </data>
+  <data name="LabelCadProdDesc" xml:space="preserve">
+    <value>Descrição produto</value>
+  </data>
+  <data name="LabelCadProdNome" xml:space="preserve">
+    <value>Nome produto</value>
+  </data>
+  <data name="LabelCadProdValor" xml:space="preserve">
+    <value>Valor</value>
+  </data>
   <data name="LabelConfigJuros" xml:space="preserve">
     <value>Percentual juros diario</value>
   </data>
