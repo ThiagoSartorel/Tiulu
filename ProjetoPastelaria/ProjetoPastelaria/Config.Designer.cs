@@ -35,6 +35,8 @@
             this.labelConfigLinguagem = new System.Windows.Forms.Label();
             this.comboBoxLinguagem = new System.Windows.Forms.ComboBox();
             this.userControl1 = new ProjetoPastelaria.UserControl();
+            this.buttonConfigSalvar = new System.Windows.Forms.Button();
+            this.checkBoxAlteraIdioma = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // labelConfigJuros
@@ -84,9 +86,9 @@
             // 
             this.comboBoxLinguagem.FormattingEnabled = true;
             this.comboBoxLinguagem.Items.AddRange(new object[] {
-            "Portugues (PT-BR)",
-            "Ingles(EN-US)",
-            "Espanhol(ES-ES)"});
+            "pt-BR",
+            "en-US",
+            "es"});
             this.comboBoxLinguagem.Location = new System.Drawing.Point(27, 151);
             this.comboBoxLinguagem.Name = "comboBoxLinguagem";
             this.comboBoxLinguagem.Size = new System.Drawing.Size(151, 28);
@@ -97,14 +99,36 @@
             // 
             this.userControl1.Location = new System.Drawing.Point(-2, 245);
             this.userControl1.Name = "userControl1";
-            this.userControl1.Size = new System.Drawing.Size(685, 65);
+            this.userControl1.Size = new System.Drawing.Size(221, 65);
             this.userControl1.TabIndex = 42;
+            // 
+            // buttonConfigSalvar
+            // 
+            this.buttonConfigSalvar.Location = new System.Drawing.Point(400, 269);
+            this.buttonConfigSalvar.Name = "buttonConfigSalvar";
+            this.buttonConfigSalvar.Size = new System.Drawing.Size(94, 29);
+            this.buttonConfigSalvar.TabIndex = 43;
+            this.buttonConfigSalvar.Text = "Salvar";
+            this.buttonConfigSalvar.UseVisualStyleBackColor = true;
+            this.buttonConfigSalvar.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // checkBoxAlteraIdioma
+            // 
+            this.checkBoxAlteraIdioma.AutoSize = true;
+            this.checkBoxAlteraIdioma.Location = new System.Drawing.Point(224, 157);
+            this.checkBoxAlteraIdioma.Name = "checkBoxAlteraIdioma";
+            this.checkBoxAlteraIdioma.Size = new System.Drawing.Size(156, 24);
+            this.checkBoxAlteraIdioma.TabIndex = 44;
+            this.checkBoxAlteraIdioma.Text = "Alterar ja o idioma";
+            this.checkBoxAlteraIdioma.UseVisualStyleBackColor = true;
             // 
             // Config
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(520, 322);
+            this.Controls.Add(this.checkBoxAlteraIdioma);
+            this.Controls.Add(this.buttonConfigSalvar);
             this.Controls.Add(this.userControl1);
             this.Controls.Add(this.labelConfigLinguagem);
             this.Controls.Add(this.comboBoxLinguagem);
@@ -128,5 +152,7 @@
         private Label labelConfigLinguagem;
         private ComboBox comboBoxLinguagem;
         private UserControl userControl1;
+        private Button buttonConfigSalvar;
+        private CheckBox checkBoxAlteraIdioma;
     }
 }

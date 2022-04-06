@@ -26,3 +26,8 @@ C:\Users\Thiago Sartorel\source\repos\ProjetoPastelaria\ProjetoPastelaria\obj\De
 C:\Users\Thiago Sartorel\source\repos\ProjetoPastelaria\ProjetoPastelaria\obj\Debug\net6.0-windows\ProjetoPastelaria.Login.en-US.resources
 C:\Users\Thiago Sartorel\source\repos\ProjetoPastelaria\ProjetoPastelaria\bin\Debug\net6.0-windows\en-US\ProjetoPastelaria.resources.dll
 C:\Users\Thiago Sartorel\source\repos\ProjetoPastelaria\ProjetoPastelaria\obj\Debug\net6.0-windows\en-US\ProjetoPastelaria.resources.dll
+C:\Users\Thiago Sartorel\source\repos\ProjetoPastelaria\ProjetoPastelaria\bin\Debug\net6.0-windows\es\ProjetoPastelaria.resources.dll
+C:\Users\Thiago Sartorel\source\repos\ProjetoPastelaria\ProjetoPastelaria\obj\Debug\net6.0-windows\ProjetoPastelaria.Properties.Resource.en-US.resources
+C:\Users\Thiago Sartorel\source\repos\ProjetoPastelaria\ProjetoPastelaria\obj\Debug\net6.0-windows\ProjetoPastelaria.Properties.Resource.es.resources
+C:\Users\Thiago Sartorel\source\repos\ProjetoPastelaria\ProjetoPastelaria\obj\Debug\net6.0-windows\es\ProjetoPastelaria.resources.dll
+C:\Users\Thiago Sartorel\source\repos\ProjetoPastelaria\ProjetoPastelaria\bin\Debug\net6.0-windows\ProjetoPastelaria.dll.config

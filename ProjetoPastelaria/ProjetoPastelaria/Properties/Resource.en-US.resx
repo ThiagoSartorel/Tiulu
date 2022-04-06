@@ -118,52 +118,52 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ButtonLoginEntrar" xml:space="preserve">
-    <value>Entrar</value>
+    <value>Login</value>
   </data>
   <data name="ButtonMenuCadClient" xml:space="preserve">
-    <value>Cadastrar Cliente</value>
+    <value>add Client</value>
   </data>
   <data name="ButtonMenuCadFun" xml:space="preserve">
-    <value>Cadastrar Funcionario</value>
+    <value>add Employed</value>
   </data>
   <data name="ButtonMenuCadProd" xml:space="preserve">
-    <value>Cadastrar Produto</value>
+    <value>add Produt</value>
   </data>
   <data name="ButtonMenuConfig" xml:space="preserve">
-    <value>Configuração</value>
+    <value>Config</value>
   </data>
   <data name="ButtonMenuSobre" xml:space="preserve">
-    <value>Sobre</value>
+    <value>About</value>
   </data>
   <data name="ButtonSobreVoltar" xml:space="preserve">
-    <value>Voltar</value>
+    <value>Return</value>
   </data>
   <data name="CheckBoxAdm" xml:space="preserve">
     <value>ADM</value>
   </data>
   <data name="CheckBoxBalcao" xml:space="preserve">
-    <value>Balcão</value>
+    <value>Attendant</value>
   </data>
   <data name="LabelCadCliCPF" xml:space="preserve">
     <value>CPF:</value>
   </data>
   <data name="LabelCadCliDias" xml:space="preserve">
-    <value>Dias:</value>
+    <value>Day:</value>
   </data>
   <data name="LabelCadCliFiado" xml:space="preserve">
-    <value>Marca Fiado:</value>
+    <value>Debtor:</value>
   </data>
   <data name="LabelCadCliNome" xml:space="preserve">
-    <value>Nome:</value>
+    <value>Name:</value>
   </data>
   <data name="LabelCadCliRSenha" xml:space="preserve">
-    <value>Re-Senha:</value>
+    <value>re-Password:</value>
   </data>
   <data name="LabelCadCliSenha" xml:space="preserve">
-    <value>Senha:</value>
+    <value>Password:</value>
   </data>
   <data name="LabelCadCliTelefone" xml:space="preserve">
-    <value>Telefone:</value>
+    <value>Telephone:</value>
   </data>
   <data name="LabelCadFunCPF" xml:space="preserve">
     <value>CPF</value>
@@ -172,43 +172,43 @@
     <value>ID</value>
   </data>
   <data name="LabelCadFunMatricula" xml:space="preserve">
-    <value>Matricula</value>
+    <value>Registration</value>
   </data>
   <data name="LabelCadFunNome" xml:space="preserve">
-    <value>Nome</value>
+    <value>Name</value>
   </data>
   <data name="LabelCadFunRSenha" xml:space="preserve">
-    <value>ReSenha</value>
+    <value>re-Password:</value>
   </data>
   <data name="LabelCadFunSenha" xml:space="preserve">
-    <value>Senha</value>
+    <value>Password:</value>
   </data>
   <data name="LabelCadFunTelefone" xml:space="preserve">
-    <value>Telefone</value>
+    <value>Telephone</value>
   </data>
   <data name="LabelCadProdDesc" xml:space="preserve">
-    <value>Descrição produto</value>
+    <value>Descripton:</value>
   </data>
   <data name="LabelCadProdNome" xml:space="preserve">
-    <value>Nome produto</value>
+    <value>Product name</value>
   </data>
   <data name="LabelCadProdValor" xml:space="preserve">
-    <value>Valor</value>
+    <value>Value</value>
   </data>
   <data name="LabelConfigJuros" xml:space="preserve">
-    <value>Percentual juros diario</value>
+    <value>Daly interest</value>
   </data>
   <data name="LabelConfigLinguagem" xml:space="preserve">
-    <value>Linguagem:</value>
+    <value>Lenguage:</value>
   </data>
   <data name="LabelConfigMulta" xml:space="preserve">
-    <value>Multa por atraso (RS)</value>
+    <value>Late fine ($US)</value>
   </data>
   <data name="LabelLoginSenha" xml:space="preserve">
-    <value>Senha</value>
+    <value>Password</value>
   </data>
   <data name="LabelLoginUser" xml:space="preserve">
-    <value>Usuario:</value>
+    <value>User:</value>
   </data>
   <data name="LabelSobreNome" xml:space="preserve">
     <value>Pasteleixons</value>

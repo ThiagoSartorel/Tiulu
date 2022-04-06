@@ -31,19 +31,19 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.labelCadFunCPF = new System.Windows.Forms.Label();
+            this.labelCadFunMatricula = new System.Windows.Forms.Label();
+            this.labelCadFunNome = new System.Windows.Forms.Label();
+            this.labelCadFunID = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.labelCadFunTelefone = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.labelCadFunRsenha = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.labelCadFunSenha = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButtonCadFunAdm = new System.Windows.Forms.RadioButton();
+            this.radioButtonCadFunBalcao = new System.Windows.Forms.RadioButton();
             this.userControl1 = new ProjetoPastelaria.UserControl();
             this.SuspendLayout();
             // 
@@ -68,41 +68,43 @@
             this.textBox3.Size = new System.Drawing.Size(125, 27);
             this.textBox3.TabIndex = 2;
             // 
-            // label1
+            // labelCadFunCPF
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(155, 64);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(33, 20);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "CPF";
+            this.labelCadFunCPF.AutoSize = true;
+            this.labelCadFunCPF.Location = new System.Drawing.Point(155, 64);
+            this.labelCadFunCPF.Name = "labelCadFunCPF";
+            this.labelCadFunCPF.Size = new System.Drawing.Size(33, 20);
+            this.labelCadFunCPF.TabIndex = 4;
+            this.labelCadFunCPF.Text = "CPF";
+            this.labelCadFunCPF.Click += new System.EventHandler(this.label1_Click);
             // 
-            // label2
+            // labelCadFunMatricula
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(309, 64);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 20);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Matricula";
+            this.labelCadFunMatricula.AutoSize = true;
+            this.labelCadFunMatricula.Location = new System.Drawing.Point(309, 64);
+            this.labelCadFunMatricula.Name = "labelCadFunMatricula";
+            this.labelCadFunMatricula.Size = new System.Drawing.Size(71, 20);
+            this.labelCadFunMatricula.TabIndex = 5;
+            this.labelCadFunMatricula.Text = "Matricula";
             // 
-            // label3
+            // labelCadFunNome
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(53, 136);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(50, 20);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Nome";
+            this.labelCadFunNome.AutoSize = true;
+            this.labelCadFunNome.Location = new System.Drawing.Point(53, 136);
+            this.labelCadFunNome.Name = "labelCadFunNome";
+            this.labelCadFunNome.Size = new System.Drawing.Size(50, 20);
+            this.labelCadFunNome.TabIndex = 6;
+            this.labelCadFunNome.Text = "Nome";
+            this.labelCadFunNome.Click += new System.EventHandler(this.labelCadFunNome_Click);
             // 
-            // label4
+            // labelCadFunID
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(53, 64);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(24, 20);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "ID";
+            this.labelCadFunID.AutoSize = true;
+            this.labelCadFunID.Location = new System.Drawing.Point(53, 64);
+            this.labelCadFunID.Name = "labelCadFunID";
+            this.labelCadFunID.Size = new System.Drawing.Size(24, 20);
+            this.labelCadFunID.TabIndex = 8;
+            this.labelCadFunID.Text = "ID";
             // 
             // textBox5
             // 
@@ -111,14 +113,14 @@
             this.textBox5.Size = new System.Drawing.Size(75, 27);
             this.textBox5.TabIndex = 7;
             // 
-            // label5
+            // labelCadFunTelefone
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(53, 207);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(66, 20);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "Telefone";
+            this.labelCadFunTelefone.AutoSize = true;
+            this.labelCadFunTelefone.Location = new System.Drawing.Point(53, 207);
+            this.labelCadFunTelefone.Name = "labelCadFunTelefone";
+            this.labelCadFunTelefone.Size = new System.Drawing.Size(66, 20);
+            this.labelCadFunTelefone.TabIndex = 10;
+            this.labelCadFunTelefone.Text = "Telefone";
             // 
             // textBox4
             // 
@@ -127,14 +129,14 @@
             this.textBox4.Size = new System.Drawing.Size(381, 27);
             this.textBox4.TabIndex = 9;
             // 
-            // label6
+            // labelCadFunRsenha
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(53, 354);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(66, 20);
-            this.label6.TabIndex = 14;
-            this.label6.Text = "ReSenha";
+            this.labelCadFunRsenha.AutoSize = true;
+            this.labelCadFunRsenha.Location = new System.Drawing.Point(53, 354);
+            this.labelCadFunRsenha.Name = "labelCadFunRsenha";
+            this.labelCadFunRsenha.Size = new System.Drawing.Size(66, 20);
+            this.labelCadFunRsenha.TabIndex = 14;
+            this.labelCadFunRsenha.Text = "ReSenha";
             // 
             // textBox6
             // 
@@ -143,14 +145,14 @@
             this.textBox6.Size = new System.Drawing.Size(381, 27);
             this.textBox6.TabIndex = 13;
             // 
-            // label7
+            // labelCadFunSenha
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(53, 283);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(49, 20);
-            this.label7.TabIndex = 12;
-            this.label7.Text = "Senha";
+            this.labelCadFunSenha.AutoSize = true;
+            this.labelCadFunSenha.Location = new System.Drawing.Point(53, 283);
+            this.labelCadFunSenha.Name = "labelCadFunSenha";
+            this.labelCadFunSenha.Size = new System.Drawing.Size(49, 20);
+            this.labelCadFunSenha.TabIndex = 12;
+            this.labelCadFunSenha.Text = "Senha";
             // 
             // textBox7
             // 
@@ -159,27 +161,27 @@
             this.textBox7.Size = new System.Drawing.Size(381, 27);
             this.textBox7.TabIndex = 11;
             // 
-            // radioButton1
+            // radioButtonCadFunAdm
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(53, 423);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(64, 24);
-            this.radioButton1.TabIndex = 15;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "ADM";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButtonCadFunAdm.AutoSize = true;
+            this.radioButtonCadFunAdm.Location = new System.Drawing.Point(53, 423);
+            this.radioButtonCadFunAdm.Name = "radioButtonCadFunAdm";
+            this.radioButtonCadFunAdm.Size = new System.Drawing.Size(64, 24);
+            this.radioButtonCadFunAdm.TabIndex = 15;
+            this.radioButtonCadFunAdm.TabStop = true;
+            this.radioButtonCadFunAdm.Text = "ADM";
+            this.radioButtonCadFunAdm.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // radioButtonCadFunBalcao
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(144, 423);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(75, 24);
-            this.radioButton2.TabIndex = 16;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Balcão";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButtonCadFunBalcao.AutoSize = true;
+            this.radioButtonCadFunBalcao.Location = new System.Drawing.Point(144, 423);
+            this.radioButtonCadFunBalcao.Name = "radioButtonCadFunBalcao";
+            this.radioButtonCadFunBalcao.Size = new System.Drawing.Size(75, 24);
+            this.radioButtonCadFunBalcao.TabIndex = 16;
+            this.radioButtonCadFunBalcao.TabStop = true;
+            this.radioButtonCadFunBalcao.Text = "Balcão";
+            this.radioButtonCadFunBalcao.UseVisualStyleBackColor = true;
             // 
             // userControl1
             // 
@@ -194,24 +196,25 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(488, 536);
             this.Controls.Add(this.userControl1);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.radioButtonCadFunBalcao);
+            this.Controls.Add(this.radioButtonCadFunAdm);
+            this.Controls.Add(this.labelCadFunRsenha);
             this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.label7);
+            this.Controls.Add(this.labelCadFunSenha);
             this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.labelCadFunTelefone);
             this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.labelCadFunID);
             this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelCadFunNome);
+            this.Controls.Add(this.labelCadFunMatricula);
+            this.Controls.Add(this.labelCadFunCPF);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Name = "CadastroFuncionario";
             this.Text = "CadastroFuncionario";
+            this.Load += new System.EventHandler(this.CadastroFuncionario_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -222,19 +225,19 @@
         private TextBox textBox1;
         private TextBox textBox2;
         private TextBox textBox3;
-        private Label label1;
-        private Label label2;
-        private Label label3;
-        private Label label4;
+        private Label labelCadFunCPF;
+        private Label labelCadFunMatricula;
+        private Label labelCadFunNome;
+        private Label labelCadFunID;
         private TextBox textBox5;
-        private Label label5;
+        private Label labelCadFunTelefone;
         private TextBox textBox4;
-        private Label label6;
+        private Label labelCadFunRsenha;
         private TextBox textBox6;
-        private Label label7;
+        private Label labelCadFunSenha;
         private TextBox textBox7;
-        private RadioButton radioButton1;
-        private RadioButton radioButton2;
+        private RadioButton radioButtonCadFunAdm;
+        private RadioButton radioButtonCadFunBalcao;
         private UserControl userControl1;
     }
 }

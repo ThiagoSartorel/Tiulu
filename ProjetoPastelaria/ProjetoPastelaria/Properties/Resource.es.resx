@@ -118,31 +118,31 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ButtonLoginEntrar" xml:space="preserve">
-    <value>Entrar</value>
+    <value>Entra</value>
   </data>
   <data name="ButtonMenuCadClient" xml:space="preserve">
-    <value>Cadastrar Cliente</value>
+    <value>Registrar cliente</value>
   </data>
   <data name="ButtonMenuCadFun" xml:space="preserve">
-    <value>Cadastrar Funcionario</value>
+    <value>Registrar empleado</value>
   </data>
   <data name="ButtonMenuCadProd" xml:space="preserve">
-    <value>Cadastrar Produto</value>
+    <value>Registrar producto</value>
   </data>
   <data name="ButtonMenuConfig" xml:space="preserve">
-    <value>Configuração</value>
+    <value>Configuración</value>
   </data>
   <data name="ButtonMenuSobre" xml:space="preserve">
     <value>Sobre</value>
   </data>
   <data name="ButtonSobreVoltar" xml:space="preserve">
-    <value>Voltar</value>
+    <value>Volver</value>
   </data>
   <data name="CheckBoxAdm" xml:space="preserve">
     <value>ADM</value>
   </data>
   <data name="CheckBoxBalcao" xml:space="preserve">
-    <value>Balcão</value>
+    <value>Assistente</value>
   </data>
   <data name="LabelCadCliCPF" xml:space="preserve">
     <value>CPF:</value>
@@ -154,16 +154,16 @@
     <value>Marca Fiado:</value>
   </data>
   <data name="LabelCadCliNome" xml:space="preserve">
-    <value>Nome:</value>
+    <value>Nombre:</value>
   </data>
   <data name="LabelCadCliRSenha" xml:space="preserve">
-    <value>Re-Senha:</value>
+    <value>Re-Clave:</value>
   </data>
   <data name="LabelCadCliSenha" xml:space="preserve">
-    <value>Senha:</value>
+    <value>Clave:</value>
   </data>
   <data name="LabelCadCliTelefone" xml:space="preserve">
-    <value>Telefone:</value>
+    <value>Teléfono:</value>
   </data>
   <data name="LabelCadFunCPF" xml:space="preserve">
     <value>CPF</value>
@@ -172,40 +172,40 @@
     <value>ID</value>
   </data>
   <data name="LabelCadFunMatricula" xml:space="preserve">
-    <value>Matricula</value>
+    <value>Registro</value>
   </data>
   <data name="LabelCadFunNome" xml:space="preserve">
-    <value>Nome</value>
+    <value>Nombre</value>
   </data>
   <data name="LabelCadFunRSenha" xml:space="preserve">
-    <value>ReSenha</value>
+    <value>re-Clave</value>
   </data>
   <data name="LabelCadFunSenha" xml:space="preserve">
-    <value>Senha</value>
+    <value>Clave</value>
   </data>
   <data name="LabelCadFunTelefone" xml:space="preserve">
-    <value>Telefone</value>
+    <value>Teléfono</value>
   </data>
   <data name="LabelCadProdDesc" xml:space="preserve">
-    <value>Descrição produto</value>
+    <value>Descripción del Producto</value>
   </data>
   <data name="LabelCadProdNome" xml:space="preserve">
-    <value>Nome produto</value>
+    <value>Nombre Producto</value>
   </data>
   <data name="LabelCadProdValor" xml:space="preserve">
     <value>Valor</value>
   </data>
   <data name="LabelConfigJuros" xml:space="preserve">
-    <value>Percentual juros diario</value>
+    <value>Intereses diarios</value>
   </data>
   <data name="LabelConfigLinguagem" xml:space="preserve">
-    <value>Linguagem:</value>
+    <value>Idioma:</value>
   </data>
   <data name="LabelConfigMulta" xml:space="preserve">
-    <value>Multa por atraso (RS)</value>
+    <value>Cargo por demora:</value>
   </data>
   <data name="LabelLoginSenha" xml:space="preserve">
-    <value>Senha</value>
+    <value>Clave</value>
   </data>
   <data name="LabelLoginUser" xml:space="preserve">
     <value>Usuario:</value>

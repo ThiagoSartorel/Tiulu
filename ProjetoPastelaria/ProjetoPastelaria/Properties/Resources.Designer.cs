@@ -115,6 +115,33 @@ namespace ProjetoPastelaria.Properties {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Voltar.
+        /// </summary>
+        internal static string ButtonSobreVoltar {
+            get {
+                return ResourceManager.GetString("ButtonSobreVoltar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a ADM.
+        /// </summary>
+        internal static string CheckBoxAdm {
+            get {
+                return ResourceManager.GetString("CheckBoxAdm", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Balcão.
+        /// </summary>
+        internal static string CheckBoxBalcao {
+            get {
+                return ResourceManager.GetString("CheckBoxBalcao", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a CPF:.
         /// </summary>
         internal static string LabelCadCliCPF {
@@ -174,6 +201,69 @@ namespace ProjetoPastelaria.Properties {
         internal static string LabelCadCliTelefone {
             get {
                 return ResourceManager.GetString("LabelCadCliTelefone", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a CPF.
+        /// </summary>
+        internal static string LabelCadFunCPF {
+            get {
+                return ResourceManager.GetString("LabelCadFunCPF", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a ID.
+        /// </summary>
+        internal static string LabelCadFunID {
+            get {
+                return ResourceManager.GetString("LabelCadFunID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Matricula.
+        /// </summary>
+        internal static string LabelCadFunMatricula {
+            get {
+                return ResourceManager.GetString("LabelCadFunMatricula", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Nome.
+        /// </summary>
+        internal static string LabelCadFunNome {
+            get {
+                return ResourceManager.GetString("LabelCadFunNome", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a ReSenha.
+        /// </summary>
+        internal static string LabelCadFunRSenha {
+            get {
+                return ResourceManager.GetString("LabelCadFunRSenha", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Senha.
+        /// </summary>
+        internal static string LabelCadFunSenha {
+            get {
+                return ResourceManager.GetString("LabelCadFunSenha", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Telefone.
+        /// </summary>
+        internal static string LabelCadFunTelefone {
+            get {
+                return ResourceManager.GetString("LabelCadFunTelefone", resourceCulture);
             }
         }
         
@@ -246,6 +336,33 @@ namespace ProjetoPastelaria.Properties {
         internal static string LabelLoginUser {
             get {
                 return ResourceManager.GetString("LabelLoginUser", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Pasteleixons.
+        /// </summary>
+        internal static string LabelSobreNome {
+            get {
+                return ResourceManager.GetString("LabelSobreNome", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a loren loren loren loren.
+        /// </summary>
+        internal static string LabelSobreTexto {
+            get {
+                return ResourceManager.GetString("LabelSobreTexto", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Linkseixons.
+        /// </summary>
+        internal static string LinkLabelSobreLink {
+            get {
+                return ResourceManager.GetString("LinkLabelSobreLink", resourceCulture);
             }
         }
     }

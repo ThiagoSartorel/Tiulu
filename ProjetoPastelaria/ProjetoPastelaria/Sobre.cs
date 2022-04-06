@@ -15,7 +15,11 @@ namespace ProjetoPastelaria
         public Sobre()
         {
             InitializeComponent();
-        }
+            labelSobreNome.Text = Properties.Resources.ResourceManager.GetString("LabelSobreNome");
+            linkLabelSobreLink.Text = Properties.Resources.ResourceManager.GetString("LinkLabelSobreLink");
+            buttonSobreVoltar.Text = Properties.Resources.ResourceManager.GetString("ButtonSobreVoltar");
+            richTextBoxSobreTexto.Text = Properties.Resources.ResourceManager.GetString("LabelSobreTexto");
+    }
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
         {
@@ -25,6 +29,11 @@ namespace ProjetoPastelaria
         private void button1_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void Sobre_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

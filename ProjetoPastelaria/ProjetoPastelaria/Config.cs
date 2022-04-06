@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Configuration;
 
 namespace ProjetoPastelaria
 {
@@ -49,6 +50,25 @@ namespace ProjetoPastelaria
         private void labelConfigJuros_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+            config.AppSettings.Settings.Remove("IdiomaRegiao");
+            config.AppSettings.Settings.Add("IdiomaRegiao", comboBoxLinguagem.Text);
+            config.Save(ConfigurationSaveMode.Modified);
+            ConfigurationManager.RefreshSection("appSettings");
+
+            Close();
+
+            _ = MessageBox.Show("Idioma alterada! reinicie a aplicação");
+
+            if (checkBoxAlteraIdioma.Checked)
+            {
+                Application.Restart();
+                Environment.Exit(0);
+            }
         }
     }
 }
