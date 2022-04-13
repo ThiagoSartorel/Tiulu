@@ -26,4 +26,4 @@ namespace ProjetoPastelaria
             Application.Run(new Login());
         }
     }
-}
+} 
