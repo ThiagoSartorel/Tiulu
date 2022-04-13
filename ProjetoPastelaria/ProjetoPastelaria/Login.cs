@@ -29,5 +29,25 @@ namespace ProjetoPastelaria
             menu.Show();
             
         }
+
+        private void textBox1_Enter(object sender, EventArgs e)
+        {
+            textBox1.BackColor = Color.LightBlue;
+        }
+
+        private void textBox1_Leave(object sender, EventArgs e)
+        {
+            textBox1.BackColor = Color.White;
+        }
+
+        private void textBox2_Leave(object sender, EventArgs e)
+        {
+            textBox2.BackColor = Color.White;
+        }
+
+        private void textBox2_Enter(object sender, EventArgs e)
+        {
+            textBox2.BackColor = Color.LightBlue;
+        }
     }
 }
