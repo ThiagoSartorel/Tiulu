@@ -24,6 +24,16 @@ namespace ProjetoPastelaria
             labelCadProdNome.Text = Properties.Resources.ResourceManager.GetString("LabelCadProdNome");
             labelCadProgDesc.Text = Properties.Resources.ResourceManager.GetString("LabelCadProdDesc");
             labelCadProValor.Text = Properties.Resources.ResourceManager.GetString("LabelCadProdValor");
+
+
+            textBox1.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
+            textBox1.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
+            textBox2.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
+            textBox2.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
+            textBox3.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
+            textBox3.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
+            textBox5.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
+            textBox5.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -38,6 +48,37 @@ namespace ProjetoPastelaria
 
         private void CadastroProduto_Load(object sender, EventArgs e)
         {
+        }
+
+        private void userControl1_KeyDown(object sender, KeyEventArgs e)
+        {
+
+        }
+
+        private void CadastroProduto_KeyDown(object sender, KeyEventArgs e)
+        {
+            //obtém o form onde o componente gerou o evento
+            Control x = (Control)sender;
+            Form form = x.FindForm();
+            //verifica se foi pressionado ENTER
+            if (e.KeyCode == Keys.Enter)
+            {
+                //Obtém ou define um valor que indica se o evento de chave deve ser passado para o controle
+                //subjacente.
+                //true caso o evento chave não deva ser enviado ao controle; caso contrário, false
+                //com isso evitamos o som de erro toda vez que pressionamos enter em algum campo
+                e.SuppressKeyPress = true;
+                //SendKeys.Send("{TAB}");
+                form.SelectNextControl(form.ActiveControl, !e.Shift, true, true, true);
+            }
+            //verifica se foi pressionado ESC
+            else if (e.KeyCode == Keys.Escape)
+            {
+                if (MessageBox.Show(" Deseja mesmo sair? ", "Mensage do sistema ", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    form.Close();
+                }
+            }
         }
     }
 }

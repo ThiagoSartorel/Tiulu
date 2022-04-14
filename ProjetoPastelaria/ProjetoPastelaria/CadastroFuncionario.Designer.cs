@@ -52,21 +52,21 @@
             this.textBox1.Location = new System.Drawing.Point(155, 87);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(125, 27);
-            this.textBox1.TabIndex = 0;
+            this.textBox1.TabIndex = 2;
             // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(53, 159);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(381, 27);
-            this.textBox2.TabIndex = 1;
+            this.textBox2.TabIndex = 4;
             // 
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(309, 87);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(125, 27);
-            this.textBox3.TabIndex = 2;
+            this.textBox3.TabIndex = 3;
             // 
             // labelCadFunCPF
             // 
@@ -111,7 +111,7 @@
             this.textBox5.Location = new System.Drawing.Point(53, 87);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(75, 27);
-            this.textBox5.TabIndex = 7;
+            this.textBox5.TabIndex = 1;
             // 
             // labelCadFunTelefone
             // 
@@ -127,7 +127,7 @@
             this.textBox4.Location = new System.Drawing.Point(53, 230);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(381, 27);
-            this.textBox4.TabIndex = 9;
+            this.textBox4.TabIndex = 5;
             // 
             // labelCadFunRsenha
             // 
@@ -143,7 +143,7 @@
             this.textBox6.Location = new System.Drawing.Point(53, 377);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(381, 27);
-            this.textBox6.TabIndex = 13;
+            this.textBox6.TabIndex = 7;
             // 
             // labelCadFunSenha
             // 
@@ -159,7 +159,7 @@
             this.textBox7.Location = new System.Drawing.Point(53, 306);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(381, 27);
-            this.textBox7.TabIndex = 11;
+            this.textBox7.TabIndex = 6;
             // 
             // radioButtonCadFunAdm
             // 
@@ -167,7 +167,7 @@
             this.radioButtonCadFunAdm.Location = new System.Drawing.Point(53, 423);
             this.radioButtonCadFunAdm.Name = "radioButtonCadFunAdm";
             this.radioButtonCadFunAdm.Size = new System.Drawing.Size(64, 24);
-            this.radioButtonCadFunAdm.TabIndex = 15;
+            this.radioButtonCadFunAdm.TabIndex = 8;
             this.radioButtonCadFunAdm.TabStop = true;
             this.radioButtonCadFunAdm.Text = "ADM";
             this.radioButtonCadFunAdm.UseVisualStyleBackColor = true;
@@ -178,7 +178,7 @@
             this.radioButtonCadFunBalcao.Location = new System.Drawing.Point(144, 423);
             this.radioButtonCadFunBalcao.Name = "radioButtonCadFunBalcao";
             this.radioButtonCadFunBalcao.Size = new System.Drawing.Size(75, 24);
-            this.radioButtonCadFunBalcao.TabIndex = 16;
+            this.radioButtonCadFunBalcao.TabIndex = 9;
             this.radioButtonCadFunBalcao.TabStop = true;
             this.radioButtonCadFunBalcao.Text = "Balcão";
             this.radioButtonCadFunBalcao.UseVisualStyleBackColor = true;
@@ -212,9 +212,11 @@
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
+            this.KeyPreview = true;
             this.Name = "CadastroFuncionario";
             this.Text = "CadastroFuncionario";
             this.Load += new System.EventHandler(this.CadastroFuncionario_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.CadastroFuncionario_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

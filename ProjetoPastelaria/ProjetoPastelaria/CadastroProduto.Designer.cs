@@ -55,7 +55,7 @@
             this.textBox5.Location = new System.Drawing.Point(12, 67);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(75, 27);
-            this.textBox5.TabIndex = 29;
+            this.textBox5.TabIndex = 1;
             // 
             // labelCadProdNome
             // 
@@ -71,7 +71,7 @@
             this.textBox1.Location = new System.Drawing.Point(114, 67);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(279, 27);
-            this.textBox1.TabIndex = 27;
+            this.textBox1.TabIndex = 2;
             // 
             // labelCadProValor
             // 
@@ -87,7 +87,7 @@
             this.textBox2.Location = new System.Drawing.Point(413, 67);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(75, 27);
-            this.textBox2.TabIndex = 31;
+            this.textBox2.TabIndex = 3;
             // 
             // textBox3
             // 
@@ -95,7 +95,7 @@
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(296, 229);
-            this.textBox3.TabIndex = 33;
+            this.textBox3.TabIndex = 4;
             // 
             // labelCadProgDesc
             // 
@@ -120,6 +120,7 @@
             this.userControl1.Name = "userControl1";
             this.userControl1.Size = new System.Drawing.Size(860, 81);
             this.userControl1.TabIndex = 36;
+            this.userControl1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.userControl1_KeyDown);
             // 
             // CadastroProduto
             // 
@@ -136,9 +137,11 @@
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.labelCadProdNome);
             this.Controls.Add(this.textBox1);
+            this.KeyPreview = true;
             this.Name = "CadastroProduto";
             this.Text = "CadastroProduto";
             this.Load += new System.EventHandler(this.CadastroProduto_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.CadastroProduto_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -62,7 +62,7 @@
             this.textBox6.Location = new System.Drawing.Point(45, 351);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(381, 27);
-            this.textBox6.TabIndex = 31;
+            this.textBox6.TabIndex = 6;
             // 
             // labelCadCliSenha
             // 
@@ -78,7 +78,7 @@
             this.textBox7.Location = new System.Drawing.Point(45, 280);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(381, 27);
-            this.textBox7.TabIndex = 29;
+            this.textBox7.TabIndex = 5;
             // 
             // labelCadCliTelefone
             // 
@@ -94,7 +94,7 @@
             this.textBox4.Location = new System.Drawing.Point(45, 204);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(381, 27);
-            this.textBox4.TabIndex = 27;
+            this.textBox4.TabIndex = 4;
             // 
             // label4
             // 
@@ -110,7 +110,7 @@
             this.textBox5.Location = new System.Drawing.Point(45, 61);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(75, 27);
-            this.textBox5.TabIndex = 25;
+            this.textBox5.TabIndex = 1;
             // 
             // labelCadCliNome
             // 
@@ -136,21 +136,21 @@
             this.textBox2.Location = new System.Drawing.Point(45, 133);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(381, 27);
-            this.textBox2.TabIndex = 20;
+            this.textBox2.TabIndex = 3;
             // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(147, 61);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(279, 27);
-            this.textBox1.TabIndex = 19;
+            this.textBox1.TabIndex = 2;
             // 
             // numericUpDown1
             // 
             this.numericUpDown1.Location = new System.Drawing.Point(276, 424);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(150, 27);
-            this.numericUpDown1.TabIndex = 37;
+            this.numericUpDown1.TabIndex = 8;
             // 
             // comboBox1
             // 
@@ -158,7 +158,7 @@
             this.comboBox1.Location = new System.Drawing.Point(45, 423);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(151, 28);
-            this.comboBox1.TabIndex = 38;
+            this.comboBox1.TabIndex = 7;
             // 
             // labelCadCliFiado
             // 
@@ -209,9 +209,11 @@
             this.Controls.Add(this.labelCadCliCPF);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
+            this.KeyPreview = true;
             this.Name = "CadastroCliente";
             this.Text = "CadastroCliente";
             this.Load += new System.EventHandler(this.CadastroCliente_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.CadastroCliente_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

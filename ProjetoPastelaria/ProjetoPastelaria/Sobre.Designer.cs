@@ -95,9 +95,11 @@
             this.Controls.Add(this.linkLabelSobreLink);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.richTextBoxSobreTexto);
+            this.KeyPreview = true;
             this.Name = "Sobre";
             this.Text = "Sobre";
             this.Load += new System.EventHandler(this.Sobre_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Sobre_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

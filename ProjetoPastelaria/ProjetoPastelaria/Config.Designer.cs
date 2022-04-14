@@ -54,7 +54,7 @@
             this.textBox5.Location = new System.Drawing.Point(27, 57);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(159, 27);
-            this.textBox5.TabIndex = 35;
+            this.textBox5.TabIndex = 1;
             // 
             // labelConfigMulta
             // 
@@ -70,7 +70,7 @@
             this.textBox1.Location = new System.Drawing.Point(215, 57);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(279, 27);
-            this.textBox1.TabIndex = 33;
+            this.textBox1.TabIndex = 2;
             // 
             // labelConfigLinguagem
             // 
@@ -92,7 +92,7 @@
             this.comboBoxLinguagem.Location = new System.Drawing.Point(27, 151);
             this.comboBoxLinguagem.Name = "comboBoxLinguagem";
             this.comboBoxLinguagem.Size = new System.Drawing.Size(151, 28);
-            this.comboBoxLinguagem.TabIndex = 40;
+            this.comboBoxLinguagem.TabIndex = 3;
             this.comboBoxLinguagem.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // userControl1
@@ -118,7 +118,7 @@
             this.checkBoxAlteraIdioma.Location = new System.Drawing.Point(224, 157);
             this.checkBoxAlteraIdioma.Name = "checkBoxAlteraIdioma";
             this.checkBoxAlteraIdioma.Size = new System.Drawing.Size(156, 24);
-            this.checkBoxAlteraIdioma.TabIndex = 44;
+            this.checkBoxAlteraIdioma.TabIndex = 4;
             this.checkBoxAlteraIdioma.Text = "Alterar ja o idioma";
             this.checkBoxAlteraIdioma.UseVisualStyleBackColor = true;
             // 
@@ -136,9 +136,11 @@
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.labelConfigMulta);
             this.Controls.Add(this.textBox1);
+            this.KeyPreview = true;
             this.Name = "Config";
             this.Text = "Config";
             this.Load += new System.EventHandler(this.Config_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Config_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 
