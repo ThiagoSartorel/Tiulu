@@ -20,6 +20,11 @@ namespace ProjetoPastelaria
             labelConfigJuros.Text = Properties.Resources.ResourceManager.GetString("LabelConfigJuros");
             labelConfigMulta.Text = Properties.Resources.ResourceManager.GetString("LabelConfigMulta");
             labelConfigLinguagem.Text = Properties.Resources.ResourceManager.GetString("LabelConfigLinguagem");
+
+            textBox1.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
+            textBox1.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
+            textBox2.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
+            textBox2.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -93,6 +98,18 @@ namespace ProjetoPastelaria
                 if (MessageBox.Show(" Deseja mesmo sair? ", "Mensage do sistema ", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     form.Close();
+                }
+            }
+        }
+
+        private void Config_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                var result = MessageBox.Show(this, "Você tem certeza que deseja sair?", "Confirmação", MessageBoxButtons.YesNo);
+                if (result != DialogResult.Yes)
+                {
+                    e.Cancel = true;
                 }
             }
         }

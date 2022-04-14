@@ -23,6 +23,24 @@ namespace ProjetoPastelaria
             labelCadCliSenha.Text = Properties.Resources.ResourceManager.GetString("LabelCadCliSenha");
             labelCadCliRSenha.Text = Properties.Resources.ResourceManager.GetString("LabelCadCliRSenha");
             labelCadCliTelefone.Text = Properties.Resources.ResourceManager.GetString("LabelCadCliTelefone");
+
+            textBox3.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
+            textBox3.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
+            textBox4.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
+            textBox4.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
+            textBox5.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
+            textBox5.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
+            textBox6.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
+            textBox6.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
+            textBox7.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
+            textBox7.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
+            textBox8.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
+            textBox8.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
+            comboBox1.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
+            comboBox1.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
+            numericUpDown1.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
+            numericUpDown1.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
+
         }
 
         public void button2_Click(object sender, EventArgs e)
@@ -85,6 +103,18 @@ namespace ProjetoPastelaria
                 if (MessageBox.Show(" Deseja mesmo sair? ", "Mensage do sistema ", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     form.Close();
+                }
+            }
+        }
+
+        private void CadastroCliente_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                var result = MessageBox.Show(this, "Você tem certeza que deseja sair?", "Confirmação", MessageBoxButtons.YesNo);
+                if (result != DialogResult.Yes)
+                {
+                    e.Cancel = true;
                 }
             }
         }

@@ -21,7 +21,16 @@ namespace ProjetoPastelaria
             buttonMenuConfig.Text = Properties.Resources.ResourceManager.GetString("ButtonMenuConfig");
             buttonMenuSobre.Text = Properties.Resources.ResourceManager.GetString("ButtonMenuSobre");
 
-
+            buttonMenuCadClient.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
+            buttonMenuCadClient.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
+            buttonMenuCadProd.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
+            buttonMenuCadProd.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
+            buttonMenuCadFun.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
+            buttonMenuCadFun.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
+            buttonMenuConfig.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
+            buttonMenuConfig.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
+            buttonMenuSobre.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
+            buttonMenuSobre.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -60,6 +69,11 @@ namespace ProjetoPastelaria
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Menu_FormClosing(object sender, FormClosingEventArgs e)
         {
 
         }

@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.labelConfigJuros = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.labelConfigMulta = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.labelConfigMulta = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.labelConfigLinguagem = new System.Windows.Forms.Label();
             this.comboBoxLinguagem = new System.Windows.Forms.ComboBox();
             this.userControl1 = new ProjetoPastelaria.UserControl();
@@ -49,12 +49,12 @@
             this.labelConfigJuros.Text = "Percent juros";
             this.labelConfigJuros.Click += new System.EventHandler(this.labelConfigJuros_Click);
             // 
-            // textBox5
+            // textBox1
             // 
-            this.textBox5.Location = new System.Drawing.Point(27, 57);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(159, 27);
-            this.textBox5.TabIndex = 1;
+            this.textBox1.Location = new System.Drawing.Point(27, 57);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(159, 27);
+            this.textBox1.TabIndex = 1;
             // 
             // labelConfigMulta
             // 
@@ -65,12 +65,12 @@
             this.labelConfigMulta.TabIndex = 34;
             this.labelConfigMulta.Text = "Multa por at";
             // 
-            // textBox1
+            // textBox2
             // 
-            this.textBox1.Location = new System.Drawing.Point(215, 57);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(279, 27);
-            this.textBox1.TabIndex = 2;
+            this.textBox2.Location = new System.Drawing.Point(215, 57);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(279, 27);
+            this.textBox2.TabIndex = 2;
             // 
             // labelConfigLinguagem
             // 
@@ -133,12 +133,13 @@
             this.Controls.Add(this.labelConfigLinguagem);
             this.Controls.Add(this.comboBoxLinguagem);
             this.Controls.Add(this.labelConfigJuros);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.labelConfigMulta);
             this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.labelConfigMulta);
+            this.Controls.Add(this.textBox2);
             this.KeyPreview = true;
             this.Name = "Config";
             this.Text = "Config";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Config_FormClosing);
             this.Load += new System.EventHandler(this.Config_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Config_KeyDown);
             this.ResumeLayout(false);
@@ -148,9 +149,9 @@
 
         #endregion
         private Label labelConfigJuros;
-        private TextBox textBox5;
-        private Label labelConfigMulta;
         private TextBox textBox1;
+        private Label labelConfigMulta;
+        private TextBox textBox2;
         private Label labelConfigLinguagem;
         private ComboBox comboBoxLinguagem;
         private UserControl userControl1;

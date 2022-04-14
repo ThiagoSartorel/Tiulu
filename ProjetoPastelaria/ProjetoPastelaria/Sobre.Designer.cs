@@ -98,6 +98,7 @@
             this.KeyPreview = true;
             this.Name = "Sobre";
             this.Text = "Sobre";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Sobre_FormClosing);
             this.Load += new System.EventHandler(this.Sobre_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Sobre_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

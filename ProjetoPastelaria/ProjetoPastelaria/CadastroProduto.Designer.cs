@@ -140,6 +140,7 @@
             this.KeyPreview = true;
             this.Name = "CadastroProduto";
             this.Text = "CadastroProduto";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CadastroProduto_FormClosing);
             this.Load += new System.EventHandler(this.CadastroProduto_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.CadastroProduto_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

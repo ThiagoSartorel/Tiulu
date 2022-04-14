@@ -30,7 +30,7 @@ namespace ProjetoPastelaria
             }
             else if (sender is ButtonBase btn)
             {
-                btn.BackColor = Color.LightGreen;
+                btn.BackColor = Color.CadetBlue;
             }
         }
         /// <summary>
@@ -55,7 +55,7 @@ namespace ProjetoPastelaria
             }
             else if (sender is ButtonBase btn)
             {
-                btn.BackColor = Color.Red;
+                btn.BackColor = Color.LightBlue;
             }
         }
     }
