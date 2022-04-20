@@ -40,7 +40,6 @@ namespace ProjetoPastelaria
             comboBox1.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
             numericUpDown1.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
             numericUpDown1.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
-
         }
 
         public void button2_Click(object sender, EventArgs e)
@@ -100,10 +99,7 @@ namespace ProjetoPastelaria
             //verifica se foi pressionado ESC
             else if (e.KeyCode == Keys.Escape)
             {
-                if (MessageBox.Show(" Deseja mesmo sair? ", "Mensage do sistema ", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                {
-                    form.Close();
-                }
+                //Corrigir
             }
         }
 
@@ -111,11 +107,9 @@ namespace ProjetoPastelaria
         {
             if (e.CloseReason == CloseReason.UserClosing)
             {
-                var result = MessageBox.Show(this, "Você tem certeza que deseja sair?", "Confirmação", MessageBoxButtons.YesNo);
-                if (result != DialogResult.Yes)
-                {
-                    e.Cancel = true;
-                }
+                var result = new AlertaSair();
+                result.Show();
+                e.Cancel = true;
             }
         }
     }

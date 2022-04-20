@@ -28,36 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.buttonVoltar = new System.Windows.Forms.Button();
+            this.buttonSalvar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // buttonVoltar
             // 
-            this.button1.Location = new System.Drawing.Point(26, 20);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 29);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Voltar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonVoltar.Location = new System.Drawing.Point(26, 20);
+            this.buttonVoltar.Name = "buttonVoltar";
+            this.buttonVoltar.Size = new System.Drawing.Size(94, 29);
+            this.buttonVoltar.TabIndex = 0;
+            this.buttonVoltar.Text = "Voltar";
+            this.buttonVoltar.UseVisualStyleBackColor = true;
+            this.buttonVoltar.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // buttonSalvar
             // 
-            this.button2.Location = new System.Drawing.Point(400, 20);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(94, 29);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Salvar";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.buttonSalvar.Location = new System.Drawing.Point(400, 20);
+            this.buttonSalvar.Name = "buttonSalvar";
+            this.buttonSalvar.Size = new System.Drawing.Size(94, 29);
+            this.buttonSalvar.TabIndex = 1;
+            this.buttonSalvar.Text = "Salvar";
+            this.buttonSalvar.UseVisualStyleBackColor = true;
+            this.buttonSalvar.Click += new System.EventHandler(this.button2_Click);
             // 
             // UserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonSalvar);
+            this.Controls.Add(this.buttonVoltar);
             this.Name = "UserControl";
             this.Size = new System.Drawing.Size(519, 65);
             this.Load += new System.EventHandler(this.UserControl_Load);
@@ -67,7 +67,7 @@
 
         #endregion
 
-        private Button button1;
-        private Button button2;
+        private Button buttonVoltar;
+        private Button buttonSalvar;
     }
 }

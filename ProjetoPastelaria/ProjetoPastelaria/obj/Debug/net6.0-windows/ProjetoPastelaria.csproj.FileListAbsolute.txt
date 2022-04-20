@@ -31,3 +31,4 @@ C:\Users\Thiago Sartorel\source\repos\ProjetoPastelaria\ProjetoPastelaria\obj\De
 C:\Users\Thiago Sartorel\source\repos\ProjetoPastelaria\ProjetoPastelaria\bin\Debug\net6.0-windows\ProjetoPastelaria.dll.config
 C:\Users\Thiago Sartorel\source\repos\ProjetoPastelaria\ProjetoPastelaria\obj\Debug\net6.0-windows\ProjetoPastelaria.Properties.Resources.en-US.resources
 C:\Users\Thiago Sartorel\source\repos\ProjetoPastelaria\ProjetoPastelaria\obj\Debug\net6.0-windows\ProjetoPastelaria.Properties.Resources.es.resources
+C:\Users\Thiago Sartorel\source\repos\ProjetoPastelaria\ProjetoPastelaria\obj\Debug\net6.0-windows\ProjetoPastelaria.AlertaSair.resources

@@ -13,6 +13,9 @@
         "resources": {
           "en-US/ProjetoPastelaria.resources.dll": {
             "locale": "en-US"
+          },
+          "es/ProjetoPastelaria.resources.dll": {
+            "locale": "es"
           }
         }
       }

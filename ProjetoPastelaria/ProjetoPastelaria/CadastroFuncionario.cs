@@ -37,6 +37,10 @@ namespace ProjetoPastelaria
             textBox7.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
             textBox7.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
 
+            UserControl operacoes = new();
+            operacoes.Dock = DockStyle.Fill;
+
+
         }
 
         private void button2_Click(object sender, EventArgs e)
