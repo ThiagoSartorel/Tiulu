@@ -40,6 +40,8 @@ namespace ProjetoPastelaria
             comboBox1.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
             numericUpDown1.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
             numericUpDown1.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
+
+
         }
 
         public void button2_Click(object sender, EventArgs e)
@@ -56,11 +58,6 @@ namespace ProjetoPastelaria
         }
 
         private void userControl1_Load_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void userControl1_Load_2(object sender, EventArgs e)
         {
 
         }

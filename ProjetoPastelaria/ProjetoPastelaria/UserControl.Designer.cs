@@ -40,7 +40,7 @@
             this.buttonVoltar.TabIndex = 0;
             this.buttonVoltar.Text = "Voltar";
             this.buttonVoltar.UseVisualStyleBackColor = true;
-            this.buttonVoltar.Click += new System.EventHandler(this.button1_Click);
+            this.buttonVoltar.Click += new System.EventHandler(this.buttonVoltar_Click);
             // 
             // buttonSalvar
             // 
@@ -50,7 +50,6 @@
             this.buttonSalvar.TabIndex = 1;
             this.buttonSalvar.Text = "Salvar";
             this.buttonSalvar.UseVisualStyleBackColor = true;
-            this.buttonSalvar.Click += new System.EventHandler(this.button2_Click);
             // 
             // UserControl
             // 
@@ -60,7 +59,6 @@
             this.Controls.Add(this.buttonVoltar);
             this.Name = "UserControl";
             this.Size = new System.Drawing.Size(519, 65);
-            this.Load += new System.EventHandler(this.UserControl_Load);
             this.ResumeLayout(false);
 
         }
