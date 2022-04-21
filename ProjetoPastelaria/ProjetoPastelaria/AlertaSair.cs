@@ -1,14 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-namespace ProjetoPastelaria
+﻿namespace ProjetoPastelaria
 {
     public partial class AlertaSair : Form
     {
@@ -29,6 +19,8 @@ namespace ProjetoPastelaria
 
         private void buttonMinimi_Click(object sender, EventArgs e)
         {
+            //Minimizar tudo
+            this.Close();
 
         }
     }

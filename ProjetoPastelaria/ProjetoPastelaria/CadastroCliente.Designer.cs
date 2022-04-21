@@ -181,9 +181,9 @@
             // 
             // userControl1
             // 
-            this.userControl1.Location = new System.Drawing.Point(-20, 473);
+            this.userControl1.Location = new System.Drawing.Point(-22, 472);
             this.userControl1.Name = "userControl1";
-            this.userControl1.Size = new System.Drawing.Size(860, 81);
+            this.userControl1.Size = new System.Drawing.Size(649, 81);
             this.userControl1.TabIndex = 41;
             // 
             // CadastroCliente

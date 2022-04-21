@@ -41,7 +41,7 @@ namespace ProjetoPastelaria
             numericUpDown1.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
             numericUpDown1.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
 
-
+           
         }
 
         public void button2_Click(object sender, EventArgs e)
