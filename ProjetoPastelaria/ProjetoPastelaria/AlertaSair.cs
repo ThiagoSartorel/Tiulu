@@ -26,5 +26,10 @@ namespace ProjetoPastelaria
         {
             Close();
         }
+
+        private void buttonMinimi_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

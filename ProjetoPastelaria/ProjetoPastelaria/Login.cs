@@ -75,12 +75,7 @@ namespace ProjetoPastelaria
 
         private void Login_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (e.CloseReason == CloseReason.UserClosing)
-            {
-                var Alert = new AlertaSair();
-                Alert.Show();
-                e.Cancel = true;
-            }
+
         }
     }
 }

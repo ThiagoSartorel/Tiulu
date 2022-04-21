@@ -104,10 +104,21 @@ namespace ProjetoPastelaria
         {
             if (e.CloseReason == CloseReason.UserClosing)
             {
-                var result = new AlertaSair();
-                result.Show();
-                e.Cancel = true;
+                var result = MessageBox.Show(this, "Salvar alteração?", "Confirmação", MessageBoxButtons.YesNo);
+                if (result != DialogResult.Yes)
+                {
+                    //
+                }
+                else
+                {
+                    //
+                }
             }
+        }
+
+        private void CadastroCliente_Resize(object sender, EventArgs e)
+        {
+            
         }
     }
 }

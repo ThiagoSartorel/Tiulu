@@ -52,6 +52,7 @@
             this.buttonMinimi.TabIndex = 1;
             this.buttonMinimi.Text = "Minimizar";
             this.buttonMinimi.UseVisualStyleBackColor = true;
+            this.buttonMinimi.Click += new System.EventHandler(this.buttonMinimi_Click);
             // 
             // buttonCancel
             // 

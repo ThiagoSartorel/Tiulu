@@ -85,10 +85,14 @@ namespace ProjetoPastelaria
         {
             if (e.CloseReason == CloseReason.UserClosing)
             {
-                var result = MessageBox.Show(this, "Você tem certeza que deseja sair?", "Confirmação", MessageBoxButtons.YesNo);
+                var result = MessageBox.Show(this, "Salvar alteração?", "Confirmação", MessageBoxButtons.YesNo);
                 if (result != DialogResult.Yes)
                 {
-                    e.Cancel = true;
+                    //
+                }
+                else
+                {
+                    //
                 }
             }
         }

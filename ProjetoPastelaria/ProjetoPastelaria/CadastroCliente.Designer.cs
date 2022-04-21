@@ -214,6 +214,7 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CadastroCliente_FormClosing);
             this.Load += new System.EventHandler(this.CadastroCliente_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.CadastroCliente_KeyDown);
+            this.Resize += new System.EventHandler(this.CadastroCliente_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

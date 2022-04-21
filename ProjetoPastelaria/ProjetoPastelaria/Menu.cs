@@ -63,11 +63,6 @@ namespace ProjetoPastelaria
             sobre.Show();
         }
 
-        private void Menu_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -75,7 +70,34 @@ namespace ProjetoPastelaria
 
         private void Menu_FormClosing(object sender, FormClosingEventArgs e)
         {
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                var result = new AlertaSair();
+                result.Show();
+                e.Cancel = true;
+            }
+        }
 
+        private void Menu_Resize(object sender, EventArgs e)
+        {
+
+            if (this.WindowState == FormWindowState.Minimized)
+            {
+                this.Hide();
+                notifyIconSystemTray.Visible = true;
+            }
+            else if (FormWindowState.Normal == this.WindowState)
+            {
+                notifyIconSystemTray.Visible = false;
+            }
+            
+        }
+
+        private void notifyIconSystemTray_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            Show();
+            WindowState = FormWindowState.Maximized;
+            notifyIconSystemTray.Visible = false;
         }
     }
 }
