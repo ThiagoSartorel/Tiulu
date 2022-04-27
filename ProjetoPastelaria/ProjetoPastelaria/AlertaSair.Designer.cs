@@ -42,7 +42,7 @@
             this.buttonSair.TabIndex = 0;
             this.buttonSair.Text = "Sair";
             this.buttonSair.UseVisualStyleBackColor = true;
-            this.buttonSair.Click += new System.EventHandler(this.buttonSair_Click);
+            this.buttonSair.Click += new System.EventHandler(this.ButtonSair_Click);
             // 
             // buttonMinimi
             // 
@@ -52,7 +52,7 @@
             this.buttonMinimi.TabIndex = 1;
             this.buttonMinimi.Text = "Minimizar";
             this.buttonMinimi.UseVisualStyleBackColor = true;
-            this.buttonMinimi.Click += new System.EventHandler(this.buttonMinimi_Click);
+            this.buttonMinimi.Click += new System.EventHandler(this.ButtonMinimi_Click);
             // 
             // buttonCancel
             // 
@@ -62,7 +62,7 @@
             this.buttonCancel.TabIndex = 2;
             this.buttonCancel.Text = "Cancelar";
             this.buttonCancel.UseVisualStyleBackColor = true;
-            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
+            this.buttonCancel.Click += new System.EventHandler(this.ButtonCancel_Click);
             // 
             // label1
             // 

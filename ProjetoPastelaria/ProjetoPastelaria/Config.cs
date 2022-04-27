@@ -27,37 +27,8 @@ namespace ProjetoPastelaria
             textBox2.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
-
-        private void Config_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelConfigJuros_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
+        private void Button1_Click_1(object sender, EventArgs e)
         {
             Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
             config.AppSettings.Settings.Remove("IdiomaRegiao");

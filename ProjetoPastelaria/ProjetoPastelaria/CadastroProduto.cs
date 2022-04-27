@@ -24,8 +24,6 @@ namespace ProjetoPastelaria
             labelCadProdNome.Text = Properties.Resources.ResourceManager.GetString("LabelCadProdNome");
             labelCadProgDesc.Text = Properties.Resources.ResourceManager.GetString("LabelCadProdDesc");
             labelCadProValor.Text = Properties.Resources.ResourceManager.GetString("LabelCadProdValor");
-
-
             textBox1.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
             textBox1.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
             textBox3.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
@@ -47,24 +45,11 @@ namespace ProjetoPastelaria
             this.Hide();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void Button2_Click(object sender, EventArgs e)
         {
             Close();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void CadastroProduto_Load(object sender, EventArgs e)
-        {
-        }
-
-        private void userControl1_KeyDown(object sender, KeyEventArgs e)
-        {
-
-        }
 
         private void CadastroProduto_KeyDown(object sender, KeyEventArgs e)
         {

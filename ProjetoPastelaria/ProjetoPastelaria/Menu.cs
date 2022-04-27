@@ -33,39 +33,34 @@ namespace ProjetoPastelaria
             buttonMenuSobre.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
-            CadastroProduto cp = new CadastroProduto();
+            CadastroProduto cp = new();
             cp.Show();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void Button2_Click(object sender, EventArgs e)
         {
-            CadastroCliente cc = new CadastroCliente();
+            CadastroCliente cc = new();
             cc.Show();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void Button3_Click(object sender, EventArgs e)
         {
-            CadastroFuncionario cf = new CadastroFuncionario();
+            CadastroFuncionario cf = new();
             cf.Show();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void Button4_Click(object sender, EventArgs e)
         {
-            Config config = new Config();
+            Config config = new();
             config.Show();
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void Button5_Click(object sender, EventArgs e)
         {
-            Sobre sobre = new Sobre();
+            Sobre sobre = new ();
             sobre.Show();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void Menu_FormClosing(object sender, FormClosingEventArgs e)
@@ -93,64 +88,43 @@ namespace ProjetoPastelaria
             
         }
 
-        private void notifyIconSystemTray_MouseDoubleClick(object sender, MouseEventArgs e)
+        
+        private void NotifyIconSystemTray_MouseDoubleClick(object sender, MouseEventArgs e)
         {
             Show();
             WindowState = FormWindowState.Maximized;
             notifyIconSystemTray.Visible = false;
         }
 
-        private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
+        private void CadastroProdutoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void cadastroProdutoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            CadastroProduto cp = new CadastroProduto();
+            CadastroProduto cp = new();
             cp.Show();
         }
 
-        private void cadastroClienteToolStripMenuItem_Click(object sender, EventArgs e)
+        private void CadastroClienteToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            CadastroCliente cc = new CadastroCliente();
+            CadastroCliente cc = new();
             cc.Show();
         }
 
-        private void cadastroFuncionárioToolStripMenuItem_Click(object sender, EventArgs e)
+        private void CadastroFuncionárioToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            CadastroFuncionario cf = new CadastroFuncionario();
+            CadastroFuncionario cf = new();
             cf.Show();
         }
 
-        private void configuraçãoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Config config = new Config();
-            config.Show();
-        }
-
-        private void sobreToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Sobre sobre = new Sobre();
-            sobre.Show();
-        }
-
-        private void contextMenuStripPrincipal_Opening(object sender, CancelEventArgs e)
-        {
-
-        }
-
-        private void fecharToolStripMenuItem_Click(object sender, EventArgs e)
+        private void FecharToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void abriToolStripMenuItem_Click(object sender, EventArgs e)
+        private void AbriToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        private void SairToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Show();
             WindowState = FormWindowState.Normal;
@@ -158,15 +132,10 @@ namespace ProjetoPastelaria
 
         }
 
-        private void sobreToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void SobreToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            Sobre sobre = new Sobre();
+            Sobre sobre = new();
             sobre.Show();
-        }
-
-        private void splitContainer1_Panel2_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

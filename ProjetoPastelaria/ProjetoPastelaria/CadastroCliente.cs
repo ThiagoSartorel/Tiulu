@@ -12,7 +12,7 @@ namespace ProjetoPastelaria
 {
     public partial class CadastroCliente : Form
     {
-        private int buttonVoltar_Click;
+        ///private int buttonVoltar_Click;
 
         public CadastroCliente()
         {
@@ -55,20 +55,6 @@ namespace ProjetoPastelaria
             this.Close();
         }
 
-        private void CadastroCliente_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelCadCliCPF_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void CadastroCliente_KeyDown(object sender, KeyEventArgs e)
         {
@@ -109,9 +95,5 @@ namespace ProjetoPastelaria
             }
         }
 
-        private void CadastroCliente_Resize(object sender, EventArgs e)
-        {
-            
-        }
     }
 }

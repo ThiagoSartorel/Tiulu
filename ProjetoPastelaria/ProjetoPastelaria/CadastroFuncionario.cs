@@ -52,24 +52,9 @@ namespace ProjetoPastelaria
             this.Close();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void Button2_Click(object sender, EventArgs e)
         {
             Close();
-        }
-
-        private void CadastroFuncionario_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelCadFunNome_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void CadastroFuncionario_KeyDown(object sender, KeyEventArgs e)

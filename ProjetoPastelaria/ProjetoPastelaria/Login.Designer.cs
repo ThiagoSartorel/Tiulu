@@ -42,8 +42,8 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(128, 27);
             this.textBox1.TabIndex = 0;
-            this.textBox1.Enter += new System.EventHandler(this.textBox1_Enter);
-            this.textBox1.Leave += new System.EventHandler(this.textBox1_Leave);
+            this.textBox1.Enter += new System.EventHandler(this.TextBox1_Enter);
+            this.textBox1.Leave += new System.EventHandler(this.TextBox1_Leave);
             // 
             // textBox2
             // 
@@ -51,8 +51,8 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(128, 27);
             this.textBox2.TabIndex = 1;
-            this.textBox2.Enter += new System.EventHandler(this.textBox2_Enter);
-            this.textBox2.Leave += new System.EventHandler(this.textBox2_Leave);
+            this.textBox2.Enter += new System.EventHandler(this.TextBox2_Enter);
+            this.textBox2.Leave += new System.EventHandler(this.TextBox2_Leave);
             // 
             // labelLoginUser
             // 
@@ -63,7 +63,6 @@
             this.labelLoginUser.Size = new System.Drawing.Size(33, 20);
             this.labelLoginUser.TabIndex = 2;
             this.labelLoginUser.Text = "Usu";
-            this.labelLoginUser.Click += new System.EventHandler(this.label1_Click);
             // 
             // labelLoginSenha
             // 
@@ -84,7 +83,7 @@
             this.buttonLoginEntrar.TabIndex = 4;
             this.buttonLoginEntrar.Text = "Ent";
             this.buttonLoginEntrar.UseVisualStyleBackColor = false;
-            this.buttonLoginEntrar.Click += new System.EventHandler(this.button1_Click);
+            this.buttonLoginEntrar.Click += new System.EventHandler(this.Button1_Click);
             // 
             // panel1
             // 
@@ -108,9 +107,8 @@
             this.Controls.Add(this.panel1);
             this.KeyPreview = true;
             this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Login_FormClosing);
-            this.Load += new System.EventHandler(this.Login_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Login_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();

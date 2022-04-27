@@ -113,7 +113,6 @@
             this.userControlProduto.Name = "userControlProduto";
             this.userControlProduto.Size = new System.Drawing.Size(860, 81);
             this.userControlProduto.TabIndex = 36;
-            this.userControlProduto.KeyDown += new System.Windows.Forms.KeyEventHandler(this.userControl1_KeyDown);
             // 
             // textBox2
             // 
@@ -139,9 +138,9 @@
             this.Controls.Add(this.textBox1);
             this.KeyPreview = true;
             this.Name = "CadastroProduto";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CadastroProduto";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CadastroProduto_FormClosing);
-            this.Load += new System.EventHandler(this.CadastroProduto_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.CadastroProduto_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

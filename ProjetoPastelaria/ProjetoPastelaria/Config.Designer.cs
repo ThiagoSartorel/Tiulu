@@ -47,7 +47,6 @@
             this.labelConfigJuros.Size = new System.Drawing.Size(93, 20);
             this.labelConfigJuros.TabIndex = 36;
             this.labelConfigJuros.Text = "Percent juros";
-            this.labelConfigJuros.Click += new System.EventHandler(this.labelConfigJuros_Click);
             // 
             // textBox1
             // 
@@ -80,7 +79,6 @@
             this.labelConfigLinguagem.Size = new System.Drawing.Size(37, 20);
             this.labelConfigLinguagem.TabIndex = 41;
             this.labelConfigLinguagem.Text = "Ling";
-            this.labelConfigLinguagem.Click += new System.EventHandler(this.label2_Click);
             // 
             // comboBoxLinguagem
             // 
@@ -93,7 +91,6 @@
             this.comboBoxLinguagem.Name = "comboBoxLinguagem";
             this.comboBoxLinguagem.Size = new System.Drawing.Size(151, 28);
             this.comboBoxLinguagem.TabIndex = 3;
-            this.comboBoxLinguagem.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // userControl1
             // 
@@ -110,7 +107,7 @@
             this.buttonConfigSalvar.TabIndex = 43;
             this.buttonConfigSalvar.Text = "Salvar";
             this.buttonConfigSalvar.UseVisualStyleBackColor = true;
-            this.buttonConfigSalvar.Click += new System.EventHandler(this.button1_Click_1);
+            this.buttonConfigSalvar.Click += new System.EventHandler(this.Button1_Click_1);
             // 
             // checkBoxAlteraIdioma
             // 
@@ -138,9 +135,9 @@
             this.Controls.Add(this.textBox2);
             this.KeyPreview = true;
             this.Name = "Config";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Config";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Config_FormClosing);
-            this.Load += new System.EventHandler(this.Config_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Config_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();

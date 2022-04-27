@@ -122,7 +122,6 @@
             this.labelCadCliCPF.Size = new System.Drawing.Size(30, 20);
             this.labelCadCliCPF.TabIndex = 22;
             this.labelCadCliCPF.Text = "cpf";
-            this.labelCadCliCPF.Click += new System.EventHandler(this.labelCadCliCPF_Click);
             // 
             // textBox5
             // 
@@ -163,7 +162,6 @@
             this.labelCadCliDias.Size = new System.Drawing.Size(35, 20);
             this.labelCadCliDias.TabIndex = 40;
             this.labelCadCliDias.Text = "Day";
-            this.labelCadCliDias.Click += new System.EventHandler(this.label8_Click);
             // 
             // userControlCliente
             // 
@@ -212,11 +210,10 @@
             this.Controls.Add(this.textBox5);
             this.KeyPreview = true;
             this.Name = "CadastroCliente";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CadastroCliente";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CadastroCliente_FormClosing);
-            this.Load += new System.EventHandler(this.CadastroCliente_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.CadastroCliente_KeyDown);
-            this.Resize += new System.EventHandler(this.CadastroCliente_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

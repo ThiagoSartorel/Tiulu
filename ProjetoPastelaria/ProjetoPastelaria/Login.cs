@@ -10,42 +10,32 @@ namespace ProjetoPastelaria
             buttonLoginEntrar.Text = Properties.Resources.ResourceManager.GetString("ButtonLoginEntrar");
         }
 
-        private void Login_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Menu menu = new Menu();
+            Menu menu = new();
             menu.FormClosed += (s, args) => 
             this.Close();
             menu.Show();
             
         }
 
-        private void textBox1_Enter(object sender, EventArgs e)
+        private void TextBox1_Enter(object sender, EventArgs e)
         {
             textBox1.BackColor = Color.LightBlue;
         }
 
-        private void textBox1_Leave(object sender, EventArgs e)
+        private void TextBox1_Leave(object sender, EventArgs e)
         {
             textBox1.BackColor = Color.White;
         }
 
-        private void textBox2_Leave(object sender, EventArgs e)
+        private void TextBox2_Leave(object sender, EventArgs e)
         {
             textBox2.BackColor = Color.White; 
         }
 
-        private void textBox2_Enter(object sender, EventArgs e)
+        private void TextBox2_Enter(object sender, EventArgs e)
         {
             textBox2.BackColor = Color.LightBlue;
         }
@@ -71,11 +61,6 @@ namespace ProjetoPastelaria
             {
                 form.Close();
             }
-        }
-
-        private void Login_FormClosing(object sender, FormClosingEventArgs e)
-        {
-
         }
     }
 }

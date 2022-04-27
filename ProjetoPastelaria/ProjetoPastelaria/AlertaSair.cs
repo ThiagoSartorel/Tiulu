@@ -7,17 +7,17 @@
             InitializeComponent();
         }
 
-        private void buttonSair_Click(object sender, EventArgs e)
+        private void ButtonSair_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void buttonCancel_Click(object sender, EventArgs e)
+        private void ButtonCancel_Click(object sender, EventArgs e)
         {
             Close();
         }
 
-        private void buttonMinimi_Click(object sender, EventArgs e)
+        private void ButtonMinimi_Click(object sender, EventArgs e)
         {
             //Minimizar tudo
             this.Close();

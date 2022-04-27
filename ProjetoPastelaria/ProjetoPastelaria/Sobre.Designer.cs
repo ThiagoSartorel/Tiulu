@@ -44,7 +44,6 @@
             this.richTextBoxSobreTexto.Size = new System.Drawing.Size(453, 407);
             this.richTextBoxSobreTexto.TabIndex = 0;
             this.richTextBoxSobreTexto.Text = resources.GetString("richTextBoxSobreTexto.Text");
-            this.richTextBoxSobreTexto.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // pictureBox1
             // 
@@ -83,7 +82,7 @@
             this.buttonSobreVoltar.TabIndex = 4;
             this.buttonSobreVoltar.Text = "Voltar";
             this.buttonSobreVoltar.UseVisualStyleBackColor = true;
-            this.buttonSobreVoltar.Click += new System.EventHandler(this.button1_Click);
+            this.buttonSobreVoltar.Click += new System.EventHandler(this.Button1_Click);
             // 
             // Sobre
             // 
@@ -97,9 +96,8 @@
             this.Controls.Add(this.richTextBoxSobreTexto);
             this.KeyPreview = true;
             this.Name = "Sobre";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sobre";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Sobre_FormClosing);
-            this.Load += new System.EventHandler(this.Sobre_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Sobre_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

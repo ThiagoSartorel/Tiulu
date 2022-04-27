@@ -76,7 +76,6 @@
             this.labelCadFunCPF.Size = new System.Drawing.Size(33, 20);
             this.labelCadFunCPF.TabIndex = 4;
             this.labelCadFunCPF.Text = "CPF";
-            this.labelCadFunCPF.Click += new System.EventHandler(this.label1_Click);
             // 
             // labelCadFunMatricula
             // 
@@ -95,7 +94,6 @@
             this.labelCadFunNome.Size = new System.Drawing.Size(50, 20);
             this.labelCadFunNome.TabIndex = 6;
             this.labelCadFunNome.Text = "Nome";
-            this.labelCadFunNome.Click += new System.EventHandler(this.labelCadFunNome_Click);
             // 
             // labelCadFunID
             // 
@@ -214,9 +212,9 @@
             this.Controls.Add(this.textBox2);
             this.KeyPreview = true;
             this.Name = "CadastroFuncionario";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CadastroFuncionario";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CadastroFuncionario_FormClosing);
-            this.Load += new System.EventHandler(this.CadastroFuncionario_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.CadastroFuncionario_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();

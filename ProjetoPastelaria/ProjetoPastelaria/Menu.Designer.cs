@@ -67,7 +67,7 @@
             this.buttonMenuCadProd.TabIndex = 0;
             this.buttonMenuCadProd.Text = "CP";
             this.buttonMenuCadProd.UseVisualStyleBackColor = false;
-            this.buttonMenuCadProd.Click += new System.EventHandler(this.button1_Click);
+            this.buttonMenuCadProd.Click += new System.EventHandler(this.Button1_Click);
             // 
             // buttonMenuCadClient
             // 
@@ -78,7 +78,7 @@
             this.buttonMenuCadClient.TabIndex = 1;
             this.buttonMenuCadClient.Text = "CC";
             this.buttonMenuCadClient.UseVisualStyleBackColor = false;
-            this.buttonMenuCadClient.Click += new System.EventHandler(this.button2_Click);
+            this.buttonMenuCadClient.Click += new System.EventHandler(this.Button2_Click);
             // 
             // buttonMenuCadFun
             // 
@@ -89,7 +89,7 @@
             this.buttonMenuCadFun.TabIndex = 2;
             this.buttonMenuCadFun.Text = "CF";
             this.buttonMenuCadFun.UseVisualStyleBackColor = false;
-            this.buttonMenuCadFun.Click += new System.EventHandler(this.button3_Click);
+            this.buttonMenuCadFun.Click += new System.EventHandler(this.Button3_Click);
             // 
             // buttonMenuConfig
             // 
@@ -100,7 +100,7 @@
             this.buttonMenuConfig.TabIndex = 3;
             this.buttonMenuConfig.Text = "Config";
             this.buttonMenuConfig.UseVisualStyleBackColor = false;
-            this.buttonMenuConfig.Click += new System.EventHandler(this.button4_Click);
+            this.buttonMenuConfig.Click += new System.EventHandler(this.Button4_Click);
             // 
             // buttonMenuSobre
             // 
@@ -111,7 +111,7 @@
             this.buttonMenuSobre.TabIndex = 4;
             this.buttonMenuSobre.Text = "Sb";
             this.buttonMenuSobre.UseVisualStyleBackColor = false;
-            this.buttonMenuSobre.Click += new System.EventHandler(this.button5_Click);
+            this.buttonMenuSobre.Click += new System.EventHandler(this.Button5_Click);
             // 
             // pictureBox1
             // 
@@ -133,7 +133,6 @@
             this.label1.Size = new System.Drawing.Size(163, 41);
             this.label1.TabIndex = 7;
             this.label1.Text = "Dashboard";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // notifyIconSystemTray
             // 
@@ -143,7 +142,7 @@
             this.notifyIconSystemTray.ContextMenuStrip = this.contextMenuStrip1;
             this.notifyIconSystemTray.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIconSystemTray.Icon")));
             this.notifyIconSystemTray.Text = "Pastelaria do Zé";
-            this.notifyIconSystemTray.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyIconSystemTray_MouseDoubleClick);
+            this.notifyIconSystemTray.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.NotifyIconSystemTray_MouseDoubleClick);
             // 
             // contextMenuStrip1
             // 
@@ -160,21 +159,21 @@
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
             this.sairToolStripMenuItem.Size = new System.Drawing.Size(117, 24);
             this.sairToolStripMenuItem.Text = "Abrir";
-            this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
+            this.sairToolStripMenuItem.Click += new System.EventHandler(this.SairToolStripMenuItem_Click);
             // 
             // abriToolStripMenuItem
             // 
             this.abriToolStripMenuItem.Name = "abriToolStripMenuItem";
             this.abriToolStripMenuItem.Size = new System.Drawing.Size(117, 24);
             this.abriToolStripMenuItem.Text = "Sair";
-            this.abriToolStripMenuItem.Click += new System.EventHandler(this.abriToolStripMenuItem_Click);
+            this.abriToolStripMenuItem.Click += new System.EventHandler(this.AbriToolStripMenuItem_Click);
             // 
             // sobreToolStripMenuItem1
             // 
             this.sobreToolStripMenuItem1.Name = "sobreToolStripMenuItem1";
             this.sobreToolStripMenuItem1.Size = new System.Drawing.Size(117, 24);
             this.sobreToolStripMenuItem1.Text = "Sobre";
-            this.sobreToolStripMenuItem1.Click += new System.EventHandler(this.sobreToolStripMenuItem1_Click);
+            this.sobreToolStripMenuItem1.Click += new System.EventHandler(this.SobreToolStripMenuItem1_Click);
             // 
             // splitContainer1
             // 
@@ -189,7 +188,6 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.label1);
-            this.splitContainer1.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel2_Paint);
             this.splitContainer1.Size = new System.Drawing.Size(668, 513);
             this.splitContainer1.SplitterDistance = 222;
             this.splitContainer1.TabIndex = 8;
@@ -206,7 +204,6 @@
             this.fecharToolStripMenuItem});
             this.contextMenuStripPrincipal.Name = "contextMenuStrip1";
             this.contextMenuStripPrincipal.Size = new System.Drawing.Size(283, 148);
-            this.contextMenuStripPrincipal.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStripPrincipal_Opening);
             // 
             // cadastroProdutoToolStripMenuItem
             // 
@@ -214,7 +211,7 @@
             this.cadastroProdutoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Shift | System.Windows.Forms.Keys.F4)));
             this.cadastroProdutoToolStripMenuItem.Size = new System.Drawing.Size(282, 24);
             this.cadastroProdutoToolStripMenuItem.Text = "Cadastro Produto";
-            this.cadastroProdutoToolStripMenuItem.Click += new System.EventHandler(this.cadastroProdutoToolStripMenuItem_Click);
+            this.cadastroProdutoToolStripMenuItem.Click += new System.EventHandler(this.CadastroProdutoToolStripMenuItem_Click);
             // 
             // cadastroClienteToolStripMenuItem
             // 
@@ -222,7 +219,7 @@
             this.cadastroClienteToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Shift | System.Windows.Forms.Keys.F3)));
             this.cadastroClienteToolStripMenuItem.Size = new System.Drawing.Size(282, 24);
             this.cadastroClienteToolStripMenuItem.Text = "Cadastro Cliente";
-            this.cadastroClienteToolStripMenuItem.Click += new System.EventHandler(this.cadastroClienteToolStripMenuItem_Click);
+            this.cadastroClienteToolStripMenuItem.Click += new System.EventHandler(this.CadastroClienteToolStripMenuItem_Click);
             // 
             // cadastroFuncionárioToolStripMenuItem
             // 
@@ -230,7 +227,7 @@
             this.cadastroFuncionárioToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Shift | System.Windows.Forms.Keys.F2)));
             this.cadastroFuncionárioToolStripMenuItem.Size = new System.Drawing.Size(282, 24);
             this.cadastroFuncionárioToolStripMenuItem.Text = "Cadastro Funcionário";
-            this.cadastroFuncionárioToolStripMenuItem.Click += new System.EventHandler(this.cadastroFuncionárioToolStripMenuItem_Click);
+            this.cadastroFuncionárioToolStripMenuItem.Click += new System.EventHandler(this.CadastroFuncionárioToolStripMenuItem_Click);
             // 
             // configuraçãoToolStripMenuItem
             // 
@@ -238,7 +235,6 @@
             this.configuraçãoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Shift | System.Windows.Forms.Keys.F9)));
             this.configuraçãoToolStripMenuItem.Size = new System.Drawing.Size(282, 24);
             this.configuraçãoToolStripMenuItem.Text = "Configuração";
-            this.configuraçãoToolStripMenuItem.Click += new System.EventHandler(this.configuraçãoToolStripMenuItem_Click);
             // 
             // sobreToolStripMenuItem
             // 
@@ -246,7 +242,6 @@
             this.sobreToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Shift | System.Windows.Forms.Keys.F8)));
             this.sobreToolStripMenuItem.Size = new System.Drawing.Size(282, 24);
             this.sobreToolStripMenuItem.Text = "Sobre";
-            this.sobreToolStripMenuItem.Click += new System.EventHandler(this.sobreToolStripMenuItem_Click);
             // 
             // fecharToolStripMenuItem
             // 
@@ -254,14 +249,14 @@
             this.fecharToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Shift | System.Windows.Forms.Keys.F11)));
             this.fecharToolStripMenuItem.Size = new System.Drawing.Size(282, 24);
             this.fecharToolStripMenuItem.Text = "Fechar";
-            this.fecharToolStripMenuItem.Click += new System.EventHandler(this.fecharToolStripMenuItem_Click);
+            this.fecharToolStripMenuItem.Click += new System.EventHandler(this.FecharToolStripMenuItem_Click);
             // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(667, 512);
+            this.ClientSize = new System.Drawing.Size(632, 503);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.buttonMenuSobre);
             this.Controls.Add(this.buttonMenuConfig);
@@ -269,7 +264,10 @@
             this.Controls.Add(this.buttonMenuCadClient);
             this.Controls.Add(this.buttonMenuCadProd);
             this.Controls.Add(this.splitContainer1);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(650, 550);
             this.Name = "Menu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Menu_FormClosing);
             this.Resize += new System.EventHandler(this.Menu_Resize);

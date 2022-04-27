@@ -59,7 +59,7 @@ namespace ProjetoPastelaria
             }
         }
 
-        static string valor;
+        static string valor = "a"; // >> ?
         private static void Aplica_KeyPress_Mascara(object sender, KeyPressEventArgs e)
         {
             TextBoxBase txt = (TextBoxBase)sender;
@@ -67,7 +67,7 @@ namespace ProjetoPastelaria
             {
                 if (e.KeyChar == ',')
                 {
-                    e.Handled = (txt.Text.Contains(","));
+                    e.Handled = (txt.Text.Contains(','));
                 }
                 else
                 {
@@ -115,12 +115,6 @@ namespace ProjetoPastelaria
             valor = txt.Text;
             txt.Text = string.Format("{0:C}", Convert.ToDouble(valor));
             txt.Select(txt.Text.Length, 0);
-        }
-        public static void AplicaMascaraMoeda2(TextBoxBase txt)
-        {
-            txt.KeyPress += Aplica_KeyPress_Mascara;
-            txt.Leave += Aplica_Leave_Mascara;
-            txt.KeyUp += Aplica_KeyUp_Mascara;
         }
     }
 }
