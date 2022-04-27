@@ -44,7 +44,7 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.labelCadCliFiado = new System.Windows.Forms.Label();
             this.labelCadCliDias = new System.Windows.Forms.Label();
-            this.userControl1 = new ProjetoPastelaria.UserControl();
+            this.userControlCliente = new ProjetoPastelaria.UserControl();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -179,19 +179,19 @@
             this.labelCadCliDias.Text = "Day";
             this.labelCadCliDias.Click += new System.EventHandler(this.label8_Click);
             // 
-            // userControl1
+            // userControlCliente
             // 
-            this.userControl1.Location = new System.Drawing.Point(-22, 472);
-            this.userControl1.Name = "userControl1";
-            this.userControl1.Size = new System.Drawing.Size(649, 81);
-            this.userControl1.TabIndex = 41;
+            this.userControlCliente.Location = new System.Drawing.Point(-18, 470);
+            this.userControlCliente.Name = "userControlCliente";
+            this.userControlCliente.Size = new System.Drawing.Size(649, 81);
+            this.userControlCliente.TabIndex = 41;
             // 
             // CadastroCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(481, 533);
-            this.Controls.Add(this.userControl1);
+            this.Controls.Add(this.userControlCliente);
             this.Controls.Add(this.labelCadCliDias);
             this.Controls.Add(this.labelCadCliFiado);
             this.Controls.Add(this.comboBox1);
@@ -238,6 +238,6 @@
         private ComboBox comboBox1;
         private Label labelCadCliFiado;
         private Label labelCadCliDias;
-        private UserControl userControl1;
+        private UserControl userControlCliente;
     }
 }

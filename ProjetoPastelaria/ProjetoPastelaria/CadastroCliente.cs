@@ -12,6 +12,8 @@ namespace ProjetoPastelaria
 {
     public partial class CadastroCliente : Form
     {
+        private int buttonVoltar_Click;
+
         public CadastroCliente()
         {
             InitializeComponent();
@@ -41,25 +43,20 @@ namespace ProjetoPastelaria
             numericUpDown1.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
             numericUpDown1.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
 
-           
+
+            userControlCliente.buttonSalvar.Click += ButtonSalvar_Click;
+            userControlCliente.buttonVoltar.Click += ButtonVoltar_Click;
+
         }
 
-        public void button2_Click(object sender, EventArgs e)
+        private void ButtonSalvar_Click(object? sender, EventArgs e)
+        {
+            this.Hide();
+        }
+
+        private void ButtonVoltar_Click(object? sender, EventArgs e)
         {
             this.Close();
-            Form f = new Form();
-            f.Close();
-
-        }
-
-        private void userControl1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void userControl1_Load_1(object sender, EventArgs e)
-        {
-
         }
 
         private void CadastroCliente_Load(object sender, EventArgs e)

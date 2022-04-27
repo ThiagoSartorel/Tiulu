@@ -37,7 +37,7 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.labelCadProgDesc = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.userControl1 = new ProjetoPastelaria.UserControl();
+            this.userControlProduto = new ProjetoPastelaria.UserControl();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -114,20 +114,20 @@
             this.pictureBox1.TabIndex = 35;
             this.pictureBox1.TabStop = false;
             // 
-            // userControl1
+            // userControlProduto
             // 
-            this.userControl1.Location = new System.Drawing.Point(-8, 406);
-            this.userControl1.Name = "userControl1";
-            this.userControl1.Size = new System.Drawing.Size(860, 81);
-            this.userControl1.TabIndex = 36;
-            this.userControl1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.userControl1_KeyDown);
+            this.userControlProduto.Location = new System.Drawing.Point(-8, 406);
+            this.userControlProduto.Name = "userControlProduto";
+            this.userControlProduto.Size = new System.Drawing.Size(860, 81);
+            this.userControlProduto.TabIndex = 36;
+            this.userControlProduto.KeyDown += new System.Windows.Forms.KeyEventHandler(this.userControl1_KeyDown);
             // 
             // CadastroProduto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(501, 482);
-            this.Controls.Add(this.userControl1);
+            this.Controls.Add(this.userControlProduto);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.labelCadProgDesc);
             this.Controls.Add(this.textBox3);
@@ -160,6 +160,6 @@
         private TextBox textBox3;
         private Label labelCadProgDesc;
         private PictureBox pictureBox1;
-        private UserControl userControl1;
+        private UserControl userControlProduto;
     }
 }

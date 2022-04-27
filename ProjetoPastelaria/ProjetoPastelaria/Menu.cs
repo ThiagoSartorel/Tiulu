@@ -99,5 +99,74 @@ namespace ProjetoPastelaria
             WindowState = FormWindowState.Maximized;
             notifyIconSystemTray.Visible = false;
         }
+
+        private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void cadastroProdutoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CadastroProduto cp = new CadastroProduto();
+            cp.Show();
+        }
+
+        private void cadastroClienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CadastroCliente cc = new CadastroCliente();
+            cc.Show();
+        }
+
+        private void cadastroFuncionárioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CadastroFuncionario cf = new CadastroFuncionario();
+            cf.Show();
+        }
+
+        private void configuraçãoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Config config = new Config();
+            config.Show();
+        }
+
+        private void sobreToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Sobre sobre = new Sobre();
+            sobre.Show();
+        }
+
+        private void contextMenuStripPrincipal_Opening(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void fecharToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void abriToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Show();
+            WindowState = FormWindowState.Normal;
+            notifyIconSystemTray.Visible = false;
+
+        }
+
+        private void sobreToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Sobre sobre = new Sobre();
+            sobre.Show();
+        }
+
+        private void splitContainer1_Panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

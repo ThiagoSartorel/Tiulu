@@ -44,7 +44,7 @@
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.radioButtonCadFunAdm = new System.Windows.Forms.RadioButton();
             this.radioButtonCadFunBalcao = new System.Windows.Forms.RadioButton();
-            this.userControl1 = new ProjetoPastelaria.UserControl();
+            this.userControlFuncionario = new ProjetoPastelaria.UserControl();
             this.SuspendLayout();
             // 
             // textBox2
@@ -183,19 +183,19 @@
             this.radioButtonCadFunBalcao.Text = "Balcão";
             this.radioButtonCadFunBalcao.UseVisualStyleBackColor = true;
             // 
-            // userControl1
+            // userControlFuncionario
             // 
-            this.userControl1.Location = new System.Drawing.Point(-18, 469);
-            this.userControl1.Name = "userControl1";
-            this.userControl1.Size = new System.Drawing.Size(649, 81);
-            this.userControl1.TabIndex = 17;
+            this.userControlFuncionario.Location = new System.Drawing.Point(-18, 469);
+            this.userControlFuncionario.Name = "userControlFuncionario";
+            this.userControlFuncionario.Size = new System.Drawing.Size(649, 81);
+            this.userControlFuncionario.TabIndex = 17;
             // 
             // CadastroFuncionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(488, 536);
-            this.Controls.Add(this.userControl1);
+            this.Controls.Add(this.userControlFuncionario);
             this.Controls.Add(this.radioButtonCadFunBalcao);
             this.Controls.Add(this.radioButtonCadFunAdm);
             this.Controls.Add(this.labelCadFunRsenha);
@@ -241,6 +241,6 @@
         private TextBox textBox6;
         private RadioButton radioButtonCadFunAdm;
         private RadioButton radioButtonCadFunBalcao;
-        private UserControl userControl1;
+        private UserControl userControlFuncionario;
     }
 }

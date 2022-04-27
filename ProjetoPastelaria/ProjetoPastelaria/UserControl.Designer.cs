@@ -40,7 +40,6 @@
             this.buttonVoltar.TabIndex = 0;
             this.buttonVoltar.Text = "Voltar";
             this.buttonVoltar.UseVisualStyleBackColor = true;
-            this.buttonVoltar.Click += new System.EventHandler(this.buttonVoltar_Click);
             // 
             // buttonSalvar
             // 
@@ -65,7 +64,7 @@
 
         #endregion
 
-        private Button buttonVoltar;
-        private Button buttonSalvar;
+        public Button buttonVoltar;
+        public Button buttonSalvar;
     }
 }

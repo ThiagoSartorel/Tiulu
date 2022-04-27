@@ -36,11 +36,26 @@
             this.buttonMenuConfig = new System.Windows.Forms.Button();
             this.buttonMenuSobre = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.splitter1 = new System.Windows.Forms.Splitter();
             this.label1 = new System.Windows.Forms.Label();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.notifyIconSystemTray = new System.Windows.Forms.NotifyIcon(this.components);
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.abriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sobreToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.contextMenuStripPrincipal = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.cadastroProdutoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cadastroClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cadastroFuncionárioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.configuraçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fecharToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.contextMenuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
+            this.splitContainer1.Panel2.SuspendLayout();
+            this.splitContainer1.SuspendLayout();
+            this.contextMenuStripPrincipal.SuspendLayout();
             this.SuspendLayout();
             // 
             // buttonMenuCadProd
@@ -108,38 +123,138 @@
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
-            // splitter1
-            // 
-            this.splitter1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.splitter1.Location = new System.Drawing.Point(0, 0);
-            this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(215, 512);
-            this.splitter1.TabIndex = 6;
-            this.splitter1.TabStop = false;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(221, 12);
+            this.label1.Location = new System.Drawing.Point(19, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(163, 41);
             this.label1.TabIndex = 7;
             this.label1.Text = "Dashboard";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // notifyIconSystemTray
+            // 
+            this.notifyIconSystemTray.BalloonTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.notifyIconSystemTray.BalloonTipText = "Pastelaria do zé continua rodando";
+            this.notifyIconSystemTray.BalloonTipTitle = "Pastelaria do Zé";
+            this.notifyIconSystemTray.ContextMenuStrip = this.contextMenuStrip1;
+            this.notifyIconSystemTray.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIconSystemTray.Icon")));
+            this.notifyIconSystemTray.Text = "Pastelaria do Zé";
+            this.notifyIconSystemTray.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyIconSystemTray_MouseDoubleClick);
+            // 
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.sairToolStripMenuItem,
+            this.abriToolStripMenuItem,
+            this.sobreToolStripMenuItem1});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(118, 76);
             // 
-            // notifyIconSystemTray
+            // sairToolStripMenuItem
             // 
-            this.notifyIconSystemTray.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIconSystemTray.Icon")));
-            this.notifyIconSystemTray.Text = "notifyIcon1";
-            this.notifyIconSystemTray.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyIconSystemTray_MouseDoubleClick);
+            this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(117, 24);
+            this.sairToolStripMenuItem.Text = "Abrir";
+            this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
+            // 
+            // abriToolStripMenuItem
+            // 
+            this.abriToolStripMenuItem.Name = "abriToolStripMenuItem";
+            this.abriToolStripMenuItem.Size = new System.Drawing.Size(117, 24);
+            this.abriToolStripMenuItem.Text = "Sair";
+            this.abriToolStripMenuItem.Click += new System.EventHandler(this.abriToolStripMenuItem_Click);
+            // 
+            // sobreToolStripMenuItem1
+            // 
+            this.sobreToolStripMenuItem1.Name = "sobreToolStripMenuItem1";
+            this.sobreToolStripMenuItem1.Size = new System.Drawing.Size(117, 24);
+            this.sobreToolStripMenuItem1.Text = "Sobre";
+            this.sobreToolStripMenuItem1.Click += new System.EventHandler(this.sobreToolStripMenuItem1_Click);
+            // 
+            // splitContainer1
+            // 
+            this.splitContainer1.Location = new System.Drawing.Point(-1, 0);
+            this.splitContainer1.Name = "splitContainer1";
+            // 
+            // splitContainer1.Panel1
+            // 
+            this.splitContainer1.Panel1.BackColor = System.Drawing.SystemColors.Control;
+            this.splitContainer1.Panel1.ContextMenuStrip = this.contextMenuStripPrincipal;
+            // 
+            // splitContainer1.Panel2
+            // 
+            this.splitContainer1.Panel2.Controls.Add(this.label1);
+            this.splitContainer1.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel2_Paint);
+            this.splitContainer1.Size = new System.Drawing.Size(668, 513);
+            this.splitContainer1.SplitterDistance = 222;
+            this.splitContainer1.TabIndex = 8;
+            // 
+            // contextMenuStripPrincipal
+            // 
+            this.contextMenuStripPrincipal.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStripPrincipal.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cadastroProdutoToolStripMenuItem,
+            this.cadastroClienteToolStripMenuItem,
+            this.cadastroFuncionárioToolStripMenuItem,
+            this.configuraçãoToolStripMenuItem,
+            this.sobreToolStripMenuItem,
+            this.fecharToolStripMenuItem});
+            this.contextMenuStripPrincipal.Name = "contextMenuStrip1";
+            this.contextMenuStripPrincipal.Size = new System.Drawing.Size(283, 148);
+            this.contextMenuStripPrincipal.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStripPrincipal_Opening);
+            // 
+            // cadastroProdutoToolStripMenuItem
+            // 
+            this.cadastroProdutoToolStripMenuItem.Name = "cadastroProdutoToolStripMenuItem";
+            this.cadastroProdutoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Shift | System.Windows.Forms.Keys.F4)));
+            this.cadastroProdutoToolStripMenuItem.Size = new System.Drawing.Size(282, 24);
+            this.cadastroProdutoToolStripMenuItem.Text = "Cadastro Produto";
+            this.cadastroProdutoToolStripMenuItem.Click += new System.EventHandler(this.cadastroProdutoToolStripMenuItem_Click);
+            // 
+            // cadastroClienteToolStripMenuItem
+            // 
+            this.cadastroClienteToolStripMenuItem.Name = "cadastroClienteToolStripMenuItem";
+            this.cadastroClienteToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Shift | System.Windows.Forms.Keys.F3)));
+            this.cadastroClienteToolStripMenuItem.Size = new System.Drawing.Size(282, 24);
+            this.cadastroClienteToolStripMenuItem.Text = "Cadastro Cliente";
+            this.cadastroClienteToolStripMenuItem.Click += new System.EventHandler(this.cadastroClienteToolStripMenuItem_Click);
+            // 
+            // cadastroFuncionárioToolStripMenuItem
+            // 
+            this.cadastroFuncionárioToolStripMenuItem.Name = "cadastroFuncionárioToolStripMenuItem";
+            this.cadastroFuncionárioToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Shift | System.Windows.Forms.Keys.F2)));
+            this.cadastroFuncionárioToolStripMenuItem.Size = new System.Drawing.Size(282, 24);
+            this.cadastroFuncionárioToolStripMenuItem.Text = "Cadastro Funcionário";
+            this.cadastroFuncionárioToolStripMenuItem.Click += new System.EventHandler(this.cadastroFuncionárioToolStripMenuItem_Click);
+            // 
+            // configuraçãoToolStripMenuItem
+            // 
+            this.configuraçãoToolStripMenuItem.Name = "configuraçãoToolStripMenuItem";
+            this.configuraçãoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Shift | System.Windows.Forms.Keys.F9)));
+            this.configuraçãoToolStripMenuItem.Size = new System.Drawing.Size(282, 24);
+            this.configuraçãoToolStripMenuItem.Text = "Configuração";
+            this.configuraçãoToolStripMenuItem.Click += new System.EventHandler(this.configuraçãoToolStripMenuItem_Click);
+            // 
+            // sobreToolStripMenuItem
+            // 
+            this.sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
+            this.sobreToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Shift | System.Windows.Forms.Keys.F8)));
+            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(282, 24);
+            this.sobreToolStripMenuItem.Text = "Sobre";
+            this.sobreToolStripMenuItem.Click += new System.EventHandler(this.sobreToolStripMenuItem_Click);
+            // 
+            // fecharToolStripMenuItem
+            // 
+            this.fecharToolStripMenuItem.Name = "fecharToolStripMenuItem";
+            this.fecharToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Shift | System.Windows.Forms.Keys.F11)));
+            this.fecharToolStripMenuItem.Size = new System.Drawing.Size(282, 24);
+            this.fecharToolStripMenuItem.Text = "Fechar";
+            this.fecharToolStripMenuItem.Click += new System.EventHandler(this.fecharToolStripMenuItem_Click);
             // 
             // Menu
             // 
@@ -147,21 +262,25 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(667, 512);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.buttonMenuSobre);
             this.Controls.Add(this.buttonMenuConfig);
             this.Controls.Add(this.buttonMenuCadFun);
             this.Controls.Add(this.buttonMenuCadClient);
             this.Controls.Add(this.buttonMenuCadProd);
-            this.Controls.Add(this.splitter1);
+            this.Controls.Add(this.splitContainer1);
             this.Name = "Menu";
             this.Text = "Menu";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Menu_FormClosing);
             this.Resize += new System.EventHandler(this.Menu_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
+            this.splitContainer1.Panel2.ResumeLayout(false);
+            this.splitContainer1.Panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
+            this.splitContainer1.ResumeLayout(false);
+            this.contextMenuStripPrincipal.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -173,9 +292,19 @@
         private Button buttonMenuConfig;
         private Button buttonMenuSobre;
         private PictureBox pictureBox1;
-        private Splitter splitter1;
         private Label label1;
-        private ContextMenuStrip contextMenuStrip1;
         private NotifyIcon notifyIconSystemTray;
+        private SplitContainer splitContainer1;
+        private ToolStripMenuItem cadastroProdutoToolStripMenuItem;
+        private ToolStripMenuItem cadastroClienteToolStripMenuItem;
+        private ToolStripMenuItem cadastroFuncionárioToolStripMenuItem;
+        private ToolStripMenuItem configuraçãoToolStripMenuItem;
+        private ToolStripMenuItem sobreToolStripMenuItem;
+        private ContextMenuStrip contextMenuStripPrincipal;
+        private ToolStripMenuItem fecharToolStripMenuItem;
+        private ContextMenuStrip contextMenuStrip1;
+        private ToolStripMenuItem sairToolStripMenuItem;
+        private ToolStripMenuItem abriToolStripMenuItem;
+        private ToolStripMenuItem sobreToolStripMenuItem1;
     }
 }

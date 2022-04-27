@@ -34,6 +34,19 @@ namespace ProjetoPastelaria
             textBox3.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
             textBox5.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
             textBox5.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
+
+            userControlProduto.buttonSalvar.Click += ButtonSalvar_Click;
+            userControlProduto.buttonVoltar.Click += ButtonVoltar_Click;
+        }
+
+        private void ButtonVoltar_Click(object? sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void ButtonSalvar_Click(object? sender, EventArgs e)
+        {
+            this.Hide();
         }
 
         private void button2_Click(object sender, EventArgs e)
