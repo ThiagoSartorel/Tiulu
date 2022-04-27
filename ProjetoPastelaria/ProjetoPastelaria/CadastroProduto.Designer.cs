@@ -33,11 +33,11 @@
             this.labelCadProdNome = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.labelCadProValor = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.labelCadProgDesc = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.userControlProduto = new ProjetoPastelaria.UserControl();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -76,18 +76,11 @@
             // labelCadProValor
             // 
             this.labelCadProValor.AutoSize = true;
-            this.labelCadProValor.Location = new System.Drawing.Point(413, 44);
+            this.labelCadProValor.Location = new System.Drawing.Point(399, 44);
             this.labelCadProValor.Name = "labelCadProValor";
             this.labelCadProValor.Size = new System.Drawing.Size(45, 20);
             this.labelCadProValor.TabIndex = 32;
             this.labelCadProValor.Text = "Value";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(413, 67);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(75, 27);
-            this.textBox2.TabIndex = 3;
             // 
             // textBox3
             // 
@@ -122,17 +115,24 @@
             this.userControlProduto.TabIndex = 36;
             this.userControlProduto.KeyDown += new System.Windows.Forms.KeyEventHandler(this.userControl1_KeyDown);
             // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(399, 67);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(125, 27);
+            this.textBox2.TabIndex = 37;
+            // 
             // CadastroProduto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(501, 482);
+            this.ClientSize = new System.Drawing.Size(531, 482);
+            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.userControlProduto);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.labelCadProgDesc);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.labelCadProValor);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.labelCadProdNome);
@@ -156,10 +156,10 @@
         private Label labelCadProdNome;
         private TextBox textBox1;
         private Label labelCadProValor;
-        private TextBox textBox2;
         private TextBox textBox3;
         private Label labelCadProgDesc;
         private PictureBox pictureBox1;
         private UserControl userControlProduto;
+        private TextBox textBox2;
     }
 }

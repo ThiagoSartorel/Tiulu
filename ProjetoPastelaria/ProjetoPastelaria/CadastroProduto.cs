@@ -28,8 +28,6 @@ namespace ProjetoPastelaria
 
             textBox1.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
             textBox1.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
-            textBox2.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
-            textBox2.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
             textBox3.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
             textBox3.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
             textBox5.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);

@@ -33,18 +33,18 @@
             this.labelCadCliSenha = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.labelCadCliTelefone = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.labelCadCliNome = new System.Windows.Forms.Label();
             this.labelCadCliCPF = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.labelCadCliFiado = new System.Windows.Forms.Label();
             this.labelCadCliDias = new System.Windows.Forms.Label();
             this.userControlCliente = new ProjetoPastelaria.UserControl();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -89,13 +89,6 @@
             this.labelCadCliTelefone.TabIndex = 28;
             this.labelCadCliTelefone.Text = "Tel";
             // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(45, 204);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(381, 27);
-            this.textBox6.TabIndex = 4;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -138,13 +131,6 @@
             this.textBox5.Size = new System.Drawing.Size(381, 27);
             this.textBox5.TabIndex = 3;
             // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(147, 61);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(279, 27);
-            this.textBox4.TabIndex = 2;
-            // 
             // numericUpDown1
             // 
             this.numericUpDown1.Location = new System.Drawing.Point(276, 424);
@@ -186,11 +172,29 @@
             this.userControlCliente.Size = new System.Drawing.Size(649, 81);
             this.userControlCliente.TabIndex = 41;
             // 
+            // maskedTextBox1
+            // 
+            this.maskedTextBox1.Location = new System.Drawing.Point(147, 61);
+            this.maskedTextBox1.Mask = "000.0000.000-00";
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(279, 27);
+            this.maskedTextBox1.TabIndex = 42;
+            // 
+            // maskedTextBox2
+            // 
+            this.maskedTextBox2.Location = new System.Drawing.Point(45, 204);
+            this.maskedTextBox2.Mask = "(99) 0 000-0000";
+            this.maskedTextBox2.Name = "maskedTextBox2";
+            this.maskedTextBox2.Size = new System.Drawing.Size(381, 27);
+            this.maskedTextBox2.TabIndex = 43;
+            // 
             // CadastroCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(481, 533);
+            this.Controls.Add(this.maskedTextBox2);
+            this.Controls.Add(this.maskedTextBox1);
             this.Controls.Add(this.userControlCliente);
             this.Controls.Add(this.labelCadCliDias);
             this.Controls.Add(this.labelCadCliFiado);
@@ -201,13 +205,11 @@
             this.Controls.Add(this.labelCadCliSenha);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.labelCadCliTelefone);
-            this.Controls.Add(this.textBox6);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.labelCadCliNome);
             this.Controls.Add(this.labelCadCliCPF);
             this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
             this.KeyPreview = true;
             this.Name = "CadastroCliente";
             this.Text = "CadastroCliente";
@@ -227,17 +229,17 @@
         private Label labelCadCliSenha;
         private TextBox textBox7;
         private Label labelCadCliTelefone;
-        private TextBox textBox6;
         private Label label4;
         private TextBox textBox3;
         private Label labelCadCliNome;
         private Label labelCadCliCPF;
         private TextBox textBox5;
-        private TextBox textBox4;
         private NumericUpDown numericUpDown1;
         private ComboBox comboBox1;
         private Label labelCadCliFiado;
         private Label labelCadCliDias;
         private UserControl userControlCliente;
+        private MaskedTextBox maskedTextBox1;
+        private MaskedTextBox maskedTextBox2;
     }
 }

@@ -83,6 +83,7 @@
             this.Controls.Add(this.buttonMinimi);
             this.Controls.Add(this.buttonSair);
             this.Name = "AlertaSair";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AlertaSair";
             this.ResumeLayout(false);
             this.PerformLayout();
