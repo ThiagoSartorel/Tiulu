@@ -30,14 +30,14 @@ namespace ProjetoPastelaria
             textBoxIdCliente.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
             textBoxNomeCliente.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
             textBoxNomeCliente.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
-            textBox7.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
-            textBox7.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
-            textBox8.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
-            textBox8.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
-            comboBox1.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
-            comboBox1.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
-            numericUpDown1.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
-            numericUpDown1.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
+            textBoxSenhaCliente.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
+            textBoxSenhaCliente.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
+            textBoxRsenhaCliente.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
+            textBoxRsenhaCliente.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
+            comboBoxFiado.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
+            comboBoxFiado.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
+            numericUpDownDia.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
+            numericUpDownDia.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
 
 
             userControlCliente.buttonSalvar.Click += ButtonSalvar_Click;

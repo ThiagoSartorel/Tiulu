@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBoxIdProduto = new System.Windows.Forms.TextBox();
             this.labelCadProdNome = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxNomeProduto = new System.Windows.Forms.TextBox();
             this.labelCadProValor = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBoxDescProduto = new System.Windows.Forms.TextBox();
             this.labelCadProgDesc = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxImgProduto = new System.Windows.Forms.PictureBox();
             this.userControlProduto = new ProjetoPastelaria.UserControl();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.maskedTextBoxValorProduto = new System.Windows.Forms.MaskedTextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxImgProduto)).BeginInit();
             this.SuspendLayout();
             // 
             // label4
@@ -50,12 +50,13 @@
             this.label4.TabIndex = 30;
             this.label4.Text = "ID";
             // 
-            // textBox5
+            // textBoxIdProduto
             // 
-            this.textBox5.Location = new System.Drawing.Point(12, 67);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(75, 27);
-            this.textBox5.TabIndex = 1;
+            this.textBoxIdProduto.Location = new System.Drawing.Point(12, 67);
+            this.textBoxIdProduto.Name = "textBoxIdProduto";
+            this.textBoxIdProduto.ReadOnly = true;
+            this.textBoxIdProduto.Size = new System.Drawing.Size(75, 27);
+            this.textBoxIdProduto.TabIndex = 1;
             // 
             // labelCadProdNome
             // 
@@ -66,12 +67,12 @@
             this.labelCadProdNome.TabIndex = 28;
             this.labelCadProdNome.Text = "Nom";
             // 
-            // textBox1
+            // textBoxNomeProduto
             // 
-            this.textBox1.Location = new System.Drawing.Point(114, 67);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(279, 27);
-            this.textBox1.TabIndex = 2;
+            this.textBoxNomeProduto.Location = new System.Drawing.Point(114, 67);
+            this.textBoxNomeProduto.Name = "textBoxNomeProduto";
+            this.textBoxNomeProduto.Size = new System.Drawing.Size(279, 27);
+            this.textBoxNomeProduto.TabIndex = 2;
             // 
             // labelCadProValor
             // 
@@ -82,13 +83,13 @@
             this.labelCadProValor.TabIndex = 32;
             this.labelCadProValor.Text = "Value";
             // 
-            // textBox3
+            // textBoxDescProduto
             // 
-            this.textBox3.Location = new System.Drawing.Point(12, 171);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(296, 229);
-            this.textBox3.TabIndex = 4;
+            this.textBoxDescProduto.Location = new System.Drawing.Point(12, 171);
+            this.textBoxDescProduto.Multiline = true;
+            this.textBoxDescProduto.Name = "textBoxDescProduto";
+            this.textBoxDescProduto.Size = new System.Drawing.Size(296, 229);
+            this.textBoxDescProduto.TabIndex = 4;
             // 
             // labelCadProgDesc
             // 
@@ -99,13 +100,13 @@
             this.labelCadProgDesc.TabIndex = 34;
             this.labelCadProgDesc.Text = "Desc";
             // 
-            // pictureBox1
+            // pictureBoxImgProduto
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(327, 182);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(161, 138);
-            this.pictureBox1.TabIndex = 35;
-            this.pictureBox1.TabStop = false;
+            this.pictureBoxImgProduto.Location = new System.Drawing.Point(327, 182);
+            this.pictureBoxImgProduto.Name = "pictureBoxImgProduto";
+            this.pictureBoxImgProduto.Size = new System.Drawing.Size(161, 138);
+            this.pictureBoxImgProduto.TabIndex = 35;
+            this.pictureBoxImgProduto.TabStop = false;
             // 
             // userControlProduto
             // 
@@ -114,35 +115,36 @@
             this.userControlProduto.Size = new System.Drawing.Size(860, 81);
             this.userControlProduto.TabIndex = 36;
             // 
-            // textBox2
+            // maskedTextBoxValorProduto
             // 
-            this.textBox2.Location = new System.Drawing.Point(399, 67);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(125, 27);
-            this.textBox2.TabIndex = 37;
+            this.maskedTextBoxValorProduto.Location = new System.Drawing.Point(399, 67);
+            this.maskedTextBoxValorProduto.Mask = "$000,99";
+            this.maskedTextBoxValorProduto.Name = "maskedTextBoxValorProduto";
+            this.maskedTextBoxValorProduto.Size = new System.Drawing.Size(125, 27);
+            this.maskedTextBoxValorProduto.TabIndex = 37;
             // 
             // CadastroProduto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(531, 482);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.maskedTextBoxValorProduto);
             this.Controls.Add(this.userControlProduto);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pictureBoxImgProduto);
             this.Controls.Add(this.labelCadProgDesc);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBoxDescProduto);
             this.Controls.Add(this.labelCadProValor);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.textBoxIdProduto);
             this.Controls.Add(this.labelCadProdNome);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxNomeProduto);
             this.KeyPreview = true;
             this.Name = "CadastroProduto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CadastroProduto";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CadastroProduto_FormClosing);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.CadastroProduto_KeyDown);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxImgProduto)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -151,14 +153,14 @@
         #endregion
 
         private Label label4;
-        private TextBox textBox5;
+        private TextBox textBoxIdProduto;
         private Label labelCadProdNome;
-        private TextBox textBox1;
+        private TextBox textBoxNomeProduto;
         private Label labelCadProValor;
-        private TextBox textBox3;
+        private TextBox textBoxDescProduto;
         private Label labelCadProgDesc;
-        private PictureBox pictureBox1;
+        private PictureBox pictureBoxImgProduto;
         private UserControl userControlProduto;
-        private TextBox textBox2;
+        private MaskedTextBox maskedTextBoxValorProduto;
     }
 }

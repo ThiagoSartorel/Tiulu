@@ -21,10 +21,10 @@ namespace ProjetoPastelaria
             labelConfigMulta.Text = Properties.Resources.ResourceManager.GetString("LabelConfigMulta");
             labelConfigLinguagem.Text = Properties.Resources.ResourceManager.GetString("LabelConfigLinguagem");
 
-            textBox1.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
-            textBox1.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
-            textBox2.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
-            textBox2.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
+            textBoxJurosConfig.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
+            textBoxJurosConfig.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
+            textBoxMultaConfig.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
+            textBoxMultaConfig.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
         }
 
 

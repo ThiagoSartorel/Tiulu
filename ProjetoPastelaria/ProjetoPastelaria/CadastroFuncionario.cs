@@ -22,20 +22,20 @@ namespace ProjetoPastelaria
             labelCadFunRsenha.Text = Properties.Resources.ResourceManager.GetString("LabelCadFunRSenha");
             labelCadFunNome.Text = Properties.Resources.ResourceManager.GetString("LabelCadFunNome");
 
-            textBox1.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
-            textBox1.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
-            textBox2.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
-            textBox2.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
-            textBox3.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
-            textBox3.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
-            textBox4.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
-            textBox4.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
-            textBox5.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
-            textBox5.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
-            textBox6.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
-            textBox6.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
-            textBox7.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
-            textBox7.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
+            textBoxIdFuncionario.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
+            textBoxIdFuncionario.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
+            maskedTextBoxCpfFuncionario.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
+            maskedTextBoxCpfFuncionario.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
+            textBoxMatriculaFuncionario.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
+            textBoxMatriculaFuncionario.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
+            textBoxNomeFuncionario.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
+            textBoxNomeFuncionario.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
+            maskedTextBoxTelefoneFuncionario.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
+            maskedTextBoxTelefoneFuncionario.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
+            textBoxSenhaFuncionario.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
+            textBoxSenhaFuncionario.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
+            textBoxRsenhaFuncionario.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
+            textBoxRsenhaFuncionario.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
 
             userControlFuncionario.buttonVoltar.Click += ButtonVoltar_Click;
             userControlFuncionario.buttonSalvar.Click += ButtonSalvar_Click;

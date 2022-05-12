@@ -29,23 +29,23 @@
         private void InitializeComponent()
         {
             this.labelCadCliRSenha = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBoxRsenhaCliente = new System.Windows.Forms.TextBox();
             this.labelCadCliSenha = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBoxSenhaCliente = new System.Windows.Forms.TextBox();
             this.labelCadCliTelefone = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.textBoxIdCliente = new System.Windows.Forms.TextBox();
             this.labelCadCliNome = new System.Windows.Forms.Label();
             this.labelCadCliCPF = new System.Windows.Forms.Label();
             this.textBoxNomeCliente = new System.Windows.Forms.TextBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.numericUpDownDia = new System.Windows.Forms.NumericUpDown();
+            this.comboBoxFiado = new System.Windows.Forms.ComboBox();
             this.labelCadCliFiado = new System.Windows.Forms.Label();
             this.labelCadCliDias = new System.Windows.Forms.Label();
             this.userControlCliente = new ProjetoPastelaria.UserControl();
             this.maskedTextBoxCpf = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            this.maskedTextBoxTelefoneCliente = new System.Windows.Forms.MaskedTextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDia)).BeginInit();
             this.SuspendLayout();
             // 
             // labelCadCliRSenha
@@ -57,12 +57,12 @@
             this.labelCadCliRSenha.TabIndex = 32;
             this.labelCadCliRSenha.Text = "Pass2";
             // 
-            // textBox8
+            // textBoxRsenhaCliente
             // 
-            this.textBox8.Location = new System.Drawing.Point(45, 351);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(381, 27);
-            this.textBox8.TabIndex = 6;
+            this.textBoxRsenhaCliente.Location = new System.Drawing.Point(45, 351);
+            this.textBoxRsenhaCliente.Name = "textBoxRsenhaCliente";
+            this.textBoxRsenhaCliente.Size = new System.Drawing.Size(381, 27);
+            this.textBoxRsenhaCliente.TabIndex = 6;
             // 
             // labelCadCliSenha
             // 
@@ -73,12 +73,12 @@
             this.labelCadCliSenha.TabIndex = 30;
             this.labelCadCliSenha.Text = "Pass";
             // 
-            // textBox7
+            // textBoxSenhaCliente
             // 
-            this.textBox7.Location = new System.Drawing.Point(45, 280);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(381, 27);
-            this.textBox7.TabIndex = 5;
+            this.textBoxSenhaCliente.Location = new System.Drawing.Point(45, 280);
+            this.textBoxSenhaCliente.Name = "textBoxSenhaCliente";
+            this.textBoxSenhaCliente.Size = new System.Drawing.Size(381, 27);
+            this.textBoxSenhaCliente.TabIndex = 5;
             // 
             // labelCadCliTelefone
             // 
@@ -102,6 +102,7 @@
             // 
             this.textBoxIdCliente.Location = new System.Drawing.Point(45, 61);
             this.textBoxIdCliente.Name = "textBoxIdCliente";
+            this.textBoxIdCliente.ReadOnly = true;
             this.textBoxIdCliente.Size = new System.Drawing.Size(75, 27);
             this.textBoxIdCliente.TabIndex = 1;
             // 
@@ -130,20 +131,20 @@
             this.textBoxNomeCliente.Size = new System.Drawing.Size(381, 27);
             this.textBoxNomeCliente.TabIndex = 3;
             // 
-            // numericUpDown1
+            // numericUpDownDia
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(276, 424);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(150, 27);
-            this.numericUpDown1.TabIndex = 8;
+            this.numericUpDownDia.Location = new System.Drawing.Point(276, 424);
+            this.numericUpDownDia.Name = "numericUpDownDia";
+            this.numericUpDownDia.Size = new System.Drawing.Size(150, 27);
+            this.numericUpDownDia.TabIndex = 8;
             // 
-            // comboBox1
+            // comboBoxFiado
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(45, 423);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(151, 28);
-            this.comboBox1.TabIndex = 7;
+            this.comboBoxFiado.FormattingEnabled = true;
+            this.comboBoxFiado.Location = new System.Drawing.Point(45, 423);
+            this.comboBoxFiado.Name = "comboBoxFiado";
+            this.comboBoxFiado.Size = new System.Drawing.Size(151, 28);
+            this.comboBoxFiado.TabIndex = 7;
             // 
             // labelCadCliFiado
             // 
@@ -175,33 +176,33 @@
             this.maskedTextBoxCpf.Location = new System.Drawing.Point(147, 61);
             this.maskedTextBoxCpf.Mask = "000.0000.000-00";
             this.maskedTextBoxCpf.Name = "maskedTextBoxCpf";
-            this.maskedTextBoxCpf.Size = new System.Drawing.Size(279, 27);
+            this.maskedTextBoxCpf.Size = new System.Drawing.Size(97, 27);
             this.maskedTextBoxCpf.TabIndex = 42;
             // 
-            // maskedTextBox2
+            // maskedTextBoxTelefoneCliente
             // 
-            this.maskedTextBox2.Location = new System.Drawing.Point(45, 204);
-            this.maskedTextBox2.Mask = "(99) 0 000-0000";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(381, 27);
-            this.maskedTextBox2.TabIndex = 43;
+            this.maskedTextBoxTelefoneCliente.Location = new System.Drawing.Point(45, 204);
+            this.maskedTextBoxTelefoneCliente.Mask = "(99) 0 000-0000";
+            this.maskedTextBoxTelefoneCliente.Name = "maskedTextBoxTelefoneCliente";
+            this.maskedTextBoxTelefoneCliente.Size = new System.Drawing.Size(101, 27);
+            this.maskedTextBoxTelefoneCliente.TabIndex = 43;
             // 
             // CadastroCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(481, 533);
-            this.Controls.Add(this.maskedTextBox2);
+            this.Controls.Add(this.maskedTextBoxTelefoneCliente);
             this.Controls.Add(this.maskedTextBoxCpf);
             this.Controls.Add(this.userControlCliente);
             this.Controls.Add(this.labelCadCliDias);
             this.Controls.Add(this.labelCadCliFiado);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.comboBoxFiado);
+            this.Controls.Add(this.numericUpDownDia);
             this.Controls.Add(this.labelCadCliRSenha);
-            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.textBoxRsenhaCliente);
             this.Controls.Add(this.labelCadCliSenha);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.textBoxSenhaCliente);
             this.Controls.Add(this.labelCadCliTelefone);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBoxIdCliente);
@@ -214,7 +215,7 @@
             this.Text = "CadastroCliente";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CadastroCliente_FormClosing);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.CadastroCliente_KeyDown);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDia)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -222,21 +223,21 @@
 
         #endregion
         private Label labelCadCliRSenha;
-        private TextBox textBox8;
+        private TextBox textBoxRsenhaCliente;
         private Label labelCadCliSenha;
-        private TextBox textBox7;
+        private TextBox textBoxSenhaCliente;
         private Label labelCadCliTelefone;
         private Label label4;
         private TextBox textBoxIdCliente;
         private Label labelCadCliNome;
         private Label labelCadCliCPF;
         private TextBox textBoxNomeCliente;
-        private NumericUpDown numericUpDown1;
-        private ComboBox comboBox1;
+        private NumericUpDown numericUpDownDia;
+        private ComboBox comboBoxFiado;
         private Label labelCadCliFiado;
         private Label labelCadCliDias;
         private UserControl userControlCliente;
         private MaskedTextBox maskedTextBoxCpf;
-        private MaskedTextBox maskedTextBox2;
+        private MaskedTextBox maskedTextBoxTelefoneCliente;
     }
 }

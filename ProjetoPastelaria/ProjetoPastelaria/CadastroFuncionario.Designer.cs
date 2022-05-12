@@ -28,45 +28,38 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBoxNomeFuncionario = new System.Windows.Forms.TextBox();
+            this.textBoxMatriculaFuncionario = new System.Windows.Forms.TextBox();
             this.labelCadFunCPF = new System.Windows.Forms.Label();
             this.labelCadFunMatricula = new System.Windows.Forms.Label();
             this.labelCadFunNome = new System.Windows.Forms.Label();
             this.labelCadFunID = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxIdFuncionario = new System.Windows.Forms.TextBox();
             this.labelCadFunTelefone = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.labelCadFunRsenha = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBoxRsenhaFuncionario = new System.Windows.Forms.TextBox();
             this.labelCadFunSenha = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBoxSenhaFuncionario = new System.Windows.Forms.TextBox();
             this.radioButtonCadFunAdm = new System.Windows.Forms.RadioButton();
             this.radioButtonCadFunBalcao = new System.Windows.Forms.RadioButton();
             this.userControlFuncionario = new ProjetoPastelaria.UserControl();
+            this.maskedTextBoxCpfFuncionario = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBoxTelefoneFuncionario = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
-            // textBox2
+            // textBoxNomeFuncionario
             // 
-            this.textBox2.Location = new System.Drawing.Point(155, 87);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(125, 27);
-            this.textBox2.TabIndex = 2;
+            this.textBoxNomeFuncionario.Location = new System.Drawing.Point(53, 159);
+            this.textBoxNomeFuncionario.Name = "textBoxNomeFuncionario";
+            this.textBoxNomeFuncionario.Size = new System.Drawing.Size(381, 27);
+            this.textBoxNomeFuncionario.TabIndex = 4;
             // 
-            // textBox4
+            // textBoxMatriculaFuncionario
             // 
-            this.textBox4.Location = new System.Drawing.Point(53, 159);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(381, 27);
-            this.textBox4.TabIndex = 4;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(309, 87);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(125, 27);
-            this.textBox3.TabIndex = 3;
+            this.textBoxMatriculaFuncionario.Location = new System.Drawing.Point(309, 87);
+            this.textBoxMatriculaFuncionario.Name = "textBoxMatriculaFuncionario";
+            this.textBoxMatriculaFuncionario.Size = new System.Drawing.Size(125, 27);
+            this.textBoxMatriculaFuncionario.TabIndex = 3;
             // 
             // labelCadFunCPF
             // 
@@ -104,12 +97,13 @@
             this.labelCadFunID.TabIndex = 8;
             this.labelCadFunID.Text = "ID";
             // 
-            // textBox1
+            // textBoxIdFuncionario
             // 
-            this.textBox1.Location = new System.Drawing.Point(53, 87);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(75, 27);
-            this.textBox1.TabIndex = 1;
+            this.textBoxIdFuncionario.Location = new System.Drawing.Point(53, 87);
+            this.textBoxIdFuncionario.Name = "textBoxIdFuncionario";
+            this.textBoxIdFuncionario.ReadOnly = true;
+            this.textBoxIdFuncionario.Size = new System.Drawing.Size(75, 27);
+            this.textBoxIdFuncionario.TabIndex = 1;
             // 
             // labelCadFunTelefone
             // 
@@ -120,13 +114,6 @@
             this.labelCadFunTelefone.TabIndex = 10;
             this.labelCadFunTelefone.Text = "Telefone";
             // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(53, 230);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(381, 27);
-            this.textBox5.TabIndex = 5;
-            // 
             // labelCadFunRsenha
             // 
             this.labelCadFunRsenha.AutoSize = true;
@@ -136,12 +123,12 @@
             this.labelCadFunRsenha.TabIndex = 14;
             this.labelCadFunRsenha.Text = "ReSenha";
             // 
-            // textBox7
+            // textBoxRsenhaFuncionario
             // 
-            this.textBox7.Location = new System.Drawing.Point(53, 377);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(381, 27);
-            this.textBox7.TabIndex = 7;
+            this.textBoxRsenhaFuncionario.Location = new System.Drawing.Point(53, 377);
+            this.textBoxRsenhaFuncionario.Name = "textBoxRsenhaFuncionario";
+            this.textBoxRsenhaFuncionario.Size = new System.Drawing.Size(381, 27);
+            this.textBoxRsenhaFuncionario.TabIndex = 7;
             // 
             // labelCadFunSenha
             // 
@@ -152,12 +139,12 @@
             this.labelCadFunSenha.TabIndex = 12;
             this.labelCadFunSenha.Text = "Senha";
             // 
-            // textBox6
+            // textBoxSenhaFuncionario
             // 
-            this.textBox6.Location = new System.Drawing.Point(53, 306);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(381, 27);
-            this.textBox6.TabIndex = 6;
+            this.textBoxSenhaFuncionario.Location = new System.Drawing.Point(53, 306);
+            this.textBoxSenhaFuncionario.Name = "textBoxSenhaFuncionario";
+            this.textBoxSenhaFuncionario.Size = new System.Drawing.Size(381, 27);
+            this.textBoxSenhaFuncionario.TabIndex = 6;
             // 
             // radioButtonCadFunAdm
             // 
@@ -188,28 +175,44 @@
             this.userControlFuncionario.Size = new System.Drawing.Size(649, 81);
             this.userControlFuncionario.TabIndex = 17;
             // 
+            // maskedTextBoxCpfFuncionario
+            // 
+            this.maskedTextBoxCpfFuncionario.Location = new System.Drawing.Point(155, 87);
+            this.maskedTextBoxCpfFuncionario.Mask = "000.0000.000-00";
+            this.maskedTextBoxCpfFuncionario.Name = "maskedTextBoxCpfFuncionario";
+            this.maskedTextBoxCpfFuncionario.Size = new System.Drawing.Size(98, 27);
+            this.maskedTextBoxCpfFuncionario.TabIndex = 18;
+            // 
+            // maskedTextBoxTelefoneFuncionario
+            // 
+            this.maskedTextBoxTelefoneFuncionario.Location = new System.Drawing.Point(53, 230);
+            this.maskedTextBoxTelefoneFuncionario.Mask = "(99) 0 000-0000";
+            this.maskedTextBoxTelefoneFuncionario.Name = "maskedTextBoxTelefoneFuncionario";
+            this.maskedTextBoxTelefoneFuncionario.Size = new System.Drawing.Size(102, 27);
+            this.maskedTextBoxTelefoneFuncionario.TabIndex = 19;
+            // 
             // CadastroFuncionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(488, 536);
+            this.Controls.Add(this.maskedTextBoxTelefoneFuncionario);
+            this.Controls.Add(this.maskedTextBoxCpfFuncionario);
             this.Controls.Add(this.userControlFuncionario);
             this.Controls.Add(this.radioButtonCadFunBalcao);
             this.Controls.Add(this.radioButtonCadFunAdm);
             this.Controls.Add(this.labelCadFunRsenha);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.textBoxRsenhaFuncionario);
             this.Controls.Add(this.labelCadFunSenha);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.textBoxSenhaFuncionario);
             this.Controls.Add(this.labelCadFunTelefone);
-            this.Controls.Add(this.textBox5);
             this.Controls.Add(this.labelCadFunID);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxIdFuncionario);
             this.Controls.Add(this.labelCadFunNome);
             this.Controls.Add(this.labelCadFunMatricula);
             this.Controls.Add(this.labelCadFunCPF);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBoxMatriculaFuncionario);
+            this.Controls.Add(this.textBoxNomeFuncionario);
             this.KeyPreview = true;
             this.Name = "CadastroFuncionario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -222,23 +225,22 @@
         }
 
         #endregion
-
-        private TextBox textBox2;
-        private TextBox textBox4;
-        private TextBox textBox3;
+        private TextBox textBoxNomeFuncionario;
+        private TextBox textBoxMatriculaFuncionario;
         private Label labelCadFunCPF;
         private Label labelCadFunMatricula;
         private Label labelCadFunNome;
         private Label labelCadFunID;
-        private TextBox textBox1;
+        private TextBox textBoxIdFuncionario;
         private Label labelCadFunTelefone;
-        private TextBox textBox5;
         private Label labelCadFunRsenha;
-        private TextBox textBox7;
+        private TextBox textBoxRsenhaFuncionario;
         private Label labelCadFunSenha;
-        private TextBox textBox6;
+        private TextBox textBoxSenhaFuncionario;
         private RadioButton radioButtonCadFunAdm;
         private RadioButton radioButtonCadFunBalcao;
         private UserControl userControlFuncionario;
+        private MaskedTextBox maskedTextBoxCpfFuncionario;
+        private MaskedTextBox maskedTextBoxTelefoneFuncionario;
     }
 }

@@ -24,12 +24,12 @@ namespace ProjetoPastelaria
             labelCadProdNome.Text = Properties.Resources.ResourceManager.GetString("LabelCadProdNome");
             labelCadProgDesc.Text = Properties.Resources.ResourceManager.GetString("LabelCadProdDesc");
             labelCadProValor.Text = Properties.Resources.ResourceManager.GetString("LabelCadProdValor");
-            textBox1.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
-            textBox1.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
-            textBox3.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
-            textBox3.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
-            textBox5.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
-            textBox5.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
+            textBoxNomeProduto.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
+            textBoxNomeProduto.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
+            textBoxDescProduto.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
+            textBoxDescProduto.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
+            textBoxIdProduto.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
+            textBoxIdProduto.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
 
             userControlProduto.buttonSalvar.Click += ButtonSalvar_Click;
             userControlProduto.buttonVoltar.Click += ButtonVoltar_Click;
