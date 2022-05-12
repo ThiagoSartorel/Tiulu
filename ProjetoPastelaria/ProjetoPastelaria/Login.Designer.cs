@@ -28,31 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBoxLoginUser = new System.Windows.Forms.TextBox();
+            this.textBoxLoginPassord = new System.Windows.Forms.TextBox();
             this.labelLoginUser = new System.Windows.Forms.Label();
             this.labelLoginSenha = new System.Windows.Forms.Label();
             this.buttonLoginEntrar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
-            // textBox1
+            // textBoxLoginUser
             // 
-            this.textBox1.Location = new System.Drawing.Point(31, 68);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(128, 27);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.Enter += new System.EventHandler(this.TextBox1_Enter);
-            this.textBox1.Leave += new System.EventHandler(this.TextBox1_Leave);
+            this.textBoxLoginUser.Location = new System.Drawing.Point(31, 68);
+            this.textBoxLoginUser.Name = "textBoxLoginUser";
+            this.textBoxLoginUser.Size = new System.Drawing.Size(128, 27);
+            this.textBoxLoginUser.TabIndex = 0;
+            this.textBoxLoginUser.Enter += new System.EventHandler(this.TextBox1_Enter);
+            this.textBoxLoginUser.Leave += new System.EventHandler(this.TextBox1_Leave);
             // 
-            // textBox2
+            // textBoxLoginPassord
             // 
-            this.textBox2.Location = new System.Drawing.Point(31, 127);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(128, 27);
-            this.textBox2.TabIndex = 1;
-            this.textBox2.Enter += new System.EventHandler(this.TextBox2_Enter);
-            this.textBox2.Leave += new System.EventHandler(this.TextBox2_Leave);
+            this.textBoxLoginPassord.Location = new System.Drawing.Point(31, 127);
+            this.textBoxLoginPassord.Name = "textBoxLoginPassord";
+            this.textBoxLoginPassord.PasswordChar = '*';
+            this.textBoxLoginPassord.Size = new System.Drawing.Size(128, 27);
+            this.textBoxLoginPassord.TabIndex = 1;
+            this.textBoxLoginPassord.Enter += new System.EventHandler(this.TextBox2_Enter);
+            this.textBoxLoginPassord.Leave += new System.EventHandler(this.TextBox2_Leave);
             // 
             // labelLoginUser
             // 
@@ -102,8 +103,8 @@
             this.Controls.Add(this.buttonLoginEntrar);
             this.Controls.Add(this.labelLoginSenha);
             this.Controls.Add(this.labelLoginUser);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxLoginPassord);
+            this.Controls.Add(this.textBoxLoginUser);
             this.Controls.Add(this.panel1);
             this.KeyPreview = true;
             this.Name = "Login";
@@ -117,8 +118,8 @@
 
         #endregion
 
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox textBoxLoginUser;
+        private TextBox textBoxLoginPassord;
         private Label labelLoginUser;
         private Label labelLoginSenha;
         private Button buttonLoginEntrar;

@@ -26,10 +26,10 @@ namespace ProjetoPastelaria
             labelCadCliRSenha.Text = Properties.Resources.ResourceManager.GetString("LabelCadCliRSenha");
             labelCadCliTelefone.Text = Properties.Resources.ResourceManager.GetString("LabelCadCliTelefone");
 
-            textBox3.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
-            textBox3.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
-            textBox5.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
-            textBox5.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
+            textBoxIdCliente.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
+            textBoxIdCliente.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
+            textBoxNomeCliente.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
+            textBoxNomeCliente.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
             textBox7.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
             textBox7.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
             textBox8.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);

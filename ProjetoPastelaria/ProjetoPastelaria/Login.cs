@@ -12,32 +12,39 @@ namespace ProjetoPastelaria
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Menu menu = new();
-            menu.FormClosed += (s, args) => 
-            this.Close();
-            menu.Show();
-            
+
+            if ((textBoxLoginUser.Text != "") && (textBoxLoginPassord.Text != ""))
+            {
+                this.Hide();
+                Menu menu = new();
+                menu.FormClosed += (s, args) =>
+                this.Close();
+                menu.Show();
+            }
+            else
+            {
+                MessageBox.Show("Todos os campos devem ser preenchidos", "Alerta", MessageBoxButtons.OK);
+            }
         }
 
         private void TextBox1_Enter(object sender, EventArgs e)
         {
-            textBox1.BackColor = Color.LightBlue;
+            textBoxLoginUser.BackColor = Color.LightBlue;
         }
 
         private void TextBox1_Leave(object sender, EventArgs e)
         {
-            textBox1.BackColor = Color.White;
+            textBoxLoginUser.BackColor = Color.White;
         }
 
         private void TextBox2_Leave(object sender, EventArgs e)
         {
-            textBox2.BackColor = Color.White; 
+            textBoxLoginPassord.BackColor = Color.White; 
         }
 
         private void TextBox2_Enter(object sender, EventArgs e)
         {
-            textBox2.BackColor = Color.LightBlue;
+            textBoxLoginPassord.BackColor = Color.LightBlue;
         }
 
         private void Login_KeyDown(object sender, KeyEventArgs e)
