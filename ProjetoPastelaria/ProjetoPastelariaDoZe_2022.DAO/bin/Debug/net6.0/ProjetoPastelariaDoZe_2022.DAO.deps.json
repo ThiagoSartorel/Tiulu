@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "ProjetoPastelariaDoZe_2022.DAO/1.0.0": {
+        "runtime": {
+          "ProjetoPastelariaDoZe_2022.DAO.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ProjetoPastelariaDoZe_2022.DAO/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

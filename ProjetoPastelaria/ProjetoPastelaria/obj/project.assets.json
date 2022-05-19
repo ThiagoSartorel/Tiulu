@@ -352,6 +352,16 @@
             "rid": "win"
           }
         }
+      },
+      "ProjetoPastelariaDoZe_2022.DAO/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/ProjetoPastelariaDoZe_2022.DAO.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProjetoPastelariaDoZe_2022.DAO.dll": {}
+        }
       }
     }
   },
@@ -1122,11 +1132,17 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "ProjetoPastelariaDoZe_2022.DAO/1.0.0": {
+      "type": "project",
+      "path": "../ProjetoPastelariaDoZe_2022.DAO/ProjetoPastelariaDoZe_2022.DAO.csproj",
+      "msbuildProject": "../ProjetoPastelariaDoZe_2022.DAO/ProjetoPastelariaDoZe_2022.DAO.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
       "MySql.Data >= 8.0.29",
+      "ProjetoPastelariaDoZe_2022.DAO >= 1.0.0",
       "System.Data.SqlClient >= 4.8.3"
     ]
   },
@@ -1161,7 +1177,11 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Thiago Sartorel\\source\\repos\\ProjetoPastelaria\\ProjetoPastelariaDoZe_2022.DAO\\ProjetoPastelariaDoZe_2022.DAO.csproj": {
+              "projectPath": "C:\\Users\\Thiago Sartorel\\source\\repos\\ProjetoPastelaria\\ProjetoPastelariaDoZe_2022.DAO\\ProjetoPastelariaDoZe_2022.DAO.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

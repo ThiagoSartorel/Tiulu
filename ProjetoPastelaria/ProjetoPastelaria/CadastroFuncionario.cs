@@ -7,14 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ProjetoPastelariaDoZe_2022.DAO;
+using System.Configuration;
 
 namespace ProjetoPastelaria
-{
+{ 
     public partial class CadastroFuncionario : Form
-    {
-        public CadastroFuncionario()
+    { 
+    private readonly FuncionarioDAO dao;
+
+    public CadastroFuncionario()
         {
             InitializeComponent();
+            
             labelCadFunID.Text = Properties.Resources.ResourceManager.GetString("LabelCadFunID");
             labelCadFunCPF.Text = Properties.Resources.ResourceManager.GetString("LabelCadFunCPF");
             labelCadFunMatricula.Text = Properties.Resources.ResourceManager.GetString("LabelCadFunMatricula");
@@ -39,12 +44,38 @@ namespace ProjetoPastelaria
 
             userControlFuncionario.buttonVoltar.Click += ButtonVoltar_Click;
             userControlFuncionario.buttonSalvar.Click += ButtonSalvar_Click;
+            // pega os dados do banco de dados
+            string provider = ConfigurationManager.ConnectionStrings["BD"].ProviderName;
+            string strConnection = ConfigurationManager.ConnectionStrings["BD"].ConnectionString;
+            // cria a instancia da classe da model
 
-        }
+            dao = new FuncionarioDAO(provider, strConnection); // No evento do botão salvar, vamos chamar o método da nossa
+
+}
 
         private void ButtonSalvar_Click(object? sender, EventArgs e)
         {
-            this.Hide();
+            //Instância e Preenche o objeto com os dados da view
+            var funcionario = new Funcionario
+            {
+                IdFuncionario = 0,
+                Nome = textBoxNomeFuncionario.Text,
+                Cpf = maskedTextBoxCpfFuncionario.Text,
+                Telefone = maskedTextBoxTelefoneFuncionario.Text,
+                Senha = textBoxSenhaFuncionario.Text,
+                Matricula = textBoxMatriculaFuncionario.Text,
+                Grupo = (radioButtonCadFunAdm.Checked) ? 1 : 2,
+            };
+            try
+            {
+                // chama o método para inserir da camada model
+                dao.InserirDbProvider(funcionario);
+                MessageBox.Show("Dados inseridos com sucesso!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void ButtonVoltar_Click(object? sender, EventArgs e)

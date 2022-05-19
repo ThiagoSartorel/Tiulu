@@ -1,4 +1,5 @@
 ﻿namespace ProjetoPastelaria
+
 {
     partial class CadastroFuncionario
     {
