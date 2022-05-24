@@ -179,7 +179,7 @@
             // maskedTextBoxCpfFuncionario
             // 
             this.maskedTextBoxCpfFuncionario.Location = new System.Drawing.Point(155, 87);
-            this.maskedTextBoxCpfFuncionario.Mask = "000.0000.000-00";
+            this.maskedTextBoxCpfFuncionario.Mask = "000.000.000-00";
             this.maskedTextBoxCpfFuncionario.Name = "maskedTextBoxCpfFuncionario";
             this.maskedTextBoxCpfFuncionario.Size = new System.Drawing.Size(98, 27);
             this.maskedTextBoxCpfFuncionario.TabIndex = 18;
