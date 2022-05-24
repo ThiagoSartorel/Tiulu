@@ -39,12 +39,12 @@
             this.labelCadCliCPF = new System.Windows.Forms.Label();
             this.textBoxNomeCliente = new System.Windows.Forms.TextBox();
             this.numericUpDownDia = new System.Windows.Forms.NumericUpDown();
-            this.comboBoxFiado = new System.Windows.Forms.ComboBox();
             this.labelCadCliFiado = new System.Windows.Forms.Label();
             this.labelCadCliDias = new System.Windows.Forms.Label();
             this.userControlCliente = new ProjetoPastelaria.UserControl();
             this.maskedTextBoxCpf = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBoxTelefoneCliente = new System.Windows.Forms.MaskedTextBox();
+            this.checkBoxFiado = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDia)).BeginInit();
             this.SuspendLayout();
             // 
@@ -138,14 +138,6 @@
             this.numericUpDownDia.Size = new System.Drawing.Size(150, 27);
             this.numericUpDownDia.TabIndex = 8;
             // 
-            // comboBoxFiado
-            // 
-            this.comboBoxFiado.FormattingEnabled = true;
-            this.comboBoxFiado.Location = new System.Drawing.Point(45, 423);
-            this.comboBoxFiado.Name = "comboBoxFiado";
-            this.comboBoxFiado.Size = new System.Drawing.Size(151, 28);
-            this.comboBoxFiado.TabIndex = 7;
-            // 
             // labelCadCliFiado
             // 
             this.labelCadCliFiado.AutoSize = true;
@@ -187,17 +179,26 @@
             this.maskedTextBoxTelefoneCliente.Size = new System.Drawing.Size(101, 27);
             this.maskedTextBoxTelefoneCliente.TabIndex = 43;
             // 
+            // checkBoxFiado
+            // 
+            this.checkBoxFiado.AutoSize = true;
+            this.checkBoxFiado.Location = new System.Drawing.Point(55, 425);
+            this.checkBoxFiado.Name = "checkBoxFiado";
+            this.checkBoxFiado.Size = new System.Drawing.Size(18, 17);
+            this.checkBoxFiado.TabIndex = 44;
+            this.checkBoxFiado.UseVisualStyleBackColor = true;
+            // 
             // CadastroCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(481, 533);
+            this.Controls.Add(this.checkBoxFiado);
             this.Controls.Add(this.maskedTextBoxTelefoneCliente);
             this.Controls.Add(this.maskedTextBoxCpf);
             this.Controls.Add(this.userControlCliente);
             this.Controls.Add(this.labelCadCliDias);
             this.Controls.Add(this.labelCadCliFiado);
-            this.Controls.Add(this.comboBoxFiado);
             this.Controls.Add(this.numericUpDownDia);
             this.Controls.Add(this.labelCadCliRSenha);
             this.Controls.Add(this.textBoxRsenhaCliente);
@@ -233,11 +234,11 @@
         private Label labelCadCliCPF;
         private TextBox textBoxNomeCliente;
         private NumericUpDown numericUpDownDia;
-        private ComboBox comboBoxFiado;
         private Label labelCadCliFiado;
         private Label labelCadCliDias;
         private UserControl userControlCliente;
         private MaskedTextBox maskedTextBoxCpf;
         private MaskedTextBox maskedTextBoxTelefoneCliente;
+        private CheckBox checkBoxFiado;
     }
 }

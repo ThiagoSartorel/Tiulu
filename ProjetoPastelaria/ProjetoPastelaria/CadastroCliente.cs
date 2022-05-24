@@ -7,12 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ProjetoPastelariaDoZe_2022.DAO;
+using System.Configuration;
 
 namespace ProjetoPastelaria
 {
     public partial class CadastroCliente : Form
     {
         ///private int buttonVoltar_Click;
+        private readonly ClienteDAO dao;
 
         public CadastroCliente()
         {
@@ -34,8 +37,6 @@ namespace ProjetoPastelaria
             textBoxSenhaCliente.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
             textBoxRsenhaCliente.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
             textBoxRsenhaCliente.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
-            comboBoxFiado.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
-            comboBoxFiado.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
             numericUpDownDia.Leave += new EventHandler(ClassFuncoes.CampoEventoLeave!);
             numericUpDownDia.Enter += new EventHandler(ClassFuncoes.CampoEventoEnter!);
 
@@ -43,11 +44,41 @@ namespace ProjetoPastelaria
             userControlCliente.buttonSalvar.Click += ButtonSalvar_Click;
             userControlCliente.buttonVoltar.Click += ButtonVoltar_Click;
 
+            string provider = ConfigurationManager.ConnectionStrings["BD"].ProviderName;
+            string strConnection = ConfigurationManager.ConnectionStrings["BD"].ConnectionString;
+            // cria a instancia da classe da model
+
+            dao = new ClienteDAO(provider, strConnection); // No evento do botão salvar, vamos chamar o método da nossa
+
+
+
         }
 
         private void ButtonSalvar_Click(object? sender, EventArgs e)
         {
-            this.Hide();
+            {
+                //Instância e Preenche o objeto com os dados da view
+                var cliente = new Cliente
+                {
+                    IdCliente = 0,
+                    Nome = textBoxNomeCliente.Text,
+                    Cpf = maskedTextBoxCpf.Text,
+                    Telefone = maskedTextBoxTelefoneCliente.Text,
+                    Dia_fiado = numericUpDownDia.Text,
+                    Compra_fiado = (checkBoxFiado.Checked) ? true : false,
+                    Senha = textBoxSenhaCliente.Text,
+                };
+                try
+                {
+                    // chama o método para inserir da camada model
+                    dao.InserirDbProvider(cliente);
+                    MessageBox.Show("Dados inseridos com sucesso!");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
         }
 
         private void ButtonVoltar_Click(object? sender, EventArgs e)
