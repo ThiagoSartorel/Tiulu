@@ -122,6 +122,7 @@
             this.maskedTextBoxValorProduto.Name = "maskedTextBoxValorProduto";
             this.maskedTextBoxValorProduto.Size = new System.Drawing.Size(125, 27);
             this.maskedTextBoxValorProduto.TabIndex = 37;
+            this.maskedTextBoxValorProduto.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             // 
             // CadastroProduto
             // 

@@ -62,7 +62,7 @@ namespace ProjetoPastelaria
                 Nome = textBoxNomeFuncionario.Text,
                 Cpf = maskedTextBoxCpfFuncionario.Text,
                 Telefone = maskedTextBoxTelefoneFuncionario.Text,
-                Senha = textBoxSenhaFuncionario.Text,
+                Senha = ClassFuncoes.Sha256Hash(textBoxSenhaFuncionario.Text),
                 Matricula = textBoxMatriculaFuncionario.Text,
                 Grupo = (radioButtonCadFunAdm.Checked) ? 1 : 2,
             };
@@ -129,5 +129,6 @@ namespace ProjetoPastelaria
                 }
             }
         }
+
     }
 }

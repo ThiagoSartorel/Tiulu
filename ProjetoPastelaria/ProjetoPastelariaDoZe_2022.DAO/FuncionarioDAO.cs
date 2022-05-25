@@ -1,5 +1,6 @@
 ﻿using System.Data.Common;
 namespace ProjetoPastelariaDoZe_2022.DAO;
+using System.Data;
 public class Funcionario
 {
     public int IdFuncionario { get; set; }
@@ -59,5 +60,23 @@ public class FuncionarioDAO
         //Executa o script na conexão e retorna o número de linhas afetadas.
         var linhas = comando.ExecuteNonQuery();
         //using faz o Close() automático quando fecha o seu escopo
+    }
+    public DataTable SelectDbProvider(Funcionario funcionario)
+    {
+        using var conexao = factory.CreateConnection(); //Cria conexão
+        conexao!.ConnectionString = StringConexao; //Atribui a string de conexão
+        using var comando = factory.CreateCommand(); //Cria comando
+        comando!.Connection = conexao; //Atribui conexão
+                                       //verifica se tem filtro
+                                       //Adiciona parâmetro (@campo e valor)
+        conexao.Open();
+        comando.CommandText = @"SELECT id_funcionario AS ID, nome AS Nome, cpf AS CPF,
+telefone AS Telefone, matricula AS Matricula, grupo AS Grupo FROM tb_funcionario";
+
+        //Executa o script na conexão e retorna as linhas afetadas.
+        var sdr = comando.ExecuteReader();
+        DataTable linhas = new();
+        linhas.Load(sdr);
+        return linhas;
     }
 }

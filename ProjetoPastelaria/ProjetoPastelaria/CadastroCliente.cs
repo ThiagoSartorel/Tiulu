@@ -66,7 +66,7 @@ namespace ProjetoPastelaria
                     Telefone = maskedTextBoxTelefoneCliente.Text,
                     Dia_fiado = numericUpDownDia.Text,
                     Compra_fiado = (checkBoxFiado.Checked) ? true : false,
-                    Senha = textBoxSenhaCliente.Text,
+                    Senha = ClassFuncoes.Sha256Hash(textBoxSenhaCliente.Text)
                 };
                 try
                 {

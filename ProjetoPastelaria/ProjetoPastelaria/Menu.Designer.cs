@@ -50,9 +50,11 @@
             this.configuraçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fecharToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.buttonListarUsuarios = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
+            this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.contextMenuStripPrincipal.SuspendLayout();
@@ -118,7 +120,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(186, 172);
+            this.pictureBox1.Size = new System.Drawing.Size(186, 145);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
@@ -184,6 +186,7 @@
             // 
             this.splitContainer1.Panel1.BackColor = System.Drawing.SystemColors.Control;
             this.splitContainer1.Panel1.ContextMenuStrip = this.contextMenuStripPrincipal;
+            this.splitContainer1.Panel1.Controls.Add(this.buttonListarUsuarios);
             // 
             // splitContainer1.Panel2
             // 
@@ -251,6 +254,17 @@
             this.fecharToolStripMenuItem.Text = "Fechar";
             this.fecharToolStripMenuItem.Click += new System.EventHandler(this.FecharToolStripMenuItem_Click);
             // 
+            // buttonListarUsuarios
+            // 
+            this.buttonListarUsuarios.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonListarUsuarios.Location = new System.Drawing.Point(18, 172);
+            this.buttonListarUsuarios.Name = "buttonListarUsuarios";
+            this.buttonListarUsuarios.Size = new System.Drawing.Size(170, 29);
+            this.buttonListarUsuarios.TabIndex = 9;
+            this.buttonListarUsuarios.Text = "Listar Usuarios";
+            this.buttonListarUsuarios.UseVisualStyleBackColor = false;
+            this.buttonListarUsuarios.Click += new System.EventHandler(this.buttonListarUsuarios_Click);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -273,6 +287,7 @@
             this.Resize += new System.EventHandler(this.Menu_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
+            this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             this.splitContainer1.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
@@ -304,5 +319,6 @@
         private ToolStripMenuItem sairToolStripMenuItem;
         private ToolStripMenuItem abriToolStripMenuItem;
         private ToolStripMenuItem sobreToolStripMenuItem1;
+        private Button buttonListarUsuarios;
     }
 }

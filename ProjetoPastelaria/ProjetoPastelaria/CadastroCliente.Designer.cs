@@ -170,6 +170,7 @@
             this.maskedTextBoxCpf.Name = "maskedTextBoxCpf";
             this.maskedTextBoxCpf.Size = new System.Drawing.Size(97, 27);
             this.maskedTextBoxCpf.TabIndex = 42;
+            this.maskedTextBoxCpf.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             // 
             // maskedTextBoxTelefoneCliente
             // 
@@ -178,6 +179,7 @@
             this.maskedTextBoxTelefoneCliente.Name = "maskedTextBoxTelefoneCliente";
             this.maskedTextBoxTelefoneCliente.Size = new System.Drawing.Size(101, 27);
             this.maskedTextBoxTelefoneCliente.TabIndex = 43;
+            this.maskedTextBoxTelefoneCliente.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             // 
             // checkBoxFiado
             // 

@@ -46,6 +46,8 @@
             this.userControlFuncionario = new ProjetoPastelaria.UserControl();
             this.maskedTextBoxCpfFuncionario = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBoxTelefoneFuncionario = new System.Windows.Forms.MaskedTextBox();
+            this.dataGridViewDados = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDados)).BeginInit();
             this.SuspendLayout();
             // 
             // textBoxNomeFuncionario
@@ -171,7 +173,7 @@
             // 
             // userControlFuncionario
             // 
-            this.userControlFuncionario.Location = new System.Drawing.Point(-18, 469);
+            this.userControlFuncionario.Location = new System.Drawing.Point(-18, 673);
             this.userControlFuncionario.Name = "userControlFuncionario";
             this.userControlFuncionario.Size = new System.Drawing.Size(649, 81);
             this.userControlFuncionario.TabIndex = 17;
@@ -192,11 +194,22 @@
             this.maskedTextBoxTelefoneFuncionario.Size = new System.Drawing.Size(102, 27);
             this.maskedTextBoxTelefoneFuncionario.TabIndex = 19;
             // 
+            // dataGridViewDados
+            // 
+            this.dataGridViewDados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewDados.Location = new System.Drawing.Point(98, 464);
+            this.dataGridViewDados.Name = "dataGridViewDados";
+            this.dataGridViewDados.RowHeadersWidth = 51;
+            this.dataGridViewDados.RowTemplate.Height = 29;
+            this.dataGridViewDados.Size = new System.Drawing.Size(300, 188);
+            this.dataGridViewDados.TabIndex = 20;
+            // 
             // CadastroFuncionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(488, 536);
+            this.ClientSize = new System.Drawing.Size(488, 733);
+            this.Controls.Add(this.dataGridViewDados);
             this.Controls.Add(this.maskedTextBoxTelefoneFuncionario);
             this.Controls.Add(this.maskedTextBoxCpfFuncionario);
             this.Controls.Add(this.userControlFuncionario);
@@ -220,6 +233,7 @@
             this.Text = "CadastroFuncionario";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CadastroFuncionario_FormClosing);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.CadastroFuncionario_KeyDown);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDados)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -243,5 +257,6 @@
         private UserControl userControlFuncionario;
         private MaskedTextBox maskedTextBoxCpfFuncionario;
         private MaskedTextBox maskedTextBoxTelefoneFuncionario;
+        private DataGridView dataGridViewDados;
     }
 }

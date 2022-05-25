@@ -137,5 +137,11 @@ namespace ProjetoPastelaria
             Sobre sobre = new();
             sobre.Show();
         }
+
+        private void buttonListarUsuarios_Click(object sender, EventArgs e)
+        {
+            ListarUsuarios listar = new();
+            listar.Show();
+        }
     }
 }
