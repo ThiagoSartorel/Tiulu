@@ -134,5 +134,7 @@ namespace ProjetoPastelaria
             txt.Text = string.Format("{0:C}", Convert.ToDouble(valor));
             txt.Select(txt.Text.Length, 0);
         }
+
+
     }
 }

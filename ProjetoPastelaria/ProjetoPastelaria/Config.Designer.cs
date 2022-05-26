@@ -37,6 +37,13 @@
             this.userControl1 = new ProjetoPastelaria.UserControl();
             this.buttonConfigSalvar = new System.Windows.Forms.Button();
             this.checkBoxAlteraIdioma = new System.Windows.Forms.CheckBox();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.comboBoxProvider = new System.Windows.Forms.ComboBox();
+            this.textBoxStringDeConexao = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelConfigJuros
@@ -74,7 +81,7 @@
             // labelConfigLinguagem
             // 
             this.labelConfigLinguagem.AutoSize = true;
-            this.labelConfigLinguagem.Location = new System.Drawing.Point(27, 128);
+            this.labelConfigLinguagem.Location = new System.Drawing.Point(27, 99);
             this.labelConfigLinguagem.Name = "labelConfigLinguagem";
             this.labelConfigLinguagem.Size = new System.Drawing.Size(37, 20);
             this.labelConfigLinguagem.TabIndex = 41;
@@ -87,43 +94,103 @@
             "pt-BR",
             "en-US",
             "es"});
-            this.comboBoxLinguagem.Location = new System.Drawing.Point(27, 151);
+            this.comboBoxLinguagem.Location = new System.Drawing.Point(27, 122);
             this.comboBoxLinguagem.Name = "comboBoxLinguagem";
             this.comboBoxLinguagem.Size = new System.Drawing.Size(151, 28);
             this.comboBoxLinguagem.TabIndex = 3;
             // 
             // userControl1
             // 
-            this.userControl1.Location = new System.Drawing.Point(-2, 245);
+            this.userControl1.Location = new System.Drawing.Point(-2, 300);
             this.userControl1.Name = "userControl1";
             this.userControl1.Size = new System.Drawing.Size(221, 65);
             this.userControl1.TabIndex = 42;
             // 
             // buttonConfigSalvar
             // 
-            this.buttonConfigSalvar.Location = new System.Drawing.Point(400, 269);
+            this.buttonConfigSalvar.Location = new System.Drawing.Point(286, 190);
             this.buttonConfigSalvar.Name = "buttonConfigSalvar";
-            this.buttonConfigSalvar.Size = new System.Drawing.Size(94, 29);
+            this.buttonConfigSalvar.Size = new System.Drawing.Size(183, 29);
             this.buttonConfigSalvar.TabIndex = 43;
-            this.buttonConfigSalvar.Text = "Salvar";
+            this.buttonConfigSalvar.Text = "Alterar Idioma";
             this.buttonConfigSalvar.UseVisualStyleBackColor = true;
             this.buttonConfigSalvar.Click += new System.EventHandler(this.Button1_Click_1);
             // 
             // checkBoxAlteraIdioma
             // 
             this.checkBoxAlteraIdioma.AutoSize = true;
-            this.checkBoxAlteraIdioma.Location = new System.Drawing.Point(224, 157);
+            this.checkBoxAlteraIdioma.Location = new System.Drawing.Point(224, 128);
             this.checkBoxAlteraIdioma.Name = "checkBoxAlteraIdioma";
             this.checkBoxAlteraIdioma.Size = new System.Drawing.Size(156, 24);
             this.checkBoxAlteraIdioma.TabIndex = 4;
             this.checkBoxAlteraIdioma.Text = "Alterar ja o idioma";
             this.checkBoxAlteraIdioma.UseVisualStyleBackColor = true;
             // 
+            // comboBoxProvider
+            // 
+            this.comboBoxProvider.FormattingEnabled = true;
+            this.comboBoxProvider.Location = new System.Drawing.Point(27, 191);
+            this.comboBoxProvider.Name = "comboBoxProvider";
+            this.comboBoxProvider.Size = new System.Drawing.Size(204, 28);
+            this.comboBoxProvider.TabIndex = 44;
+            // 
+            // textBoxStringDeConexao
+            // 
+            this.textBoxStringDeConexao.Location = new System.Drawing.Point(27, 257);
+            this.textBoxStringDeConexao.Multiline = true;
+            this.textBoxStringDeConexao.Name = "textBoxStringDeConexao";
+            this.textBoxStringDeConexao.Size = new System.Drawing.Size(467, 51);
+            this.textBoxStringDeConexao.TabIndex = 45;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(27, 168);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(116, 20);
+            this.label1.TabIndex = 46;
+            this.label1.Text = "Banco de dados";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(27, 234);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(83, 20);
+            this.label2.TabIndex = 47;
+            this.label2.Text = "Parametros";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(204, 320);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(290, 29);
+            this.button1.TabIndex = 48;
+            this.button1.Text = "Salvar configuração banco de dados";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(129, 320);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(63, 29);
+            this.button2.TabIndex = 49;
+            this.button2.Text = "Sair";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Config
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(520, 322);
+            this.ClientSize = new System.Drawing.Size(522, 363);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textBoxStringDeConexao);
+            this.Controls.Add(this.comboBoxProvider);
             this.Controls.Add(this.checkBoxAlteraIdioma);
             this.Controls.Add(this.buttonConfigSalvar);
             this.Controls.Add(this.userControl1);
@@ -154,5 +221,12 @@
         private UserControl userControl1;
         private Button buttonConfigSalvar;
         private CheckBox checkBoxAlteraIdioma;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private ComboBox comboBoxProvider;
+        private TextBox textBoxStringDeConexao;
+        private Label label1;
+        private Label label2;
+        private Button button1;
+        private Button button2;
     }
 }
