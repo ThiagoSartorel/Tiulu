@@ -54,7 +54,7 @@
             this.buttonListaFuncionario.TabIndex = 1;
             this.buttonListaFuncionario.Text = "Funcionario";
             this.buttonListaFuncionario.UseVisualStyleBackColor = true;
-            this.buttonListaFuncionario.Click += new System.EventHandler(this.buttonListaFuncionario_Click);
+            this.buttonListaFuncionario.Click += new System.EventHandler(this.ButtonListaFuncionario_Click);
             // 
             // buttonListaCliente
             // 
@@ -64,7 +64,7 @@
             this.buttonListaCliente.TabIndex = 2;
             this.buttonListaCliente.Text = "Cliente";
             this.buttonListaCliente.UseVisualStyleBackColor = true;
-            this.buttonListaCliente.Click += new System.EventHandler(this.buttonListaCliente_Click);
+            this.buttonListaCliente.Click += new System.EventHandler(this.ButtonListaCliente_Click);
             // 
             // buttonListaProdutos
             // 
@@ -74,6 +74,7 @@
             this.buttonListaProdutos.TabIndex = 3;
             this.buttonListaProdutos.Text = "Produtos";
             this.buttonListaProdutos.UseVisualStyleBackColor = true;
+            this.buttonListaProdutos.Click += new System.EventHandler(this.ButtonListaProdutos_Click);
             // 
             // buttonListaUsuariosSair
             // 
@@ -83,7 +84,7 @@
             this.buttonListaUsuariosSair.TabIndex = 4;
             this.buttonListaUsuariosSair.Text = "Sair";
             this.buttonListaUsuariosSair.UseVisualStyleBackColor = true;
-            this.buttonListaUsuariosSair.Click += new System.EventHandler(this.buttonListaUsuariosSair_Click);
+            this.buttonListaUsuariosSair.Click += new System.EventHandler(this.ButtonListaUsuariosSair_Click);
             // 
             // ListarUsuarios
             // 

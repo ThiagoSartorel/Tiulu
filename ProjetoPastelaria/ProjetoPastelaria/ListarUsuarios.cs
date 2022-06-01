@@ -18,6 +18,8 @@ namespace ProjetoPastelaria
         private readonly FuncionarioDAO dao_fun;
 
         private readonly ClienteDAO dao_Usuario;
+
+        private readonly ProdutoDAO dao_Produto;
         public ListarUsuarios()
         {
             InitializeComponent();
@@ -25,6 +27,7 @@ namespace ProjetoPastelaria
             string strConnection = ConfigurationManager.ConnectionStrings["BD"].ConnectionString;
             dao_fun = new FuncionarioDAO(provider, strConnection); // No evento do botão salvar, vamos chamar o método da nossa
             dao_Usuario = new ClienteDAO(provider, strConnection);
+            dao_Produto = new ProdutoDAO(provider, strConnection);
         }
 
         private void buttonListaFuncionario_Click(object sender, EventArgs e)
@@ -79,6 +82,29 @@ namespace ProjetoPastelaria
         private void buttonListaUsuariosSair_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void buttonListaProdutos_Click(object sender, EventArgs e)
+        {
+            //Instância e Preenche o objeto com os dados da view
+            var produto = new Produto
+            {
+                IdProduto = 0,
+            };
+            try
+            {
+                //chama o método para buscar todos os dados da nossa camada model
+                DataTable linhas = dao_Produto.SelectDbProvider(produto);
+                // seta o datasouce do dataGridView com os dados retornados
+                dataGridViewDados.Columns.Clear();
+                dataGridViewDados.AutoGenerateColumns = true;
+                dataGridViewDados.DataSource = linhas;
+                dataGridViewDados.Refresh();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
