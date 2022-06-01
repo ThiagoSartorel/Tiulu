@@ -30,7 +30,7 @@ namespace ProjetoPastelaria
             dao_Produto = new ProdutoDAO(provider, strConnection);
         }
 
-        private void buttonListaFuncionario_Click(object sender, EventArgs e)
+        private void ButtonListaFuncionario_Click(object sender, EventArgs e)
         {
 
             //Instância e Preenche o objeto com os dados da view
@@ -55,7 +55,7 @@ namespace ProjetoPastelaria
             
         }
 
-        private void buttonListaCliente_Click(object sender, EventArgs e)
+        private void ButtonListaCliente_Click(object sender, EventArgs e)
         {
 
             //Instância e Preenche o objeto com os dados da view
@@ -79,12 +79,12 @@ namespace ProjetoPastelaria
             }
         }
 
-        private void buttonListaUsuariosSair_Click(object sender, EventArgs e)
+        private void ButtonListaUsuariosSair_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void buttonListaProdutos_Click(object sender, EventArgs e)
+        private void ButtonListaProdutos_Click(object sender, EventArgs e)
         {
             //Instância e Preenche o objeto com os dados da view
             var produto = new Produto
