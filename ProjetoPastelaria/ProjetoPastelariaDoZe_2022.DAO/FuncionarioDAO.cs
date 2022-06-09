@@ -69,14 +69,71 @@ public class FuncionarioDAO
         comando!.Connection = conexao; //Atribui conexão
                                        //verifica se tem filtro
                                        //Adiciona parâmetro (@campo e valor)
+
+        string auxSqlFiltro = " ";
+        if (funcionario.IdFuncionario > 0)
+        {
+            auxSqlFiltro = " WHERE id_funcionario = " + funcionario.IdFuncionario + " ";
+        }
+
         conexao.Open();
         comando.CommandText = @"SELECT id_funcionario AS ID, nome AS Nome, cpf AS CPF,
-telefone AS Telefone, matricula AS Matricula, grupo AS Grupo FROM tb_funcionario";
+telefone AS Telefone, matricula AS Matricula, grupo AS Grupo, senha AS Senha FROM tb_funcionario" +
+         auxSqlFiltro + "ORDER BY nome;"; 
 
         //Executa o script na conexão e retorna as linhas afetadas.
         var sdr = comando.ExecuteReader();
         DataTable linhas = new();
         linhas.Load(sdr);
         return linhas;
+    }
+
+    public void EditarDbProvider(Funcionario funcionario)
+    {
+        using var conexao = factory.CreateConnection(); //Cria conexão
+        conexao!.ConnectionString = StringConexao; //Atribui a string de conexão
+        using var comando = factory.CreateCommand(); //Cria comando
+        comando!.Connection = conexao; //Atribui conexão
+                                       //Adiciona parâmetros (@campo e valor)
+        var idFuncionario = comando.CreateParameter(); idFuncionario.ParameterName = "@idFuncionario";
+        idFuncionario.Value = funcionario.IdFuncionario; comando.Parameters.Add(idFuncionario);
+        var nome = comando.CreateParameter(); nome.ParameterName = "@nome";
+        nome.Value = funcionario.Nome; comando.Parameters.Add(nome);
+        var cpf = comando.CreateParameter(); cpf.ParameterName = "@cpf";
+        cpf.Value = funcionario.Cpf; comando.Parameters.Add(cpf);
+        var telefone = comando.CreateParameter(); telefone.ParameterName = "@telefone";
+        telefone.Value = funcionario.Telefone; comando.Parameters.Add(telefone);
+        var senha = comando.CreateParameter(); senha.ParameterName = "@senha";
+        senha.Value = funcionario.Senha; comando.Parameters.Add(senha);
+        var maticula = comando.CreateParameter(); maticula.ParameterName = "@matricula";
+        maticula.Value = funcionario.Matricula; comando.Parameters.Add(maticula);
+        var grupo = comando.CreateParameter(); grupo.ParameterName = "@grupo";
+        grupo.Value = funcionario.Grupo; comando.Parameters.Add(grupo);
+
+        conexao.Open();
+        comando.CommandText = @"UPDATE tb_funcionario " +
+            "SET nome = @nome, cpf = @cpf, telefone = @telefone, senha = @senha, matricula = @matricula, grupo = @grupo " +
+            "WHERE id_funcionario = @idFuncionario;";
+        //Executa o script na conexão e retorna as linhas afetadas.
+        var linhas = comando.ExecuteNonQuery();
+
+    }
+    public void ExcluirDbProvider(Funcionario funcionario)
+    {
+        using var conexao = factory.CreateConnection(); //Cria conexão
+        conexao!.ConnectionString = StringConexao; //Atribui a string de conexão
+        using var comando = factory.CreateCommand(); //Cria comando
+        comando!.Connection = conexao; //Atribui conexão
+                                       //Adiciona parâmetros (@campo e valor)
+        var idFuncionario = comando.CreateParameter();
+        idFuncionario.ParameterName = "@idFuncionario";
+        idFuncionario.Value = funcionario.IdFuncionario;
+        comando.Parameters.Add(idFuncionario);
+        conexao.Open();
+        comando.CommandText = @"" +
+        "DELETE FROM tb_funcionario " +
+        "WHERE id_funcionario = @idFuncionario;";
+        //Executa o script na conexão e retorna as linhas afetadas.
+        var linhas = comando.ExecuteNonQuery();
     }
 }

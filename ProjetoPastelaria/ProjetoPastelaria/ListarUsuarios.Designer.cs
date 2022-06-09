@@ -38,13 +38,19 @@
             // 
             // dataGridViewDados
             // 
+            this.dataGridViewDados.AllowUserToAddRows = false;
             this.dataGridViewDados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewDados.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dataGridViewDados.Location = new System.Drawing.Point(12, 59);
+            this.dataGridViewDados.MultiSelect = false;
             this.dataGridViewDados.Name = "dataGridViewDados";
             this.dataGridViewDados.RowHeadersWidth = 51;
             this.dataGridViewDados.RowTemplate.Height = 29;
+            this.dataGridViewDados.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewDados.Size = new System.Drawing.Size(776, 379);
             this.dataGridViewDados.TabIndex = 0;
+            this.dataGridViewDados.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewDados_CellContentDoubleClick);
+            this.dataGridViewDados.DoubleClick += new System.EventHandler(this.dataGridViewDados_DoubleClick);
             // 
             // buttonListaFuncionario
             // 

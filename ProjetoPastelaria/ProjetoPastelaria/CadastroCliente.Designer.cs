@@ -45,7 +45,11 @@
             this.maskedTextBoxCpf = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBoxTelefoneCliente = new System.Windows.Forms.MaskedTextBox();
             this.checkBoxFiado = new System.Windows.Forms.CheckBox();
+            this.dataGridViewDados = new System.Windows.Forms.DataGridView();
+            this.buttonExcluir = new System.Windows.Forms.Button();
+            this.buttonEditar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDia)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDados)).BeginInit();
             this.SuspendLayout();
             // 
             // labelCadCliRSenha
@@ -61,6 +65,7 @@
             // 
             this.textBoxRsenhaCliente.Location = new System.Drawing.Point(45, 351);
             this.textBoxRsenhaCliente.Name = "textBoxRsenhaCliente";
+            this.textBoxRsenhaCliente.PasswordChar = '*';
             this.textBoxRsenhaCliente.Size = new System.Drawing.Size(381, 27);
             this.textBoxRsenhaCliente.TabIndex = 6;
             // 
@@ -77,6 +82,7 @@
             // 
             this.textBoxSenhaCliente.Location = new System.Drawing.Point(45, 280);
             this.textBoxSenhaCliente.Name = "textBoxSenhaCliente";
+            this.textBoxSenhaCliente.PasswordChar = '*';
             this.textBoxSenhaCliente.Size = new System.Drawing.Size(381, 27);
             this.textBoxSenhaCliente.TabIndex = 5;
             // 
@@ -105,6 +111,7 @@
             this.textBoxIdCliente.ReadOnly = true;
             this.textBoxIdCliente.Size = new System.Drawing.Size(75, 27);
             this.textBoxIdCliente.TabIndex = 1;
+            this.textBoxIdCliente.TabStop = false;
             // 
             // labelCadCliNome
             // 
@@ -190,11 +197,50 @@
             this.checkBoxFiado.TabIndex = 44;
             this.checkBoxFiado.UseVisualStyleBackColor = true;
             // 
+            // dataGridViewDados
+            // 
+            this.dataGridViewDados.AllowUserToAddRows = false;
+            this.dataGridViewDados.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dataGridViewDados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewDados.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.dataGridViewDados.Location = new System.Drawing.Point(499, 30);
+            this.dataGridViewDados.MultiSelect = false;
+            this.dataGridViewDados.Name = "dataGridViewDados";
+            this.dataGridViewDados.RowHeadersWidth = 51;
+            this.dataGridViewDados.RowTemplate.Height = 29;
+            this.dataGridViewDados.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridViewDados.Size = new System.Drawing.Size(457, 491);
+            this.dataGridViewDados.TabIndex = 45;
+            this.dataGridViewDados.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewDados_CellContentDoubleClick);
+            // 
+            // buttonExcluir
+            // 
+            this.buttonExcluir.Location = new System.Drawing.Point(127, 490);
+            this.buttonExcluir.Name = "buttonExcluir";
+            this.buttonExcluir.Size = new System.Drawing.Size(94, 29);
+            this.buttonExcluir.TabIndex = 47;
+            this.buttonExcluir.Text = "Excluir";
+            this.buttonExcluir.UseVisualStyleBackColor = true;
+            this.buttonExcluir.Click += new System.EventHandler(this.buttonExcluir_Click);
+            // 
+            // buttonEditar
+            // 
+            this.buttonEditar.Location = new System.Drawing.Point(259, 490);
+            this.buttonEditar.Name = "buttonEditar";
+            this.buttonEditar.Size = new System.Drawing.Size(94, 29);
+            this.buttonEditar.TabIndex = 46;
+            this.buttonEditar.Text = "Editar";
+            this.buttonEditar.UseVisualStyleBackColor = true;
+            this.buttonEditar.Click += new System.EventHandler(this.buttonEditar_Click);
+            // 
             // CadastroCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(481, 533);
+            this.ClientSize = new System.Drawing.Size(965, 533);
+            this.Controls.Add(this.buttonExcluir);
+            this.Controls.Add(this.buttonEditar);
+            this.Controls.Add(this.dataGridViewDados);
             this.Controls.Add(this.checkBoxFiado);
             this.Controls.Add(this.maskedTextBoxTelefoneCliente);
             this.Controls.Add(this.maskedTextBoxCpf);
@@ -219,6 +265,7 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CadastroCliente_FormClosing);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.CadastroCliente_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDia)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDados)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -242,5 +289,8 @@
         private MaskedTextBox maskedTextBoxCpf;
         private MaskedTextBox maskedTextBoxTelefoneCliente;
         private CheckBox checkBoxFiado;
+        private DataGridView dataGridViewDados;
+        private Button buttonExcluir;
+        private Button buttonEditar;
     }
 }

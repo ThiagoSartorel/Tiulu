@@ -51,7 +51,7 @@ namespace ProjetoPastelaria
             dao = new ClienteDAO(provider, strConnection); // No evento do botão salvar, vamos chamar o método da nossa
 
 
-
+            AtualizaTela();
         }
 
         private void ButtonSalvar_Click(object? sender, EventArgs e)
@@ -126,5 +126,131 @@ namespace ProjetoPastelaria
             }
         }
 
+        public void LimpaTela()
+        {
+            textBoxIdCliente.Text = "";
+            textBoxNomeCliente.Text = "";
+            textBoxRsenhaCliente.Text = "";
+            textBoxSenhaCliente.Text = "";
+            numericUpDownDia.Text = "";
+            checkBoxFiado.Checked = false;
+            maskedTextBoxCpf.Text = "";
+            maskedTextBoxTelefoneCliente.Text = "";
+        }
+        public void AtualizaTela()
+        {
+            //Instância e Preenche o objeto com os dados da view
+            var cliente = new Cliente
+            {
+                IdCliente = 0,
+            };
+            try
+            {
+                //chama o método para buscar todos os dados da nossa camada model
+                DataTable linhas = dao.SelectDbProvider(cliente);
+                // seta o datasouce do dataGridView com os dados retornados
+                dataGridViewDados.Columns.Clear();
+                dataGridViewDados.AutoGenerateColumns = true;
+                dataGridViewDados.DataSource = linhas;
+                dataGridViewDados.Refresh();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        public void AtualizaTelaEditar(int id)
+        {
+            //Instância e Preenche o objeto com os dados da view
+            var cliente = new Cliente
+            {
+                IdCliente = id,
+            };
+            try
+            {
+                // chama o método para buscar todos os dados da nossa camada model
+                DataTable linhas = dao.SelectDbProvider(cliente);
+                // seta os dados na tela
+                foreach (DataRow row in linhas.Rows)
+                {
+                    textBoxIdCliente.Text = row[0].ToString();
+                    textBoxNomeCliente.Text = row[1].ToString();
+                    maskedTextBoxCpf.Text = row[2].ToString();
+                    maskedTextBoxTelefoneCliente.Text = row[3].ToString();
+                    if (row[4].ToString() == "1")
+                    {
+                        checkBoxFiado.Checked = true;
+                    }
+
+                    numericUpDownDia.Text = row[5].ToString();
+
+
+
+                }
+                textBoxNomeCliente.Focus();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        private void buttonEditar_Click(object sender, EventArgs e)
+        {
+            //Instância e Preenche o objeto com os dados da view
+            var cliente = new Cliente
+            {
+                IdCliente = int.Parse(textBoxIdCliente.Text),
+                Nome = textBoxNomeCliente.Text,
+                Cpf = maskedTextBoxCpf.Text,
+                Telefone = maskedTextBoxTelefoneCliente.Text,
+                Senha = ClassFuncoes.Sha256Hash(textBoxSenhaCliente.Text),
+                Dia_fiado = numericUpDownDia.Text,
+                Compra_fiado = checkBoxFiado.Checked,
+            };
+            try
+            {
+                // chama o método para inserir da nossa camada model
+                dao.EditarDbProvider(cliente);
+                AtualizaTela();
+                LimpaTela();
+                MessageBox.Show("Dados editados com sucesso!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void buttonExcluir_Click(object sender, EventArgs e)
+        {
+            //Instância e Preenche o objeto com os dados da view
+            var cliente = new Cliente
+            {
+                IdCliente = int.Parse(textBoxIdCliente.Text),
+            };
+            try
+            {
+                // chama o método para inserir da nossa camada model
+                dao.ExcluirDbProvider(cliente);
+                AtualizaTela();
+                LimpaTela();
+                MessageBox.Show("Dados excluidos com sucesso!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void dataGridViewDados_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dataGridViewDados.SelectedCells.Count > 0)
+            {
+                //pega a primeira coluna, que esta com o ID, da linha selecionada
+                DataGridViewRow selectedRow = dataGridViewDados.Rows[dataGridViewDados.SelectedCells[0].RowIndex];
+                int id = Convert.ToInt32(selectedRow.Cells[0].Value);
+                AtualizaTelaEditar(id);
+            }
+        }
     }
 }

@@ -106,5 +106,15 @@ namespace ProjetoPastelaria
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void dataGridViewDados_DoubleClick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridViewDados_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

@@ -39,7 +39,11 @@
             this.maskedTextBoxValor = new System.Windows.Forms.MaskedTextBox();
             this.openFileDialogImagem = new System.Windows.Forms.OpenFileDialog();
             this.pictureBoxImagem = new System.Windows.Forms.PictureBox();
+            this.dataGridViewDados = new System.Windows.Forms.DataGridView();
+            this.buttonEditar = new System.Windows.Forms.Button();
+            this.buttonExcluir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxImagem)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDados)).BeginInit();
             this.SuspendLayout();
             // 
             // label4
@@ -58,6 +62,7 @@
             this.textBoxIdProduto.ReadOnly = true;
             this.textBoxIdProduto.Size = new System.Drawing.Size(75, 27);
             this.textBoxIdProduto.TabIndex = 1;
+            this.textBoxIdProduto.TabStop = false;
             // 
             // labelCadProdNome
             // 
@@ -131,11 +136,50 @@
             this.pictureBoxImagem.TabStop = false;
             this.pictureBoxImagem.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // dataGridViewDados
+            // 
+            this.dataGridViewDados.AllowUserToAddRows = false;
+            this.dataGridViewDados.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dataGridViewDados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewDados.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.dataGridViewDados.Location = new System.Drawing.Point(552, 12);
+            this.dataGridViewDados.MultiSelect = false;
+            this.dataGridViewDados.Name = "dataGridViewDados";
+            this.dataGridViewDados.RowHeadersWidth = 51;
+            this.dataGridViewDados.RowTemplate.Height = 29;
+            this.dataGridViewDados.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridViewDados.Size = new System.Drawing.Size(426, 458);
+            this.dataGridViewDados.TabIndex = 39;
+            this.dataGridViewDados.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewDados_CellContentDoubleClick);
+            // 
+            // buttonEditar
+            // 
+            this.buttonEditar.Location = new System.Drawing.Point(266, 426);
+            this.buttonEditar.Name = "buttonEditar";
+            this.buttonEditar.Size = new System.Drawing.Size(94, 29);
+            this.buttonEditar.TabIndex = 40;
+            this.buttonEditar.Text = "Editar";
+            this.buttonEditar.UseVisualStyleBackColor = true;
+            this.buttonEditar.Click += new System.EventHandler(this.buttonEditar_Click);
+            // 
+            // buttonExcluir
+            // 
+            this.buttonExcluir.Location = new System.Drawing.Point(138, 426);
+            this.buttonExcluir.Name = "buttonExcluir";
+            this.buttonExcluir.Size = new System.Drawing.Size(94, 29);
+            this.buttonExcluir.TabIndex = 41;
+            this.buttonExcluir.Text = "Excluir";
+            this.buttonExcluir.UseVisualStyleBackColor = true;
+            this.buttonExcluir.Click += new System.EventHandler(this.buttonExcluir_Click);
+            // 
             // CadastroProduto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(531, 482);
+            this.ClientSize = new System.Drawing.Size(990, 482);
+            this.Controls.Add(this.buttonExcluir);
+            this.Controls.Add(this.buttonEditar);
+            this.Controls.Add(this.dataGridViewDados);
             this.Controls.Add(this.pictureBoxImagem);
             this.Controls.Add(this.maskedTextBoxValor);
             this.Controls.Add(this.userControlProduto);
@@ -153,6 +197,7 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CadastroProduto_FormClosing);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.CadastroProduto_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxImagem)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDados)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -171,5 +216,8 @@
         private MaskedTextBox maskedTextBoxValor;
         private OpenFileDialog openFileDialogImagem;
         private PictureBox pictureBoxImagem;
+        private DataGridView dataGridViewDados;
+        private Button buttonEditar;
+        private Button buttonExcluir;
     }
 }

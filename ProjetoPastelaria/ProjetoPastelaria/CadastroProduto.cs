@@ -41,6 +41,7 @@ namespace ProjetoPastelaria
             // cria a instancia da classe da model
 
             dao = new ProdutoDAO(provider, strConnection); // No evento do botão salvar, vamos chamar o método da nossa
+            AtualizaTela();
         }
 
         private void ButtonVoltar_Click(object? sender, EventArgs e)
@@ -63,6 +64,7 @@ namespace ProjetoPastelaria
             {
                 // chama o método para inserir da camada model
                 dao.InserirDbProvider(produto);
+                AtualizaTela();
                 MessageBox.Show("Dados inseridos com sucesso!");
             }
             catch (Exception ex)
@@ -139,6 +141,121 @@ namespace ProjetoPastelaria
                 pictureBoxImagem.SizeMode = PictureBoxSizeMode.StretchImage;
             }
 
+        }
+
+        public void LimpaTela()
+        {
+            textBoxDescriacaoProduto.Text = "";
+            textBoxIdProduto.Text = "";
+            textBoxNomeProduto.Text = "";
+            maskedTextBoxValor.Text = "";
+            pictureBoxImagem.Image = null;
+        }
+        public void AtualizaTela()
+        {
+            //Instância e Preenche o objeto com os dados da view
+            var produto = new Produto
+            {
+                IdProduto = 0,
+            };
+            try
+            {
+                //chama o método para buscar todos os dados da nossa camada model
+                DataTable linhas = dao.SelectDbProvider(produto);
+                // seta o datasouce do dataGridView com os dados retornados
+                dataGridViewDados.Columns.Clear();
+                dataGridViewDados.AutoGenerateColumns = true;
+                dataGridViewDados.DataSource = linhas;
+                dataGridViewDados.Refresh();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        public void AtualizaTelaEditar(int id)
+        {
+            //Instância e Preenche o objeto com os dados da view
+            var produto = new Produto
+            {
+                IdProduto = id,
+            };
+            try
+            {
+                // chama o método para buscar todos os dados da nossa camada model
+                DataTable linhas = dao.SelectDbProvider(produto);
+                // seta os dados na tela
+                foreach (DataRow row in linhas.Rows)
+                {
+                    textBoxIdProduto.Text = row[0].ToString();
+                    textBoxNomeProduto.Text = row[1].ToString();
+                    maskedTextBoxValor.Text = row[2].ToString();
+                    textBoxDescriacaoProduto.Text = row[3].ToString();
+                    pictureBoxImagem.Image = ClassFuncoes.ConverteByteArrayParaImagem((byte[])row[4]);
+                }
+                textBoxNomeProduto.Focus();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void dataGridViewDados_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dataGridViewDados.SelectedCells.Count > 0)
+            {
+                //pega a primeira coluna, que esta com o ID, da linha selecionada
+                DataGridViewRow selectedRow = dataGridViewDados.Rows[dataGridViewDados.SelectedCells[0].RowIndex];
+                int id = Convert.ToInt32(selectedRow.Cells[0].Value);
+                AtualizaTelaEditar(id);
+            }
+        }
+
+        private void buttonEditar_Click(object sender, EventArgs e)
+        {
+            //Instância e Preenche o objeto com os dados da view
+            var produto = new Produto
+            {
+                IdProduto = int.Parse(textBoxIdProduto.Text),
+                Nome = textBoxNomeProduto.Text,
+                Descricao = textBoxDescriacaoProduto.Text,
+                ValorUnitario = double.Parse(maskedTextBoxValor.Text),
+                Foto = ClassFuncoes.ConverteImagemParaByteArray(pictureBoxImagem.Image),
+            };
+            try
+            {
+                // chama o método para inserir da nossa camada model
+                dao.EditarDbProvider(produto);
+                AtualizaTela();
+                LimpaTela();
+                MessageBox.Show("Dados editados com sucesso!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void buttonExcluir_Click(object sender, EventArgs e)
+        {
+            //Instância e Preenche o objeto com os dados da view
+            var produto = new Produto
+            {
+                IdProduto = int.Parse(textBoxIdProduto.Text),
+            };
+            try
+            {
+                // chama o método para inserir da nossa camada model
+                dao.ExcluirDbProvider(produto);
+                AtualizaTela();
+                LimpaTela();
+                MessageBox.Show("Dados excluidos com sucesso!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
