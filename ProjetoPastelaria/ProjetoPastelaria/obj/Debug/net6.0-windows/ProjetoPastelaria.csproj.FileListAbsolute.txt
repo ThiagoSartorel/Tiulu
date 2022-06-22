@@ -50,3 +50,4 @@ C:\Users\Thiago Sartorel\source\repos\ProjetoPastelaria\ProjetoPastelaria\bin\De
 C:\Users\Thiago Sartorel\source\repos\ProjetoPastelaria\ProjetoPastelaria\bin\Debug\net6.0-windows\ProjetoPastelariaDoZe_2022.DAO.pdb
 C:\Users\Thiago Sartorel\source\repos\ProjetoPastelaria\ProjetoPastelaria\obj\Debug\net6.0-windows\ProjetoPastelaria.csproj.CopyComplete
 C:\Users\Thiago Sartorel\source\repos\ProjetoPastelaria\ProjetoPastelaria\obj\Debug\net6.0-windows\ProjetoPastelaria.ListarUsuarios.resources
+C:\Users\Thiago Sartorel\source\repos\ProjetoPastelaria\ProjetoPastelaria\obj\Debug\net6.0-windows\ProjetoPastelaria.Comandas.resources

@@ -169,6 +169,7 @@
             this.userControlCliente.Name = "userControlCliente";
             this.userControlCliente.Size = new System.Drawing.Size(649, 81);
             this.userControlCliente.TabIndex = 41;
+            this.userControlCliente.Load += new System.EventHandler(this.userControlCliente_Load);
             // 
             // maskedTextBoxCpf
             // 
@@ -211,6 +212,7 @@
             this.dataGridViewDados.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewDados.Size = new System.Drawing.Size(457, 491);
             this.dataGridViewDados.TabIndex = 45;
+            this.dataGridViewDados.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewDados_CellContentClick);
             this.dataGridViewDados.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewDados_CellContentDoubleClick);
             // 
             // buttonExcluir

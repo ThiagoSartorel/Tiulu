@@ -143,5 +143,11 @@ namespace ProjetoPastelaria
             ListarUsuarios listar = new();
             listar.Show();
         }
+
+        private void buttonComanda_Click(object sender, EventArgs e)
+        {
+            Comandas comanda = new();
+            comanda.Show();
+        }
     }
 }

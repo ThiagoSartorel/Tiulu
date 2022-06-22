@@ -51,6 +51,7 @@
             this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fecharToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.buttonListarUsuarios = new System.Windows.Forms.Button();
+            this.buttonComanda = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -63,7 +64,7 @@
             // buttonMenuCadProd
             // 
             this.buttonMenuCadProd.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.buttonMenuCadProd.Location = new System.Drawing.Point(17, 227);
+            this.buttonMenuCadProd.Location = new System.Drawing.Point(18, 261);
             this.buttonMenuCadProd.Name = "buttonMenuCadProd";
             this.buttonMenuCadProd.Size = new System.Drawing.Size(170, 29);
             this.buttonMenuCadProd.TabIndex = 0;
@@ -74,7 +75,7 @@
             // buttonMenuCadClient
             // 
             this.buttonMenuCadClient.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.buttonMenuCadClient.Location = new System.Drawing.Point(17, 284);
+            this.buttonMenuCadClient.Location = new System.Drawing.Point(18, 309);
             this.buttonMenuCadClient.Name = "buttonMenuCadClient";
             this.buttonMenuCadClient.Size = new System.Drawing.Size(170, 29);
             this.buttonMenuCadClient.TabIndex = 1;
@@ -85,7 +86,7 @@
             // buttonMenuCadFun
             // 
             this.buttonMenuCadFun.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.buttonMenuCadFun.Location = new System.Drawing.Point(17, 341);
+            this.buttonMenuCadFun.Location = new System.Drawing.Point(18, 358);
             this.buttonMenuCadFun.Name = "buttonMenuCadFun";
             this.buttonMenuCadFun.Size = new System.Drawing.Size(170, 29);
             this.buttonMenuCadFun.TabIndex = 2;
@@ -96,7 +97,7 @@
             // buttonMenuConfig
             // 
             this.buttonMenuConfig.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.buttonMenuConfig.Location = new System.Drawing.Point(17, 398);
+            this.buttonMenuConfig.Location = new System.Drawing.Point(18, 407);
             this.buttonMenuConfig.Name = "buttonMenuConfig";
             this.buttonMenuConfig.Size = new System.Drawing.Size(170, 29);
             this.buttonMenuConfig.TabIndex = 3;
@@ -186,7 +187,12 @@
             // 
             this.splitContainer1.Panel1.BackColor = System.Drawing.SystemColors.Control;
             this.splitContainer1.Panel1.ContextMenuStrip = this.contextMenuStripPrincipal;
+            this.splitContainer1.Panel1.Controls.Add(this.buttonComanda);
             this.splitContainer1.Panel1.Controls.Add(this.buttonListarUsuarios);
+            this.splitContainer1.Panel1.Controls.Add(this.buttonMenuConfig);
+            this.splitContainer1.Panel1.Controls.Add(this.buttonMenuCadFun);
+            this.splitContainer1.Panel1.Controls.Add(this.buttonMenuCadClient);
+            this.splitContainer1.Panel1.Controls.Add(this.buttonMenuCadProd);
             // 
             // splitContainer1.Panel2
             // 
@@ -265,6 +271,17 @@
             this.buttonListarUsuarios.UseVisualStyleBackColor = false;
             this.buttonListarUsuarios.Click += new System.EventHandler(this.buttonListarUsuarios_Click);
             // 
+            // buttonComanda
+            // 
+            this.buttonComanda.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonComanda.Location = new System.Drawing.Point(18, 216);
+            this.buttonComanda.Name = "buttonComanda";
+            this.buttonComanda.Size = new System.Drawing.Size(170, 29);
+            this.buttonComanda.TabIndex = 10;
+            this.buttonComanda.Text = "Comandas";
+            this.buttonComanda.UseVisualStyleBackColor = false;
+            this.buttonComanda.Click += new System.EventHandler(this.buttonComanda_Click);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -273,10 +290,6 @@
             this.ClientSize = new System.Drawing.Size(632, 503);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.buttonMenuSobre);
-            this.Controls.Add(this.buttonMenuConfig);
-            this.Controls.Add(this.buttonMenuCadFun);
-            this.Controls.Add(this.buttonMenuCadClient);
-            this.Controls.Add(this.buttonMenuCadProd);
             this.Controls.Add(this.splitContainer1);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(650, 550);
@@ -320,5 +333,6 @@
         private ToolStripMenuItem abriToolStripMenuItem;
         private ToolStripMenuItem sobreToolStripMenuItem1;
         private Button buttonListarUsuarios;
+        private Button buttonComanda;
     }
 }

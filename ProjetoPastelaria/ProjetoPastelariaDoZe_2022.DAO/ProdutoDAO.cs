@@ -89,7 +89,7 @@ namespace ProjetoPastelariaDoZe_2022.DAO
             "SELECT id_produto AS ID, nome AS Nome, valor_unitario AS Valor, descricao AS Descrição, foto AS Imagem " +
             "FROM tb_produto " +
             auxSqlFiltro +
-            "ORDER BY nome;";
+            " ORDER BY nome;";
 
             //Executa o script na conexão e retorna as linhas afetadas.
             var sdr = comando.ExecuteReader();

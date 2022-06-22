@@ -252,5 +252,15 @@ namespace ProjetoPastelaria
                 AtualizaTelaEditar(id);
             }
         }
+
+        private void dataGridViewDados_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void userControlCliente_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
